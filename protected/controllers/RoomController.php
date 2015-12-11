@@ -120,7 +120,7 @@ class RoomController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
+	public function actionAdmin()
 	{
 		$dataProvider=new CActiveDataProvider('Room');
 		$this->render('index',array(
@@ -131,7 +131,7 @@ class RoomController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$model=new Room('search');
 		$model->unsetAttributes();  // clear any default values

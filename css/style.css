@@ -18,7 +18,6 @@ li{
 /*-------------------------------------------------------------------------------------*/
 
 
-
 #header{
 	height:70px;
 	background:#5cb85c;
@@ -77,8 +76,7 @@ li{
 	position: absolute;
 	top:40px;
 	left:0;
-	background:#5cb85c;
-	border:1px solid #4cae4c;
+	background:#4cae4c;
 }
 #user-dropdown a{
 	text-decoration: none;
@@ -121,6 +119,7 @@ li{
 
 #content{
 	height:400px;
+	overflow: hidden;
 }
 
 

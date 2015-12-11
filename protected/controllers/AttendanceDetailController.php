@@ -120,7 +120,7 @@ class AttendanceDetailController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
+	public function actionAdmin()
 	{
 		$dataProvider=new CActiveDataProvider('AttendanceDetail');
 		$this->render('index',array(
@@ -131,7 +131,7 @@ class AttendanceDetailController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$model=new AttendanceDetail('search');
 		$model->unsetAttributes();  // clear any default values

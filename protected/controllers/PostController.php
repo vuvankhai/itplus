@@ -120,7 +120,7 @@ class PostController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
+	public function actionAdmin()
 	{
 		$dataProvider=new CActiveDataProvider('Post');
 		$this->render('index',array(
@@ -131,7 +131,7 @@ class PostController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$model=new Post('search');
 		$model->unsetAttributes();  // clear any default values

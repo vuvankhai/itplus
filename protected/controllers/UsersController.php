@@ -120,7 +120,7 @@ class UsersController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
+	public function actionAdmin()
 	{
 		$dataProvider=new CActiveDataProvider('Users');
 		$this->render('index',array(
@@ -131,7 +131,7 @@ class UsersController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$model=new Users('search');
 		$model->unsetAttributes();  // clear any default values
