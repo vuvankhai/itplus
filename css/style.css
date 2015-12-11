@@ -19,12 +19,12 @@ li{
 
 
 #header{
-	height:70px;
+	height:80px;
 	background:#5cb85c;
 }
 .top-head{
 	width:100%;
-	height:40px;
+	height:50px;
 	background:#4cae4c;
 }
 .top-head .wrap-logo{
@@ -38,7 +38,7 @@ li{
 	float:left;
 }
 .top-head .wrap-logo .logo img{
-	height:30px;
+	height:40px;
 }
 .top-head .wrap-logo .description{
 	margin:0;
@@ -127,15 +127,15 @@ li{
 	width:20%;
 	height:100%;
 	float:left;
-	/*overflow: scroll;*/
-	background:#ccc;
+	overflow: scroll;
+	border-right:1px solid #ccc;
+	box-shadow: 1px 1px 2px #ccc;
 }
 #main-content{
 	width: 80%;
 	height:100%;
 	float:right;
-	/*overflow: scroll;*/
-	background:#cfc;
+	overflow: scroll;
 	padding:10px;
 }
 
@@ -146,12 +146,12 @@ li{
 
 
 #footer{
-	height:40px;
+	height:30px;
 	background:#f70;
 	text-align: center;
 }
 #footer p{
-	line-height: 40px;
+	line-height: 30px;
 	color:#fff;
 	margin:0;
 }

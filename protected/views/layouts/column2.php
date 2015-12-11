@@ -15,9 +15,7 @@
 </div><!-- sidebar -->
 
 <div id="main-content">
-	<div class="container-fluid">
-		<?php echo $content; ?>
-	</div><!-- container-fluid -->
+	<?php echo $content; ?>
 </div>
 
 <?php $this->endContent(); ?>
