@@ -8,8 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/bootstrap/css/bootstrap-theme.min.css"/>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/bootstrap/js/bootstrap.min.js"></script>
+	<!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/bootstrap/js/bootstrap.min.js"></script>-->
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/dropdown.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/setheight.js"></script>
 </head>
 <body>
 
@@ -57,15 +58,7 @@
 			<p>&copy; 2015 Hoanglv. All Rights Reserved.</p>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var h_header = $("#header").height();
-			var h_footer = $("#footer").height();
-			var height = $(window).height() - h_header - h_footer;
-			$("#content").css('height', height+"px");
-
-		})
-	</script>
+	
 </body>
 
 </html>
