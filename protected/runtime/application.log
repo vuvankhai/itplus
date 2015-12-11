@@ -1193,3 +1193,29 @@ Stack trace:
 REQUEST_URI=/demo/index.php/site/chuyennganh
 HTTP_REFERER=http://localhost/demo/index.php/site/login
 ---
+2015/12/11 02:33:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\xampp\htdocs\itplus\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CController.php(270): CController->missingAction('gii')
+#1 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CController->run('gii')
+#2 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/itplus/index.php/site/gii
+---
+2015/12/11 03:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "menu".' in C:\xampp\htdocs\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu')
+#1 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/itplus/index.php/menu
+---
+2015/12/11 03:09:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "menus".' in C:\xampp\htdocs\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menus')
+#1 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/itplus/index.php/menus
+---
