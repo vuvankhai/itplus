@@ -5,8 +5,6 @@ $(document).ready(function(){
 	var height = $(window).height() - h_header - h_footer;
 	if(h_content < height){
 		$("#content").css('height', height+"px");
-	} else {
-		$("#content").css('height', h_content+200+"px");
 	}
 	
 

@@ -133,6 +133,9 @@ class CourseController extends Controller
 	 */
 	public function actionIndex()
 	{
+
+		$this->layout = 'layout_second';
+
 		$model=new Course('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Course']))

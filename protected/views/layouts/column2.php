@@ -1,7 +1,7 @@
 <?php /* @var $this Controller */ ?>
 <?php $this->beginContent('//layouts/main'); ?>
 
-<div id="sidebar">
+<div class="main-content">
 	<?php
 		$this->beginWidget('zii.widgets.CPortlet', array(
 			'title'=>'Operations',
@@ -12,9 +12,6 @@
 		));
 		$this->endWidget();
 	?>
-</div><!-- sidebar -->
-
-<div id="main-content">
 	<?php echo $content; ?>
 </div>
 
