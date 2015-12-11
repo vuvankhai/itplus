@@ -49,9 +49,6 @@
 			</div>
 		</div>
 		<div id="content">
-			<div id="sidebar">
-
-			</div>
 			<div id="main-content">
 				<div class="container-fluid">
 					<?php echo $content; ?>
