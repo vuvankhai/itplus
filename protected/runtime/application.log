@@ -1492,3 +1492,31 @@ Stack trace:
 #35 {main}
 REQUEST_URI=/framework/Yii/itplus/index.php/menu
 ---
+2015/12/12 07:00:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pót".' in D:\web\projects\framework\Yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\Yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('p\xC3\xB3t')
+#1 D:\web\projects\framework\Yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\Yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/p%C3%B3t
+---
+2015/12/12 08:12:04 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.model" is not defined.' in D:\web\projects\framework\Yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\Yii\itplus\framework\base\CModule.php(105): CComponent->__get('model')
+#1 D:\web\projects\framework\Yii\itplus\protected\views\site\index.php(9): CModule->__get('model')
+#2 D:\web\projects\framework\Yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#3 D:\web\projects\framework\Yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', NULL, true)
+#4 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', NULL, true)
+#5 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\web\projects\framework\Yii\itplus\protected\controllers\SiteController.php(32): CController->render('index')
+#7 D:\web\projects\framework\Yii\itplus\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\web\projects\framework\Yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\web\projects\framework\Yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\web\projects\framework\Yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\web\projects\framework\Yii\itplus\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/framework/Yii/itplus/
+---
