@@ -52,7 +52,32 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'ID_Teacher',
 		'Date_create',
 		array(
-			'class'=>'CButtonColumn',
-		),
+            'header' => '<span class="glyphicon glyphicon-cog" ></span>',
+            'htmlOptions' => array(
+                            'style' => 'width: 100px; text-align: center;',
+		            ),
+		            'class' => 'CButtonColumn',
+		            'template' => '{view} {update} {delete}',
+		            'buttons' => array(
+	                    'view'=>array(
+	                    	'label' => '<span class="glyphicon glyphicon-eye-open"></span>',
+	                        'url' => '$this->grid->controller->createUrl("attendance/view", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+	                        'imageUrl' => false,
+	                        'options'=>array('title'=>'Chi tiết'),
+	                    ),
+	                    'delete' => array(
+	                  		'label' => '<span class="glyphicon glyphicon-trash"></span>',
+	                        'url' => '$this->grid->controller->createUrl("attendance/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
+	                        'imageUrl' => false,
+	                        'options'=>array('title'=>'Xóa'),
+	                    ),
+	                    'update' => array(
+	                  		'label' => "<span class='glyphicon glyphicon-pencil'></span>",
+	                        'url' => '$this->grid->controller->createUrl("attendance/update", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+	                        'imageUrl' => false,
+	                        'options'=>array('title'=>'Cập nhật'),
+	                    ),
+            		),
+        ),
 	),
 )); ?>
