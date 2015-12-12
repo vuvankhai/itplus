@@ -109,4 +109,15 @@ class Menu extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public function getMenu($parent_id){
+		$menus = $this->model()->findAll('Parent_ID=:Parent_ID', array('Parent_ID'=>$parent_id));
+		$_menu = array();
+		$base = Yii::app()->request->baseUrl.'/index.php';
+		foreach($menus as $menu){
+			$_menu[] = array('label'=>$menu->Name, 'url'=>$base.$menu->URL, 'submenuOptions'=>array('class'=>'submenu'),'items'=>$this->getMenu($menu->ID));
+		}
+
+		return $_menu;
+	}
 }

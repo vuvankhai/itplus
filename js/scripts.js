@@ -27,4 +27,14 @@ $(document).ready(function(){
 
 	$(".filters td input").addClass('form-control');
 
+	/*
+		Display submenu
+	*/
+
+	$(".list-item li").hover(function(){
+		$(this).find(".submenu:first").css({'visibility':'visible', 'display':'none'}).show(300);
+	}, function(){
+		$(this).find(".submenu:first").css({'visibility':'hidden'}).hide(300);
+	})
+
 })

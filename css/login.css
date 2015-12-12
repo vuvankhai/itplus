@@ -1,0 +1,33 @@
+html{
+	height:100%;
+}
+body{
+	height:100%;
+}
+#wrapper{
+	height:100%;
+	background:url('../images/bg_login.jpg');
+	background-size: cover;
+}
+.box-login{
+	width:360px;
+	min-height: 400px;
+	overflow: hidden;
+	border:1px solid #ccc;
+	box-shadow: 2px 2px 3px #333;
+	border-radius: 3px;
+	padding:30px 10px;
+	margin:0 auto;
+	position: relative;
+	z-index: 100;
+	top:150px;
+	background:#fff;
+}
+.pd-3-10{
+	padding:3px 10px;
+}
+.box-login > h1{
+	margin:0 0 20px 0;
+	text-align: center;
+	font-size: 26px;
+}

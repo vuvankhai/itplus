@@ -70,9 +70,9 @@ html .form-group .form-control{
 }
 .top-head #box-user{
 	width:20%;
-	height:40px;
+	height:50px;
 	float:right;
-	padding-top:5px;
+	padding-top:10px;
 	position: relative;
 }
 .top-head #box-user img{
@@ -93,7 +93,7 @@ html .form-group .form-control{
 	width:100%;
 	padding:10px;
 	position: absolute;
-	top:40px;
+	top:50px;
 	left:0;
 	background:#4cae4c;
 }
@@ -105,7 +105,7 @@ html .form-group .form-control{
 .menu{
 	width:100%;
 	height:30px;
-	overflow-y: scroll;
+	background-color: #5cb85c;
 }
 .menu .list-item{
 	margin:0;
@@ -113,6 +113,7 @@ html .form-group .form-control{
 }
 .menu .list-item li{
 	float:left;
+	position: relative;
 }
 .menu .list-item li.sep{
 	color:#fff;
@@ -128,6 +129,19 @@ html .form-group .form-control{
 	text-decoration: none;
 }
 .menu .list-item li a:hover{
+	background:#4cae4c;
+}
+.menu .list-item li ul{
+	display: none;
+	position: absolute;
+	top:30px;
+	left:0;
+}
+.menu .list-item li ul li{
+	background-color: #5cb85c;
+	min-width:180px;
+}
+.menu-active{
 	background:#4cae4c;
 }
 
