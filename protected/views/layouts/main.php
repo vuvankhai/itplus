@@ -11,8 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/bootstrap/css/bootstrap-theme.min.css"/>
 
 	<!--<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/bootstrap/js/bootstrap.min.js"></script>-->
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/dropdown.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/setheight.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/scripts.js"></script>
 </head>
 <body>
 
