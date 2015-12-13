@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Create Post', 'url'=>array('create')),
-	array('label'=>'Manage Post', 'url'=>array('admin')),
+	array('label'=>'Manage Post', 'url'=>array('index')),
 );
 ?>
 
-<h1>Posts</h1>
+<h1 class="text-success">Posts</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

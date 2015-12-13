@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Create Room', 'url'=>array('create')),
-	array('label'=>'Manage Room', 'url'=>array('admin')),
+	array('label'=>'Manage Room', 'url'=>array('index')),
 );
 ?>
 
-<h1>Rooms</h1>
+<h1 class="text-success">Rooms</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

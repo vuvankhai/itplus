@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Users', 'url'=>array('index')),
+	array('label'=>'List Users', 'url'=>array('admin')),
 	array('label'=>'Create Users', 'url'=>array('create')),
 	array('label'=>'View Users', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Users', 'url'=>array('admin')),
+	array('label'=>'Manage Users', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Users <?php echo $model->ID; ?></h1>
+<h1 class="text-success">Update Users <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

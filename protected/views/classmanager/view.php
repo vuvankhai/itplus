@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Classmanager', 'url'=>array('index')),
+	array('label'=>'List Classmanager', 'url'=>array('admin')),
 	array('label'=>'Create Classmanager', 'url'=>array('create')),
 	array('label'=>'Update Classmanager', 'url'=>array('update', 'id'=>$model->ID)),
 	array('label'=>'Delete Classmanager', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Classmanager', 'url'=>array('admin')),
+	array('label'=>'Manage Classmanager', 'url'=>array('index')),
 );
 ?>
 
-<h1>View Classmanager #<?php echo $model->ID; ?></h1>
+<h1 class="text-success">View Classmanager #<?php echo $model->ID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Create SemesterSubject', 'url'=>array('create')),
-	array('label'=>'Manage SemesterSubject', 'url'=>array('admin')),
+	array('label'=>'Manage SemesterSubject', 'url'=>array('index')),
 );
 ?>
 
-<h1>Semester Subjects</h1>
+<h1 class="text-success">Semester Subjects</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

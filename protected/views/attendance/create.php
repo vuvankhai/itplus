@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Attendance', 'url'=>array('index')),
-	array('label'=>'Manage Attendance', 'url'=>array('admin')),
+	array('label'=>'List Attendance', 'url'=>array('admin')),
+	array('label'=>'Manage Attendance', 'url'=>array('index')),
 );
 ?>
 
-<h1>Create Attendance</h1>
+<h1 class="text-success">Create Attendance</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

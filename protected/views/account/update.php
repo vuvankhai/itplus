@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Account', 'url'=>array('index')),
+	array('label'=>'List Account', 'url'=>array('admin')),
 	array('label'=>'Create Account', 'url'=>array('create')),
 	array('label'=>'View Account', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Account', 'url'=>array('admin')),
+	array('label'=>'Manage Account', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Account <?php echo $model->ID; ?></h1>
+<h1 class="text-success">Update Account <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

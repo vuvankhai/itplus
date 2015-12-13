@@ -9,40 +9,41 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
+	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID'); ?>
-		<?php echo $form->textField($model,'ID'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID', array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Username'); ?>
-		<?php echo $form->textField($model,'Username',array('size'=>25,'maxlength'=>25)); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'Username', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Username',array('size'=>25,'maxlength'=>25,'class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Password'); ?>
-		<?php echo $form->passwordField($model,'Password',array('size'=>20,'maxlength'=>20)); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'Password', array('class'=>'control-label')); ?>
+		<?php echo $form->passwordField($model,'Password',array('size'=>20,'maxlength'=>20,'class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Type'); ?>
-		<?php echo $form->textField($model,'Type',array('size'=>20,'maxlength'=>20)); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'Type', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Type',array('size'=>20,'maxlength'=>20,'class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Status'); ?>
-		<?php echo $form->textField($model,'Status',array('size'=>20,'maxlength'=>20)); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'Status', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Status',array('size'=>20,'maxlength'=>20,'class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID_GroupAcc'); ?>
-		<?php echo $form->textField($model,'ID_GroupAcc'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID_GroupAcc', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_GroupAcc', array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+	<div class="form-group buttons">
+		<?php echo CHtml::submitButton('Search', array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

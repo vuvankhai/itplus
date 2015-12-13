@@ -120,7 +120,7 @@ class StudentController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Student');
 		$this->render('index',array(
@@ -131,7 +131,7 @@ class StudentController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionIndex()
+	public function actionAdmin()
 	{
 		$model=new Student('search');
 		$model->unsetAttributes();  // clear any default values

@@ -9,25 +9,26 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
+	'htmlOptions'=>array('form'),
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID'); ?>
-		<?php echo $form->textField($model,'ID'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID', array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Name'); ?>
-		<?php echo $form->textField($model,'Name',array('size'=>30,'maxlength'=>30)); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'Name',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Name',array('size'=>30,'maxlength'=>30, 'class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID_Course'); ?>
-		<?php echo $form->textField($model,'ID_Course'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID_Course',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_Course', array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+	<div class="form-group buttons">
+		<?php echo CHtml::submitButton('Search', array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

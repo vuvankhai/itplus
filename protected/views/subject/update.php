@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Subject', 'url'=>array('index')),
+	array('label'=>'List Subject', 'url'=>array('admin')),
 	array('label'=>'Create Subject', 'url'=>array('create')),
 	array('label'=>'View Subject', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Subject', 'url'=>array('admin')),
+	array('label'=>'Manage Subject', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Subject <?php echo $model->ID; ?></h1>
+<h1 class="text-success">Update Subject <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -3,10 +3,8 @@ $(document).ready(function(){
 	/*
 		Dropdown dox user-dropdown in div id=box-user
 	*/
-	$("#box-user").hover(function(){
-		$("#user-dropdown").show(300);
-	}, function(){
-		$("#user-dropdown").hide(300);
+	$("#box-user").click(function(){
+		$("#user-dropdown").toggle(300);
 	})
 
 	/*
@@ -17,9 +15,12 @@ $(document).ready(function(){
 	var footer = $("#footer").height();
 	var content = $("#content").height();
 	var height = $(window).height() - header - footer;
-	if(content < height){
-		$("#content").css('min-height', height+"px");
-	}
+	if(height < 500)
+		height = 500;
+
+	$("#content").css('height', height+"px");
+	$("#main-content").css('height', height+"px");
+	$(".main-content").css('height', height+"px");
 
 	/*
 		Add class from-control for input search

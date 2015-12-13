@@ -13,32 +13,33 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
+	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Name'); ?>
-		<?php echo $form->textField($model,'Name',array('size'=>50,'maxlength'=>50)); ?>
-		<?php echo $form->error($model,'Name'); ?>
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'Name', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Name',array('size'=>50,'maxlength'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Name', array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Description'); ?>
-		<?php echo $form->textField($model,'Description',array('size'=>50,'maxlength'=>50)); ?>
-		<?php echo $form->error($model,'Description'); ?>
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'Description', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Description',array('size'=>50,'maxlength'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Description', array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Status'); ?>
-		<?php echo $form->textField($model,'Status'); ?>
-		<?php echo $form->error($model,'Status'); ?>
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'Status', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Status', array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Status', array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-group buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

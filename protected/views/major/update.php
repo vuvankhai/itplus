@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Major', 'url'=>array('index')),
+	array('label'=>'List Major', 'url'=>array('admin')),
 	array('label'=>'Create Major', 'url'=>array('create')),
 	array('label'=>'View Major', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Major', 'url'=>array('admin')),
+	array('label'=>'Manage Major', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Major <?php echo $model->ID; ?></h1>
+<h1 class="text-success">Update Major <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

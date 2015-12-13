@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Major', 'url'=>array('index')),
-	array('label'=>'Manage Major', 'url'=>array('admin')),
+	array('label'=>'List Major', 'url'=>array('admin')),
+	array('label'=>'Manage Major', 'url'=>array('index')),
 );
 ?>
 
-<h1>Create Major</h1>
+<h1 class="text-success">Create Major</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

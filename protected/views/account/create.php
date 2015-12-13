@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Account', 'url'=>array('index')),
-	array('label'=>'Manage Account', 'url'=>array('admin')),
+	array('label'=>'List Account', 'url'=>array('admin')),
+	array('label'=>'Manage Account', 'url'=>array('index')),
 );
 ?>
 
-<h1>Create Account</h1>
+<h1 class="text-success">Create Account</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

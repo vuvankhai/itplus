@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Groupaccount', 'url'=>array('index')),
+	array('label'=>'List Groupaccount', 'url'=>array('admin')),
 	array('label'=>'Create Groupaccount', 'url'=>array('create')),
 	array('label'=>'View Groupaccount', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Groupaccount', 'url'=>array('admin')),
+	array('label'=>'Manage Groupaccount', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Groupaccount <?php echo $model->ID; ?></h1>
+<h1 class="text-success">Update Groupaccount <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Room', 'url'=>array('index')),
+	array('label'=>'List Room', 'url'=>array('admin')),
 	array('label'=>'Create Room', 'url'=>array('create')),
 	array('label'=>'View Room', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Room', 'url'=>array('admin')),
+	array('label'=>'Manage Room', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Room <?php echo $model->ID; ?></h1>
+<h1 class="text-success">Update Room <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

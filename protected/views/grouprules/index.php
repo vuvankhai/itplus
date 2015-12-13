@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Create Grouprules', 'url'=>array('create')),
-	array('label'=>'Manage Grouprules', 'url'=>array('admin')),
+	array('label'=>'Manage Grouprules', 'url'=>array('index')),
 );
 ?>
 
-<h1>Grouprules</h1>
+<h1 class="text-success">Grouprules</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

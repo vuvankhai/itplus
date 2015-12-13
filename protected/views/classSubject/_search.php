@@ -9,55 +9,56 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
+	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID'); ?>
-		<?php echo $form->textField($model,'ID'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID',array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID_Class'); ?>
-		<?php echo $form->textField($model,'ID_Class'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID_Class',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_Class',array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID_Room'); ?>
-		<?php echo $form->textField($model,'ID_Room'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID_Room',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_Room',array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID_Hour'); ?>
-		<?php echo $form->textField($model,'ID_Hour'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID_Hour',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_Hour',array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID_Subject'); ?>
-		<?php echo $form->textField($model,'ID_Subject'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID_Subject',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_Subject',array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Start_date'); ?>
-		<?php echo $form->textField($model,'Start_date'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'Start_date',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Start_date',array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Finish_date'); ?>
-		<?php echo $form->textField($model,'Finish_date'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'Finish_date',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Finish_date',array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID_Facuty'); ?>
-		<?php echo $form->textField($model,'ID_Facuty'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID_Facuty',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_Facuty',array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Date_Exam'); ?>
-		<?php echo $form->textField($model,'Date_Exam'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'Date_Exam',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Date_Exam',array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+	<div class="form-group buttons">
+		<?php echo CHtml::submitButton('Search',array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

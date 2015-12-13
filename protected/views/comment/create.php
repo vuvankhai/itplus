@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Comment', 'url'=>array('index')),
-	array('label'=>'Manage Comment', 'url'=>array('admin')),
+	array('label'=>'List Comment', 'url'=>array('admin')),
+	array('label'=>'Manage Comment', 'url'=>array('index')),
 );
 ?>
 
-<h1>Create Comment</h1>
+<h1 class="text-success">Create Comment</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

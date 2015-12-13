@@ -9,30 +9,31 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
 	'method'=>'get',
+	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID'); ?>
-		<?php echo $form->textField($model,'ID'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID', array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID_GroupAcc'); ?>
-		<?php echo $form->textField($model,'ID_GroupAcc'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID_GroupAcc', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_GroupAcc', array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'ID_menu'); ?>
-		<?php echo $form->textField($model,'ID_menu'); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'ID_menu', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_menu', array('class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'Status'); ?>
-		<?php echo $form->textField($model,'Status',array('size'=>20,'maxlength'=>20)); ?>
+	<div class="form-group">
+		<?php echo $form->label($model,'Status', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Status',array('size'=>20,'maxlength'=>20, 'class'=>'form-control')); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+	<div class="form-group buttons">
+		<?php echo CHtml::submitButton('Search', array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

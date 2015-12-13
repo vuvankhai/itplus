@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Comment', 'url'=>array('index')),
+	array('label'=>'List Comment', 'url'=>array('admin')),
 	array('label'=>'Create Comment', 'url'=>array('create')),
 	array('label'=>'View Comment', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Comment', 'url'=>array('admin')),
+	array('label'=>'Manage Comment', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Comment <?php echo $model->ID; ?></h1>
+<h1 class="text-success">Update Comment <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

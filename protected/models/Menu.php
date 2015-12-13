@@ -111,7 +111,7 @@ class Menu extends CActiveRecord
 	}
 
 	public function getMenu($parent_id){
-		$menus = $this->model()->findAll('Parent_ID=:Parent_ID', array('Parent_ID'=>$parent_id));
+		$menus = $this->model()->findAll('Parent_ID=:Parent_ID ORDER BY Name ASC', array('Parent_ID'=>$parent_id));
 		$_menu = array();
 		$base = Yii::app()->request->baseUrl.'/index.php';
 		foreach($menus as $menu){

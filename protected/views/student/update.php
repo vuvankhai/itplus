@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Student', 'url'=>array('index')),
+	array('label'=>'List Student', 'url'=>array('admin')),
 	array('label'=>'Create Student', 'url'=>array('create')),
 	array('label'=>'View Student', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Student', 'url'=>array('admin')),
+	array('label'=>'Manage Student', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update Student <?php echo $model->ID; ?></h1>
+<h1 class="text-success">Update Student <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

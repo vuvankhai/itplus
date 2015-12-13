@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Groupaccount', 'url'=>array('index')),
-	array('label'=>'Manage Groupaccount', 'url'=>array('admin')),
+	array('label'=>'List Groupaccount', 'url'=>array('admin')),
+	array('label'=>'Manage Groupaccount', 'url'=>array('index')),
 );
 ?>
 
-<h1>Create Groupaccount</h1>
+<h1 class="text-success">Create Groupaccount</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

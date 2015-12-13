@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Create AttendanceDetail', 'url'=>array('create')),
-	array('label'=>'Manage AttendanceDetail', 'url'=>array('admin')),
+	array('label'=>'Manage AttendanceDetail', 'url'=>array('index')),
 );
 ?>
 
-<h1>Attendance Details</h1>
+<h1 class="text-success">Attendance Details</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

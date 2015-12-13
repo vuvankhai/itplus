@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Subject', 'url'=>array('index')),
-	array('label'=>'Manage Subject', 'url'=>array('admin')),
+	array('label'=>'List Subject', 'url'=>array('admin')),
+	array('label'=>'Manage Subject', 'url'=>array('index')),
 );
 ?>
 
-<h1>Create Subject</h1>
+<h1 class="text-success">Create Subject</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

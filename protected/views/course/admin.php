@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Course', 'url'=>array('index')),
+	array('label'=>'List Course', 'url'=>array('admin')),
 	array('label'=>'Create Course', 'url'=>array('create')),
 );
 
@@ -43,7 +43,7 @@ $('.search-form form').submit(function(){
 <div id="main-content">
 	<h1 class="text-success">Manage Courses</h1>
 
-	<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-primary btn-sm')); ?>
+	<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
 	<div class="search-form" style="display:none">
 	<?php $this->renderPartial('_search',array(
 		'model'=>$model,

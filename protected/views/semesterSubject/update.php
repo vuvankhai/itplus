@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List SemesterSubject', 'url'=>array('index')),
+	array('label'=>'List SemesterSubject', 'url'=>array('admin')),
 	array('label'=>'Create SemesterSubject', 'url'=>array('create')),
 	array('label'=>'View SemesterSubject', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage SemesterSubject', 'url'=>array('admin')),
+	array('label'=>'Manage SemesterSubject', 'url'=>array('index')),
 );
 ?>
 
-<h1>Update SemesterSubject <?php echo $model->ID; ?></h1>
+<h1 class="text-success">Update SemesterSubject <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

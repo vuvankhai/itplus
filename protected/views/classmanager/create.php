@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Classmanager', 'url'=>array('index')),
-	array('label'=>'Manage Classmanager', 'url'=>array('admin')),
+	array('label'=>'List Classmanager', 'url'=>array('admin')),
+	array('label'=>'Manage Classmanager', 'url'=>array('index')),
 );
 ?>
 
-<h1>Create Classmanager</h1>
+<h1 class="text-success">Create Classmanager</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

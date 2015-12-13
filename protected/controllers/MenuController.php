@@ -117,8 +117,9 @@ class MenuController extends Controller
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
+
 	/**
-	 * Lists all models.
+	 * Manages all models.
 	 */
 	public function actionAdmin()
 	{
@@ -127,9 +128,8 @@ class MenuController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
-
 	/**
-	 * Manages all models.
+	 * Lists all models.
 	 */
 	public function actionIndex()
 	{

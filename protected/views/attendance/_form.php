@@ -13,44 +13,45 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
+	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Session'); ?>
-		<?php echo $form->textField($model,'Session'); ?>
-		<?php echo $form->error($model,'Session'); ?>
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'Session',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Session',array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Session',array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Present'); ?>
-		<?php echo $form->textField($model,'Present'); ?>
-		<?php echo $form->error($model,'Present'); ?>
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'Present',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Present',array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Present',array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Absent'); ?>
-		<?php echo $form->textField($model,'Absent'); ?>
-		<?php echo $form->error($model,'Absent'); ?>
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'Absent',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Absent',array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Absent',array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'ID_Teacher'); ?>
-		<?php echo $form->textField($model,'ID_Teacher'); ?>
-		<?php echo $form->error($model,'ID_Teacher'); ?>
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'ID_Teacher',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID_Teacher',array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'ID_Teacher',array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Date_create'); ?>
-		<?php echo $form->textField($model,'Date_create'); ?>
-		<?php echo $form->error($model,'Date_create'); ?>
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'Date_create',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'Date_create',array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Date_create',array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-group buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

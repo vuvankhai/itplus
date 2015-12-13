@@ -10,4 +10,4 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 
-<h1>Chao mung toi trang quan ly hoc vien cua ITPlus-Academy</h1>
+<h1 class="welcome">Chao mung toi trang quan ly hoc vien cua ITPlus-Academy</h1>
