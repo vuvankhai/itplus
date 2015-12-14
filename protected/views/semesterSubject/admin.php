@@ -48,32 +48,7 @@ $('.search-form form').submit(function(){
 		'Hour',
 		'Description',
 		array(
-            'header' => '<span class="glyphicon glyphicon-cog" ></span>',
-            'htmlOptions' => array(
-                            'style' => 'width: 100px; text-align: center;',
-		            ),
-		            'class' => 'CButtonColumn',
-		            'template' => '{view} {update} {delete}',
-		            'buttons' => array(
-	                    'view'=>array(
-	                    	'label' => '<button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
-	                        'url' => '$this->grid->controller->createUrl("semestersubject/view", array("id"=>$data->primaryKey,"type"=>$data->ID))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Chi tiết'),
-	                    ),
-	                    'delete' => array(
-	                  		'label' => '<button type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
-	                        'url' => '$this->grid->controller->createUrl("semestersubject/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Xóa'),
-	                    ),
-	                    'update' => array(
-	                  		'label' => '<button type="button" class="btn btn-success btn-xs glyphicon glyphicon-pencil"></button>',
-	                        'url' => '$this->grid->controller->createUrl("semestersubject/update", array("id"=>$data->primaryKey,"type"=>$data->ID))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Cập nhật'),
-	                    ),
-            		),
-        ),
+			'class'=>'CButtonColumn',
+		),
 	),
 )); ?>

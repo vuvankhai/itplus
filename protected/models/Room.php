@@ -29,7 +29,6 @@ class Room extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Name, Desccription', 'required'),
 			array('Name', 'length', 'max'=>45),
 			array('Desccription', 'length', 'max'=>100),
 			// The following rule is used by search().

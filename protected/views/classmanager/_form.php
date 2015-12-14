@@ -20,25 +20,25 @@
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Name',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Name',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Name',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Name',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Description',array('class'=>'control-label')); ?>
 		<?php echo $form->textArea($model,'Description',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Description',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Description',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Code',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Code',array('size'=>10,'maxlength'=>10,'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Code',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Code',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Code_ITI',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Code_ITI',array('size'=>10,'maxlength'=>10,'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Code_ITI',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Code_ITI',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
@@ -56,31 +56,31 @@
 		        )
 		    );
 		    //$form->dateField($model,'Start_date',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Start_date',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Start_date',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Finish_date',array('class'=>'control-label')); ?>
 		<?php echo $form->dateField($model,'Finish_date',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Finish_date',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Finish_date',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Numberofstudent',array('class'=>'control-label')); ?>
 		<?php echo $form->numberField($model,'Numberofstudent',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Numberofstudent',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Numberofstudent',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_course',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'ID_course',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'ID_course',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'ID_course',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Facuty_id',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Facuty_id',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Facuty_id',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Facuty_id',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
@@ -95,7 +95,7 @@
                             'uncheckValue'=>null
                         ));
                 ?>
-		<?php echo $form->error($model,'Status',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Status',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group buttons">

@@ -17,23 +17,25 @@
 )); ?>
 
 	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
-	
+
+	<?php echo $form->errorSummary($model); ?>
+
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Attendance',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'ID_Attendance',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'ID_Attendance',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'ID_Attendance',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Student',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'ID_Student',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'ID_Student',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'ID_Student',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Status',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Status',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Status',array('class'=>'clearboth text-danger')); ?>
+		<?php echo $form->error($model,'Status',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group buttons">

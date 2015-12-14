@@ -18,15 +18,17 @@
 
 	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
 
+	<?php echo $form->errorSummary($model); ?>
+
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Value',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Value',array('size'=>45,'maxlength'=>45, 'class'=>'clearboth text-danger')); ?>
+		<?php echo $form->textField($model,'Value',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Value'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Type',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Type',array('size'=>1,'maxlength'=>1, 'class'=>'clearboth text-danger')); ?>
+		<?php echo $form->textField($model,'Type',array('size'=>1,'maxlength'=>1, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Type'); ?>
 	</div>
 

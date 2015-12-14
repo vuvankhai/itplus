@@ -38,11 +38,4 @@ $(document).ready(function(){
 		$(this).find(".submenu:first").css({'visibility':'hidden'}).hide(300);
 	})
 
-	/*
-		Set class {.btn .btn-default btn-sm} for list menu operations and button in user-dropdown
-	*/
-
-	$('.box-btn a').addClass('btn btn-default btn-sm');
-	$('.user-btn a').addClass('btn btn-default btn-sm');
-
 })

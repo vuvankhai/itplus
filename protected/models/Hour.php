@@ -29,7 +29,6 @@ class Hour extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Value, Type', 'required'),
 			array('Value', 'length', 'max'=>45),
 			array('Type', 'length', 'max'=>1),
 			// The following rule is used by search().

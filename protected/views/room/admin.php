@@ -54,19 +54,19 @@ $('.search-form form').submit(function(){
 		            'template' => '{view} {update} {delete}',
 		            'buttons' => array(
 	                    'view'=>array(
-	                    	'label' => '<button type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
+	                    	'label' => '<span class="glyphicon glyphicon-eye-open"></span>',
 	                        'url' => '$this->grid->controller->createUrl("room/view", array("id"=>$data->primaryKey,"type"=>$data->ID))',
 	                        'imageUrl' => false,
 	                        'options'=>array('title'=>'Chi tiết'),
 	                    ),
 	                    'delete' => array(
-	                  		'label' => '<button type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
+	                  		'label' => '<span class="glyphicon glyphicon-trash"></span>',
 	                        'url' => '$this->grid->controller->createUrl("room/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
 	                        'imageUrl' => false,
 	                        'options'=>array('title'=>'Xóa'),
 	                    ),
 	                    'update' => array(
-	                  		'label' => '<button type="button" class="btn btn-success btn-xs glyphicon glyphicon-pencil"></button>',
+	                  		'label' => "<span class='glyphicon glyphicon-pencil'></span>",
 	                        'url' => '$this->grid->controller->createUrl("room/update", array("id"=>$data->primaryKey,"type"=>$data->ID))',
 	                        'imageUrl' => false,
 	                        'options'=>array('title'=>'Cập nhật'),
