@@ -56,8 +56,8 @@ class Hour extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Value' => 'Value',
-			'Type' => 'Type',
+			'Value' => 'Giờ học',
+			'Type' => 'Tên giờ',
 		);
 	}
 

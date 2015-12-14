@@ -56,8 +56,8 @@ class Room extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Name',
-			'Desccription' => 'Desccription',
+			'Name' => 'Phòng học',
+			'Desccription' => 'Mô tả',
 		);
 	}
 

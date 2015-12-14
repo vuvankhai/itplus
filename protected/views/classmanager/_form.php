@@ -16,9 +16,6 @@
 	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
-
-	<?php echo $form->errorSummary($model); ?>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Name',array('class'=>'control-label')); ?>
@@ -28,7 +25,7 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Description',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Description',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
+		<?php echo $form->textArea($model,'Description',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Description',array('class'=>'text-danger')); ?>
 	</div>
 
@@ -46,19 +43,19 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Start_date',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Start_date',array('class'=>'form-control')); ?>
+		<?php echo $form->dateField($model,'Start_date',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Start_date',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Finish_date',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Finish_date',array('class'=>'form-control')); ?>
+		<?php echo $form->dateField($model,'Finish_date',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Finish_date',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Numberofstudent',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Numberofstudent',array('class'=>'form-control')); ?>
+		<?php echo $form->numberField($model,'Numberofstudent',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Numberofstudent',array('class'=>'text-danger')); ?>
 	</div>
 
@@ -76,7 +73,16 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Status',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Status',array('class'=>'form-control')); ?>
+		<?php echo "Bắt đầu ".$form->radioButton($model, 'Status', array(
+                            'value'=>0,
+                            'uncheckValue'=>null
+                        ));
+
+                        echo " Kết thúc ".$form->radioButton($model, 'Status', array(
+                            'value'=>1,
+                            'uncheckValue'=>null
+                        ));
+                ?>
 		<?php echo $form->error($model,'Status',array('class'=>'text-danger')); ?>
 	</div>
 
