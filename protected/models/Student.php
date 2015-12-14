@@ -76,17 +76,17 @@ class Student extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Firstname' => 'Firstname',
-			'Lastname' => 'Lastname',
-			'Phonenumber' => 'Phonenumber',
+			'Firstname' => 'Họ',
+			'Lastname' => 'Tên',
+			'Phonenumber' => 'Điện thoại',
 			'Email' => 'Email',
 			'ID_Account' => 'Id Account',
-			'Gender' => 'Gender',
-			'Birthday' => 'Birthday',
-			'Status' => 'Status',
-			'Description' => 'Description',
-			'ID_Class' => 'Id Class',
-			'Address' => 'Address',
+			'Gender' => 'Giới tính',
+			'Birthday' => 'Ngày sinh',
+			'Status' => 'Trạng thái',
+			'Description' => 'Mô tả',
+			'ID_Class' => 'Lớp học',
+			'Address' => 'Địa chỉ',
 			'Phone_Parent' => 'Phone Parent',
 		);
 	}

@@ -67,11 +67,11 @@ class Account extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Username' => 'Username',
-			'Password' => 'Password',
+			'Username' => 'Tên đăng nhập',
+			'Password' => 'Mật khẩu',
 			'Type' => 'Type',
-			'Status' => 'Status',
-			'ID_GroupAcc' => 'Id Group Acc',
+			'Status' => 'Trạng thái',
+			'ID_GroupAcc' => 'Chức vụ',
 		);
 	}
 

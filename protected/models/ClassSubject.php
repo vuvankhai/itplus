@@ -70,14 +70,14 @@ class ClassSubject extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'ID_Class' => 'Id Class',
-			'ID_Room' => 'Id Room',
-			'ID_Hour' => 'Id Hour',
-			'ID_Subject' => 'Id Subject',
-			'Start_date' => 'Start Date',
-			'Finish_date' => 'Finish Date',
-			'ID_Facuty' => 'Id Facuty',
-			'Date_Exam' => 'Date Exam',
+			'ID_Class' => 'Lớp học',
+			'ID_Room' => 'Phòng học',
+			'ID_Hour' => 'Giờ học',
+			'ID_Subject' => 'Môn học',
+			'Start_date' => 'Ngày bắt đầu',
+			'Finish_date' => 'Ngày kết thúc',
+			'ID_Facuty' => 'Giảng viên',
+			'Date_Exam' => 'Ngày thi',
 		);
 	}
 

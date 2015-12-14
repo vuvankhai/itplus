@@ -60,9 +60,9 @@ class Subject extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Name',
-			'Description' => 'Description',
-			'Status' => 'Status',
+			'Name' => 'Tên môn học',
+			'Description' => 'Mô tả',
+			'Status' => 'Trạng thái',
 		);
 	}
 

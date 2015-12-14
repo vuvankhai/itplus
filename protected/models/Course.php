@@ -66,8 +66,8 @@ class Course extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Name',
-			'Description' => 'Description',
+			'Name' => 'Tên khóa học',
+			'Description' => 'Mô tả',
 			'Parent_id' => 'Parent',
 			'Type' => 'Type',
 			'Major_id' => 'Major',
