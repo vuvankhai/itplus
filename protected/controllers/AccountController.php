@@ -63,7 +63,7 @@ class AccountController extends Controller
 	public function actionCreate()
 	{
 		$model=new Account;
-                $users=new Users;
+        $users=new Users;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -71,17 +71,17 @@ class AccountController extends Controller
 		if(isset($_POST['Account']) && isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Account'];
-                        $users->attributes=$_POST['Users'];
-			if($model->save())
-                                
-                                $users->ID_Account = (Int)$model->ID;
-                                if($users->save())
-                                $this->redirect(array('view','id'=>$model->ID));
+            $users->attributes=$_POST['Users'];
+			if($model->save()){
+            	$users->ID_Account = (Int)$model->ID;
+            	if($users->save())
+            		$this->redirect(array('view','id'=>$model->ID));
+        	}
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-                        'users'=>$users,
+            'users'=>$users,
 		));
 	}
 

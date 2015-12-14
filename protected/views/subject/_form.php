@@ -18,8 +18,6 @@
 
 	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
-
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Name', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Name',array('size'=>50,'maxlength'=>50,'class'=>'form-control')); ?>
