@@ -43,7 +43,19 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Start_date',array('class'=>'control-label')); ?>
-		<?php echo $form->dateField($model,'Start_date',array('class'=>'form-control')); ?>
+		<?php 
+			$form->widget(
+		        'booster.widgets.TbDatePicker',
+		        array(
+		        	'model'=>$model,
+		            'name' => 'Classmanager[Start_date]',
+		            'htmlOptions' => array('class'=>'form-control',),
+		            'options' => array(
+		                'language' => 'vi'
+		            )
+		        )
+		    );
+		    //$form->dateField($model,'Start_date',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Start_date',array('class'=>'text-danger')); ?>
 	</div>
 

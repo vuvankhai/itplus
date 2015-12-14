@@ -8,9 +8,9 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
-
+	'language'=>'vi',
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log','booster'),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -72,6 +72,9 @@ return array(
 				),
 				*/
 			),
+		),
+		'booster' => array(
+		    'class' => 'application.extensions.booster.components.Booster',
 		),
 
 	),
