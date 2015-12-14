@@ -82,7 +82,6 @@
 		<?php echo $form->dropDownList($model,'Facuty_id',  Users::getAccountUser(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Facuty_id',array('class'=>'text-danger')); ?>
 	</div>
-
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Status',array('class'=>'control-label')); ?>
 		<?php echo "Bắt đầu ".$form->radioButton($model, 'Status', array(

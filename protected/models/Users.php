@@ -129,7 +129,14 @@ class Users extends CActiveRecord
 	}
         
         public static function getAccountUser(){
-                $sql = "SELECT * FROM `tbl_users` AS users INNER JOIN `tbl_account` AS acc ON users.ID_Account = acc.ID WHERE acc.ID_GroupAcc = 3 ";
-                return CHtml::listData(Users::model()->findBySql($sql), 'ID_Account', 'Name');
+                $sql = "SELECT users.ID_Account,users.Name FROM `tbl_users` AS users INNER JOIN `tbl_account` AS acc ON users.ID_Account = acc.ID WHERE acc.ID_GroupAcc = 3 ";
+                
+                //$users = Users::model()->findBySql($sql);
+                
+                //return CHtml::listData(Users);
+                return CHtml::listData(Users::model()->findBySql($sql), 'ID_Account', 'Name') ;
+        
+                //return CHtml::listData();
+                
         }
 }
