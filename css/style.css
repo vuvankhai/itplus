@@ -12,10 +12,10 @@ html .row{
 	margin-left:0;
 	margin-right:0;
 }
-
+/*
 html .btn{
 	margin:0 10px 10px 0;
-}
+}*/
 html .form-group{
 	clear: both;
 	overflow: hidden;
@@ -32,6 +32,11 @@ html .form-group .form-control{
 .pd-3-15{
 	padding:3px 15px;
 }
+
+.clearboth{
+	clear: both;
+}
+
 
 #wrapper{
 	background:#fafafa;
@@ -204,6 +209,12 @@ html h1.welcome{
 .portlet .portlet-content ul li a{
 	text-decoration: none;
 }
+.portlet .operations .btn{
+	margin:0 15px 15px 0;
+}
+
+
+
 .main-content > h1,
 #main-content > h1{
 	margin:10px 0;

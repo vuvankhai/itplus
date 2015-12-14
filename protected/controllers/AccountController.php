@@ -62,16 +62,17 @@ class AccountController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Account;
-
+		$model = new Account;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Account']))
-		{
+		{	
+
 			$model->attributes=$_POST['Account'];
-			if($model->save())
+			if($model->save()){
 				$this->redirect(array('view','id'=>$model->ID));
+			}
 		}
 
 		$this->render('create',array(

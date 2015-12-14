@@ -18,36 +18,35 @@
 
 	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Session',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Session',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Session',array('class'=>'text-danger')); ?>
+		<?php echo $form->error($model,'Session',array('class'=>'clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Present',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Present',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Present',array('class'=>'text-danger')); ?>
+		<?php echo $form->error($model,'Present',array('class'=>'clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Absent',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Absent',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Absent',array('class'=>'text-danger')); ?>
+		<?php echo $form->error($model,'Absent',array('class'=>'clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Teacher',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'ID_Teacher',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'ID_Teacher',array('class'=>'text-danger')); ?>
+		<?php echo $form->error($model,'ID_Teacher',array('class'=>'clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Date_create',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Date_create',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Date_create',array('class'=>'text-danger')); ?>
+		<?php echo $form->error($model,'Date_create',array('class'=>'clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group buttons">

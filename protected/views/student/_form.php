@@ -18,78 +18,76 @@
 
 	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
-
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Firstname', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Firstname',array('size'=>15,'maxlength'=>15, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Firstname', array('text-danger')); ?>
+		<?php echo $form->error($model,'Firstname', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Lastname', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Lastname',array('size'=>20,'maxlength'=>20, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Lastname', array('text-danger')); ?>
+		<?php echo $form->error($model,'Lastname', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Phonenumber', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Phonenumber',array('size'=>12,'maxlength'=>12, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Phonenumber', array('text-danger')); ?>
+		<?php echo $form->error($model,'Phonenumber', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Email', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Email',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Email', array('text-danger')); ?>
+		<?php echo $form->error($model,'Email', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Account', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'ID_Account', array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'ID_Account', array('text-danger')); ?>
+		<?php echo $form->error($model,'ID_Account', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Gender', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Gender', array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Gender', array('text-danger')); ?>
+		<?php echo $form->error($model,'Gender', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Birthday', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Birthday',array('size'=>20,'maxlength'=>20, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Birthday', array('text-danger')); ?>
+		<?php echo $form->error($model,'Birthday', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Status', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Status', array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Status', array('text-danger')); ?>
+		<?php echo $form->error($model,'Status', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Description', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Description',array('size'=>60,'maxlength'=>300, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Description', array('text-danger')); ?>
+		<?php echo $form->error($model,'Description', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Class', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'ID_Class', array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'ID_Class', array('text-danger')); ?>
+		<?php echo $form->error($model,'ID_Class', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Address', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Address',array('size'=>50,'maxlength'=>50, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Address', array('text-danger')); ?>
+		<?php echo $form->error($model,'Address', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Phone_Parent', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Phone_Parent',array('size'=>12,'maxlength'=>12, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'Phone_Parent', array('text-danger')); ?>
+		<?php echo $form->error($model,'Phone_Parent', array('clearboth text-danger')); ?>
 	</div>
 
 	<div class="form-group buttons">
