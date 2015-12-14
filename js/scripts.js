@@ -38,4 +38,11 @@ $(document).ready(function(){
 		$(this).find(".submenu:first").css({'visibility':'hidden'}).hide(300);
 	})
 
+	/*
+		Add class {.btn .btn-default btn-sm} to tag a in .box-btn and add it to tag a in .user-btn
+	*/
+
+	$('.box-btn a').addClass('btn btn-default btn-sm');
+	$('.user-btn a').addClass('btn btn-default btn-sm');
+
 })

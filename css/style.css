@@ -13,9 +13,6 @@ html .row{
 	margin-right:0;
 }
 
-html .btn{
-	margin:0 10px 10px 0;
-}
 html .form-group{
 	clear: both;
 	overflow: hidden;
@@ -204,6 +201,10 @@ html h1.welcome{
 .portlet .portlet-content ul li a{
 	text-decoration: none;
 }
+.portlet .operations .box-btn .btn{
+	margin:0 10px 10px 0;
+}
+
 .main-content > h1,
 #main-content > h1{
 	margin:10px 0;
