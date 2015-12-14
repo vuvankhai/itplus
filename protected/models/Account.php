@@ -39,6 +39,9 @@ class Account extends CActiveRecord
 			array('ID_GroupAcc', 'numerical', 'integerOnly'=>true),
 			array('Username', 'length', 'max'=>25),
 			array('Password, Type, Status', 'length', 'max'=>20),
+                        
+                        //check isset username
+                        array('Username','unique','message' => 'Tài khoản đã tồn tại !'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ID, Username, Password, Type, Status, ID_GroupAcc', 'safe', 'on'=>'search'),
@@ -115,4 +118,5 @@ class Account extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
 }

@@ -49,7 +49,49 @@
 		<?php echo $form->textField($model,'ID_GroupAcc', array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID_GroupAcc', array('class'=>'text-danger')); ?>
 	</div>
+        
+        
+        <div class="form-group">
+		<?php echo $form->labelEx($users,'Name', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($users,'Name',array('size'=>50,'maxlength'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->error($users,'Name', array('class'=>'text-danger')); ?>
+	</div>
 
+	<div class="form-group">
+		<?php echo $form->labelEx($users,'Phonenumber', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($users,'Phonenumber',array('size'=>12,'maxlength'=>12,'class'=>'form-control')); ?>
+		<?php echo $form->error($users,'Phonenumber', array('class'=>'text-danger')); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($users,'Email', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($users,'Email',array('size'=>45,'maxlength'=>45,'class'=>'form-control')); ?>
+		<?php echo $form->error($users,'Email', array('class'=>'text-danger')); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($users,'Address', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($users,'Address',array('size'=>50,'maxlength'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->error($users,'Address', array('class'=>'text-danger')); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($users,'Description', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($users,'Description',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
+		<?php echo $form->error($users,'Description', array('class'=>'text-danger')); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($users,'Avatar', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($users,'Avatar',array('size'=>50,'maxlength'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->error($users,'Avatar', array('class'=>'text-danger')); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($users,'Status', array('class'=>'control-label')); ?>
+		<?php echo $form->textField($users,'Status',array('size'=>30,'maxlength'=>30,'class'=>'form-control')); ?>
+		<?php echo $form->error($users,'Status', array('class'=>'text-danger')); ?>
+	</div>
 	<div class="form-group buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
