@@ -20,6 +20,7 @@ $(document).ready(function(){
 
 	$("#content").css('height', height+"px");
 	$("#main-content").css('height', height+"px");
+	$("#sidebar").css('height', height+"px");
 	$(".main-content").css('height', height+"px");
 
 	/*
@@ -44,5 +45,46 @@ $(document).ready(function(){
 
 	$('.box-btn a').addClass('btn btn-default btn-sm');
 	$('.user-btn a').addClass('btn btn-default btn-sm');
+
+	/*
+		Set scrollbar for .menu
+	*/
+
+	$(window).load(function(){
+        $(".menu").mCustomScrollbar({
+			scrollButtons:{enable:true},
+			theme:"light",
+        });
+    });
+
+	/*
+		Set scrollbar for .main-content
+	*/
+
+	$(window).load(function(){
+        $(".main-content").mCustomScrollbar({
+        	theme:'dark',
+        });
+    });
+
+	/*
+		Set scrollbar for #sidebar
+	*/
+
+	$(window).load(function(){
+        $("#sidebar").mCustomScrollbar({
+        	theme:'dark',
+        });
+    });
+
+	/*
+		Set scrollbar for #main-content
+	*/
+
+	$(window).load(function(){
+        $("#main-content").mCustomScrollbar({
+        	theme:'dark',
+        });
+    });
 
 })

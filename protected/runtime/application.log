@@ -3168,3 +3168,11 @@ REQUEST_URI=/qlsv/itplus/index.php/classmanager/create
 in C:\xampp\htdocs\qlsv\itplus\protected\models\Users.php (137)
 in C:\xampp\htdocs\qlsv\itplus\protected\views\classmanager\_form.php (82)
 in C:\xampp\htdocs\qlsv\itplus\protected\views\classmanager\create.php (18)
+2015/12/15 01:14:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "cu".' in D:\web\projects\framework\Yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\Yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('cu')
+#1 D:\web\projects\framework\Yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\Yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/cu
+---
