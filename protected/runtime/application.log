@@ -3893,3 +3893,33 @@ Stack trace:
 REQUEST_URI=/framework/Yii/itplus/index.php/account/update/10
 in D:\web\projects\framework\Yii\itplus\protected\controllers\AccountController.php (114)
 in D:\web\projects\framework\Yii\itplus\index.php (13)
+2015/12/15 16:15:36 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "CDetailView.itemsCssClass" chưa được định nghĩa.' in D:\web\projects\framework\Yii\itplus\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\web\projects\framework\Yii\itplus\framework\web\CWidgetFactory.php(161): CComponent->__set('itemsCssClass', 'table')
+#1 D:\web\projects\framework\Yii\itplus\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UsersController), 'zii.widgets.CDe...', Array)
+#2 D:\web\projects\framework\Yii\itplus\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 D:\web\projects\framework\Yii\itplus\protected\views\users\view.php(35): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 D:\web\projects\framework\Yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#5 D:\web\projects\framework\Yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#7 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 D:\web\projects\framework\Yii\itplus\protected\controllers\UsersController.php(56): CController->render('view', Array)
+#9 [internal function]: UsersController->actionView('1')
+#10 D:\web\projects\framework\Yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 D:\web\projects\framework\Yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsersController), Object(ReflectionMethod), Array)
+#12 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\web\projects\framework\Yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\web\projects\framework\Yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\web\projects\framework\Yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\web\projects\framework\Yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\web\projects\framework\Yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\web\projects\framework\Yii\itplus\framework\web\CWebApplication.php(282): CController->run('view')
+#21 D:\web\projects\framework\Yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('users/view')
+#22 D:\web\projects\framework\Yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 D:\web\projects\framework\Yii\itplus\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/users/1
+HTTP_REFERER=http://localhost/framework/Yii/itplus/index.php/users/update/1
+---
