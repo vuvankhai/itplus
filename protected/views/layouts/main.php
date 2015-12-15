@@ -25,7 +25,7 @@
 					<p class="description">Phần mền quản lý học viên ITPlus-Academy</p>
 				</div>
 				<div id="box-user">
-					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/admin.png"/>
+					<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/avatars/luffy.png"/>
 					<p class="name">
 						<?php 
 							if(isset(Yii::app()->user->name)){
