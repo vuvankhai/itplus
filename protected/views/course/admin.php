@@ -30,8 +30,8 @@ $('.search-form form').submit(function(){
  <?php
 // echo '<pre>';print_r($this->getMenuTree());exit();
         $this->widget('CTreeView', array(
-              'data' => $this->getMenuTree(),
-                'animated'=>'fast', 
+            'data' => TreeView::getMenuTree(),
+            'animated'=>'fast', 
 	        //'collapsed'=>'false',
 	        'htmlOptions'=>array(
 	        	'id'=>'treeview-catg',

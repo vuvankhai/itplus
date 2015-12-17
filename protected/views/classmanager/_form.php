@@ -88,7 +88,12 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_course',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'ID_course',array('class'=>'form-control')); ?>
+		<?php 
+			if(Yii::app()->controller->action->id =='create')
+				echo $form->textField($model,'ID_course',array('class'=>'form-control')); 
+			else if(Yii::app()->controller->action->id =='update')
+				echo $form->dropDownList($model, 'ID_course', Course::getCourseOptions() ,array('class'=>'form-control'));
+		?>
 		<?php echo $form->error($model,'ID_course',array('class'=>'text-danger')); ?>
 	</div>
         

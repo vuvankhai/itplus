@@ -63,27 +63,32 @@ class CourseController extends Controller
 	public function actionCreate()
 	{
 		$model=new Course;
-                $id = 0;
-                if(isset($_GET['ID']))
-                    $id = $_GET['ID'];
-                
-                $course = Course::model()->find(' ID = :id', array('id'=>$id));
-                
-                $model->Parent_id = $course->Name;
+        $id = 0;
+        if(isset($_GET['ID'])){
+            $id = $_GET['ID'];
+            $course = Course::model()->find(' ID = :id', array('id'=>$id));
+            $model->Parent_id = $course->Name;
+        } else {
+        	$model->Parent_id = 0;
+        }
+        
+        
+        
+        
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Course']))
 		{
 			$model->attributes=$_POST['Course'];
-                        $model->Parent_id = $course->ID;
+            $model->Parent_id = $id;
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect(array('view','id'=>$id));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-                        'id'=>$id,
+            'id'=>$id,
 		));
 	}
 
@@ -182,44 +187,4 @@ class CourseController extends Controller
 		}
 	}
         
-        
-        private static $menuTree = array();
- 
-   public static function getMenuTree() {
-        if (empty(self::$menuTree)) {
-            $rows = Course::model()->findAll('Parent_id = 0');
-            foreach ($rows as $item) {
-                self::$menuTree[] = self::getMenuItems($item);
-            }
-        }
-        return self::$menuTree;
-    }
- 
-    private static function getMenuItems($modelRow) {
- 
-        if (!$modelRow)
-            return;
- 
-        if (isset($modelRow->Childs)) {
-            $chump = self::getMenuItems($modelRow->Childs);
-            if ($chump != null){
-                $href = Yii::app()->createUrl('course/create/', array('ID' => $modelRow->ID));
-                $res = array('text' => '<a href="'.$href.'">'.$modelRow->Name.'</a>', 'children' => $chump);
-            } else {
-                $href = Yii::app()->createUrl('course/create/', array('ID' => $modelRow->ID));
-                $res = array('text' => '<a href="'.$href.'">'.$modelRow->Name.'</a>');//, 'url' => Yii::app()->createUrl('', array('ID' => $modelRow->ID));
-            }
-            return $res;
-        } else {
-            if (is_array($modelRow)) {
-                $arr = array();
-                foreach ($modelRow as $leaves) {
-                    $arr[] = self::getMenuItems($leaves);
-                }
-                return $arr;
-            } else {
-                return array('text' => ($modelRow->Name), 'url' => Yii::app()->createUrl('', array('ID' => $modelRow->ID)));
-            }
-        }
-    }
 }

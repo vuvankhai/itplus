@@ -26,6 +26,23 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
+<div id="sidebar">
+ <?php
+// echo '<pre>';print_r($this->getMenuTree());exit();
+        $this->widget('CTreeView', array(
+            'data' => TreeView::getMenuTree(),
+            'animated'=>'fast', 
+	        //'collapsed'=>'false',
+	        'htmlOptions'=>array(
+	        	'id'=>'treeview-catg',
+	            'class'=>'treeview-red',
+	        ),
+));
+?>
+ 
+</div>
+
+<div id="main-content">
 <h1 class="text-success title">Manage Classmanagers</h1>
 
 
@@ -85,3 +102,5 @@ $('.search-form form').submit(function(){
         ),
 	),
 )); ?>
+
+</div>

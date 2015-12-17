@@ -14,5 +14,4 @@ $this->menu=array(
 ?>
 
 <h1 class="text-success title">Create Classmanager</h1>
-
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model, 'id'=>$id)); ?>

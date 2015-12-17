@@ -120,7 +120,7 @@ class Course extends CActiveRecord
 		return parent::model($className);
 	}
    
-        public static function getCourseOptions(){
-            return CHtml::listDate(Course::model()->findAll(), 'ID', 'Name');
-        }
+    public static function getCourseOptions(){
+        return CHtml::listData(Course::model()->findAll(), 'ID', 'Name');
+    }
 }

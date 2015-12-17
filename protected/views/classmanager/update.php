@@ -17,5 +17,4 @@ $this->menu=array(
 ?>
 
 <h1 class="text-success title">Update Classmanager <?php echo $model->ID; ?></h1>
-
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

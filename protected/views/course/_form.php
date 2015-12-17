@@ -34,10 +34,10 @@
 ?>
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Parent_id',array('class'=>'control-label')); ?>
-		<?php   if($type == 'create') 
-                            echo $form->textField($model,'Parent_id', array('class'=>'form-control', 'readOnly'=>'readOnly')); 
-                        else if($type == 'update')
-                            echo $form->dropDownList($model,'Parent_id', Course::getCourseOptions(),array('class'=>'form-control')); 
+		<?php   if(Yii::app()->controller->action->id == 'create') 
+                    echo $form->textField($model,'Parent_id', array('class'=>'form-control', 'readOnly'=>'readOnly')); 
+                else if(Yii::app()->controller->action->id == 'update')
+                    echo $form->dropDownList($model,'Parent_id', Course::getCourseOptions(),array('class'=>'form-control')); 
                 ?>
 		<?php echo $form->error($model,'Parent_id',array('class'=>'text-danger')); ?>
 	</div>

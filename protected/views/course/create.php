@@ -14,5 +14,4 @@ $this->menu=array(
 ?>
 
 <h1 class="text-success title">Create Course</h1>
-<?php $type = 'create'; ?>
-<?php $this->renderPartial('_form', array('model'=>$model, 'id'=>$id, 'type'=>$type)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model, 'id'=>$id); ?>
