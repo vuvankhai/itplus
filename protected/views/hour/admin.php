@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1 class="text-successs">Manage Hours</h1>
+<h1 class="text-successs title">Manage Hours</h1>
 
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>

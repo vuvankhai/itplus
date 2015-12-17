@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1 class="text-success">View Groupaccount #<?php echo $model->ID; ?></h1>
+<h1 class="text-success title">View Groupaccount #<?php echo $model->ID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

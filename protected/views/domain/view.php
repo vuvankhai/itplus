@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1 class="text-success">View Domain #<?php echo $model->ID; ?></h1>
+<h1 class="text-success title">View Domain #<?php echo $model->ID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
