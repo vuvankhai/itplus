@@ -96,4 +96,8 @@ class Groupaccount extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public static function getGroupAccountOptions(){
+		return CHtml::listData(Groupaccount::model()->findAll(), 'ID', 'Name');
+	}
 }

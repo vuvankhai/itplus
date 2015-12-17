@@ -75,7 +75,10 @@ class AccountController extends Controller
 
             //save avatar
             $user->Avatar = CUploadedFile::getInstance($user, 'Avatar');
-            $user->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$user->Avatar->name);
+            if(!empty($user->Avatar)){
+				$user->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$user->Avatar->name);
+            }
+            
 
 			if($model->save()){
             	$user->ID_Account = (Int)$model->ID;

@@ -49,8 +49,10 @@
 		        array(
 		        	'model'=>$model,
 		            'name' => 'Classmanager[Start_date]',
+		            'value'=>$model->Start_date,
 		            'htmlOptions' => array('class'=>'form-control',),
 		            'options' => array(
+		            	'format'=>'yyyy-mm-dd',
 		                'language' => 'vi'
 		            )
 		        )
@@ -61,13 +63,26 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Finish_date',array('class'=>'control-label')); ?>
-		<?php echo $form->dateField($model,'Finish_date',array('class'=>'form-control')); ?>
+		<?php 
+			$form->widget(
+		        'booster.widgets.TbDatePicker',
+		        array(
+		        	'model'=>$model,
+		            'name' => 'Classmanager[Finish_date]',
+		            'value'=>$model->Finish_date,
+		            'htmlOptions' => array('class'=>'form-control',),
+		            'options' => array(
+		            	'format'=>'yyyy-mm-dd',
+		                'language' => 'vi'
+		            )
+		        )
+		    );//echo $form->dateField($model,'Finish_date',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Finish_date',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Numberofstudent',array('class'=>'control-label')); ?>
-		<?php echo $form->numberField($model,'Numberofstudent',array('class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'Numberofstudent',array('class'=>'form-control', 'onKeyPress'=>'return isNumberKey(event)')); ?>
 		<?php echo $form->error($model,'Numberofstudent',array('class'=>'text-danger')); ?>
 	</div>
 

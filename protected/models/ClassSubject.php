@@ -41,10 +41,17 @@ class ClassSubject extends CActiveRecord
 		return array(
 			array('ID_Class, ID_Room, ID_Hour, ID_Subject, ID_Facuty', 'numerical', 'integerOnly'=>true),
 			array('Start_date, Finish_date, Date_Exam', 'safe'),
+			array('Finish_date', 'checkDate'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ID, ID_Class, ID_Room, ID_Hour, ID_Subject, Start_date, Finish_date, ID_Facuty, Date_Exam', 'safe', 'on'=>'search'),
 		);
+	}
+
+	public function checkDate($attribute,$params){
+		if($this->Start_date > $this->Finish_date){
+			$this->addError($attribute, 'Ngày kết thúc phải sau ngày bắt đầu');
+		}
 	}
 
 	/**

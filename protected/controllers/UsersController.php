@@ -73,7 +73,10 @@ class UsersController extends Controller
 
 			// save avatar
 			$model->Avatar = CUploadedFile::getInstance($model, 'Avatar');
-			$model->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$model->Avatar->name);
+			if(!empry($model->Avatar)){
+				$model->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$model->Avatar->name);
+			}
+			
 			
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));

@@ -131,4 +131,8 @@ class Classmanager extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public static function getClassOptions(){
+		return CHtml::listData(Classmanager::model()->findAll(), 'ID', 'Name');
+	}
 }

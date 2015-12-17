@@ -20,49 +20,91 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Class',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'ID_Class',array('class'=>'form-control')); ?>
+		<?php echo $form->dropdownList($model,'ID_Class',Classmanager::getClassOptions(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID_Class',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Room',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'ID_Room',array('class'=>'form-control')); ?>
+		<?php echo $form->dropdownList($model,'ID_Room', Room::getRoomOptions(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID_Room',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Hour',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'ID_Hour',array('class'=>'form-control')); ?>
+		<?php echo $form->dropdownList($model,'ID_Hour', Hour::getHourOptions(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID_Hour',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Subject',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'ID_Subject',array('class'=>'form-control')); ?>
+		<?php echo $form->dropdownList($model,'ID_Subject', Subject::getSubjectOptions(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID_Subject',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Start_date',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Start_date',array('class'=>'form-control')); ?>
+		<?php 
+			$form->widget(
+					'booster.widgets.TbDatePicker',
+					array(
+			        	'model'=>$model,
+			            'name' => 'ClassSubject[Start_date]',
+			            'value'=>$model->Start_date,
+			            'htmlOptions' => array('class'=>'form-control',),
+			            'options' => array(
+			            	'format'=>'yyyy-mm-dd',
+			                'language' => 'vi'
+			            	)
+		        	)
+				);
+		//echo $form->textField($model,'Start_date',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Start_date',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Finish_date',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Finish_date',array('class'=>'form-control')); ?>
+		<?php 
+			$form->widget(
+					'booster.widgets.TbDatePicker',
+					array(
+			        	'model'=>$model,
+			            'name' => 'ClassSubject[Finish_date]',
+			            'value'=>$model->Finish_date,
+			            'htmlOptions' => array('class'=>'form-control',),
+			            'options' => array(
+			            	'format'=>'yyyy-mm-dd',
+			                'language' => 'vi'
+			            	)
+		        	)
+				);
+		//echo $form->textField($model,'Finish_date',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Finish_date',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_Facuty',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'ID_Facuty',array('class'=>'form-control')); ?>
+		<?php echo $form->dropdownList($model,'ID_Facuty',Users::getAccountUser(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID_Facuty',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Date_Exam',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Date_Exam',array('class'=>'form-control')); ?>
+		<?php 
+			$form->widget(
+					'booster.widgets.TbDatePicker',
+					array(
+			        	'model'=>$model,
+			            'name' => 'ClassSubject[Date_Exam]',
+			            'value'=>$model->Date_Exam,
+			            'htmlOptions' => array('class'=>'form-control',),
+			            'options' => array(
+			            	'format'=>'yyyy-mm-dd',
+			                'language' => 'vi'
+			            	)
+		        	)
+				);
+		//echo $form->textField($model,'Date_Exam',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Date_Exam',array('class'=>'text-danger')); ?>
 	</div>
 

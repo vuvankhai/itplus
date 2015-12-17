@@ -104,4 +104,8 @@ class Subject extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public static function getSubjectOptions(){
+		return CHtml::listData(Subject::model()->findAll(), 'ID', 'Name');
+	}
 }

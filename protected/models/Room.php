@@ -98,4 +98,7 @@ class Room extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	public static function getRoomOptions(){
+		return CHtml::listData(Room::model()->findAll(),'ID', 'Name');
+	}
 }

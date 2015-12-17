@@ -44,7 +44,7 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_GroupAcc', array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'ID_GroupAcc', array('class'=>'form-control')); ?>
+		<?php echo $form->dropdownList($model,'ID_GroupAcc', Groupaccount::getGroupAccountOptions(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID_GroupAcc', array('class'=>'text-danger')); ?>
 	</div>
         

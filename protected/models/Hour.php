@@ -99,4 +99,8 @@ class Hour extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	public static function getHourOptions(){
+		return CHtml::listData(Hour::model()->findAll(), 'ID', 'Value');
+	}
 }
