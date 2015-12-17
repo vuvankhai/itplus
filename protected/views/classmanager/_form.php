@@ -76,24 +76,17 @@
 		<?php echo $form->textField($model,'ID_course',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID_course',array('class'=>'text-danger')); ?>
 	</div>
-
+        
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Facuty_id',array('class'=>'control-label')); ?>
-		<?php echo $form->dropDownList($model,'Facuty_id',  Users::getAccountUser(),array('class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'Facuty_id', Users::getAccountUser(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Facuty_id',array('class'=>'text-danger')); ?>
 	</div>
-	<div class="form-group">
+	
+    
+        <div class="form-group">
 		<?php echo $form->labelEx($model,'Status',array('class'=>'control-label')); ?>
-		<?php echo "Bắt đầu ".$form->radioButton($model, 'Status', array(
-                            'value'=>0,
-                            'uncheckValue'=>null
-                        ));
-
-                        echo " Kết thúc ".$form->radioButton($model, 'Status', array(
-                            'value'=>1,
-                            'uncheckValue'=>null
-                        ));
-                ?>
+		<?php echo $form->dropDownList($model, 'Status',array('1'=>'Bắt đầu','2'=>'Kết thúc'),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Status',array('class'=>'text-danger')); ?>
 	</div>
 
