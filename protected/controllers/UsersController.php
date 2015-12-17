@@ -70,6 +70,11 @@ class UsersController extends Controller
 		if(isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Users'];
+
+			// save avatar
+			$model->Avatar = CUploadedFile::getInstance($model, 'Avatar');
+			$model->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$model->Avatar->name);
+			
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
@@ -87,6 +92,7 @@ class UsersController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+		$avatar = $model->Avatar;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -94,6 +100,12 @@ class UsersController extends Controller
 		if(isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Users'];
+			$model->Avatar = CUploadedFile::getInstance($model, 'Avatar');
+			if(!empty($model->Avatar->name)){
+				$model->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$model->Avatar->name);
+			} else {
+				$model->Avatar = $avatar;
+			}
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}

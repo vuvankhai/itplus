@@ -63,7 +63,7 @@ class AccountController extends Controller
 	public function actionCreate()
 	{
 		$model=new Account;
-        $users=new Users;
+        $user=new Users;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -71,19 +71,25 @@ class AccountController extends Controller
 		if(isset($_POST['Account']) && isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Account'];
-            $users->attributes=$_POST['Users'];
+            $user->attributes=$_POST['Users'];
+
+            //save avatar
+            $user->Avatar = CUploadedFile::getInstance($user, 'Avatar');
+            $user->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$user->Avatar->name);
+
 			if($model->save()){
-            	$users->ID_Account = (Int)$model->ID;
-            	if($users->save())
+            	$user->ID_Account = (Int)$model->ID;
+            	if($user->save())
             		$this->redirect(array('view','id'=>$model->ID));
         	}
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-            'users'=>$users,
+            'user'=>$user,
 		));
 	}
+
 
 	/**
 	 * Updates a particular model.
@@ -94,18 +100,31 @@ class AccountController extends Controller
 	{
 		$model=$this->loadModel($id);
 
+		$user = Users::model()->findByPk($model->ID);
+
+		$avatar = $user->Avatar;
+
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Account']))
 		{
 			$model->attributes=$_POST['Account'];
-			if($model->save())
+			$user->attributes = $_POST['Users'];
+			$user->Avatar = CUploadedFile::getInstance($user, 'Avatar');
+
+			if(!empty($user->Avatar->name)){
+				$user->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$user->Avatar->name);
+			} else {
+				$user->Avatar = $avatar;
+			}
+			if($model->save() && $user->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
+			'user'=>$user,
 		));
 	}
 

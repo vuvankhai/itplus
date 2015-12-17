@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1 class="text-successs">Update Hour <?php echo $model->ID; ?></h1>
+<h1 class="text-successs title">Update Hour <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -45,6 +45,7 @@ class Users extends CActiveRecord
 			array('Email', 'length', 'max'=>45),
 			array('Description', 'length', 'max'=>500),
 			array('Status', 'length', 'max'=>30),
+			array('Avatar', 'file', 'types'=>'jpg,jpeg,gif,png', 'maxSize'=>1024*1024*2, 'on'=>'upload'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ID, ID_Account, Name, Phonenumber, Email, Address, Description, Avatar, Status', 'safe', 'on'=>'search'),

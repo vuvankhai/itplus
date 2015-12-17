@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1 class="text-success">Manage Posts</h1>
+<h1 class="text-success title">Manage Posts</h1>
 
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>

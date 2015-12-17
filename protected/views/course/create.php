@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1 class="text-success">Create Course</h1>
+<h1 class="text-success title">Create Course</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

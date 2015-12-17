@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1 class="text-successs">Create Hour</h1>
+<h1 class="text-successs title">Create Hour</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -41,7 +41,7 @@ $('.search-form form').submit(function(){
 </div>
 
 <div id="main-content">
-	<h1 class="text-success">Manage Courses</h1>
+	<h1 class="text-success title">Manage Courses</h1>
 
 	<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
 	<div class="search-form" style="display:none">

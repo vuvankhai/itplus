@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1 class="text-success">Update Groupaccount <?php echo $model->ID; ?></h1>
+<h1 class="text-success title">Update Groupaccount <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

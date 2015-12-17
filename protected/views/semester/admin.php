@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1 class="text-success">Manage Semesters</h1>
+<h1 class="text-success title">Manage Semesters</h1>
 
 
 

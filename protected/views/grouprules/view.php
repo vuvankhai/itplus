@@ -16,10 +16,11 @@ $this->menu=array(
 );
 ?>
 
-<h1 class="text-success">View Grouprules #<?php echo $model->ID; ?></h1>
+<h1 class="text-success title">View Grouprules #<?php echo $model->ID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
+	'htmlOptions'=>array('class'=>'table table-striped'),
 	'attributes'=>array(
 		'ID',
 		'ID_GroupAcc',

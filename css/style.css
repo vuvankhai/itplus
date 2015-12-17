@@ -187,6 +187,9 @@ html h1.welcome{
 	overflow: hidden;
 	border-bottom:1px solid #ccc;
 }
+.title{
+	font-size: 24px;
+}
 .portlet .portlet-decoration{
 	display: inline-block;
 	margin-right:20px;
