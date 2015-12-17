@@ -27,19 +27,21 @@ $('.search-form form').submit(function(){
 ?>
 
 <div id="sidebar">
-<?php 
-	$this->widget('CTreeView',array(
-	        'data'=>$dataTree,
-	        'animated'=>'fast', //quick animation
-	        'collapsed'=>'false',//remember must giving quote for boolean value in here
+ <?php
+// echo '<pre>';print_r($this->getMenuTree());exit();
+        $this->widget('CTreeView', array(
+              'data' => $this->getMenuTree(),
+                'animated'=>'fast', 
+	        //'collapsed'=>'false',
 	        'htmlOptions'=>array(
 	        	'id'=>'treeview-catg',
-	            'class'=>'treeview-red',//there are some classes that ready to use
+	            'class'=>'treeview-red',
 	        ),
-	));
+));
 ?>
+ 
 </div>
-
+  
 <div id="main-content">
 	<h1 class="text-success title">Manage Courses</h1>
 

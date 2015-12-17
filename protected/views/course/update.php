@@ -18,4 +18,5 @@ $this->menu=array(
 
 <h1 class="text-success title">Update Course <?php echo $model->ID; ?></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $type = 'create'; ?>
+<?php $this->renderPartial('_form', array('model'=>$model, 'type'=>$type)); ?>

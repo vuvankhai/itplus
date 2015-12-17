@@ -29,10 +29,16 @@
 		<?php echo $form->textField($model,'Description',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Description',array('class'=>'text-danger')); ?>
 	</div>
-
+<?php
+    //var_dump(Course::model()->find(' ID = :id', array('id'=>$id)));die();
+?>
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Parent_id',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Parent_id', array('class'=>'form-control')); ?>
+		<?php   if($type == 'create') 
+                            echo $form->textField($model,'Parent_id', array('class'=>'form-control', 'readOnly'=>'readOnly')); 
+                        else if($type == 'update')
+                            echo $form->dropDownList($model,'Parent_id', Course::getCourseOptions(),array('class'=>'form-control')); 
+                ?>
 		<?php echo $form->error($model,'Parent_id',array('class'=>'text-danger')); ?>
 	</div>
 

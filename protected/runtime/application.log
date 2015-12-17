@@ -5440,3 +5440,405 @@ REQUEST_URI=/framework/Yii/itplus/index.php/classsubject/create
 in D:\web\projects\framework\Yii\itplus\protected\extensions\booster\widgets\TbDatePicker.php (72)
 in D:\web\projects\framework\Yii\itplus\protected\views\classSubject\_form.php (60)
 in D:\web\projects\framework\Yii\itplus\protected\views\classSubject\create.php (18)
+2015/12/17 06:22:15 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Course.id" chưa được định nghĩa.' in C:\xampp\htdocs\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(225): CActiveRecord->__get('id')
+#2 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(231): CourseController::getMenuItems(Object(Course))
+#3 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(221): CourseController::getMenuItems(Array)
+#4 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(209): CourseController::getMenuItems(Object(Course))
+#5 C:\xampp\htdocs\itplus\protected\views\course\admin.php(32): CourseController::getMenuTree()
+#6 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(171): CController->render('admin', Array)
+#11 C:\xampp\htdocs\itplus\framework\web\actions\CInlineAction.php(49): CourseController->actionIndex()
+#12 C:\xampp\htdocs\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#21 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course')
+#22 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/itplus/index.php/course
+HTTP_REFERER=http://localhost/itplus/index.php/classmanager
+---
+2015/12/17 06:22:49 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "CTreeView.items" chưa được định nghĩa.' in C:\xampp\htdocs\itplus\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWidgetFactory.php(161): CComponent->__set('items', Array)
+#1 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CourseController), 'CTreeView', Array)
+#2 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(180): CBaseController->createWidget('CTreeView', Array)
+#3 C:\xampp\htdocs\itplus\protected\views\course\admin.php(40): CBaseController->widget('CTreeView', Array)
+#4 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(171): CController->render('admin', Array)
+#9 C:\xampp\htdocs\itplus\framework\web\actions\CInlineAction.php(49): CourseController->actionIndex()
+#10 C:\xampp\htdocs\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course')
+#20 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/itplus/index.php/course
+---
+2015/12/17 06:23:13 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "CTreeView.items" chưa được định nghĩa.' in C:\xampp\htdocs\itplus\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWidgetFactory.php(161): CComponent->__set('items', Array)
+#1 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CourseController), 'CTreeView', Array)
+#2 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(180): CBaseController->createWidget('CTreeView', Array)
+#3 C:\xampp\htdocs\itplus\protected\views\course\admin.php(39): CBaseController->widget('CTreeView', Array)
+#4 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(171): CController->render('admin', Array)
+#9 C:\xampp\htdocs\itplus\framework\web\actions\CInlineAction.php(49): CourseController->actionIndex()
+#10 C:\xampp\htdocs\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course')
+#20 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/itplus/index.php/course
+---
+2015/12/17 06:27:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ID/view".' in C:\xampp\htdocs\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('ID/view')
+#1 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/itplus/index.php/ID/5
+HTTP_REFERER=http://localhost/itplus/index.php/course/index
+---
+2015/12/17 06:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "index".' in C:\xampp\htdocs\itplus\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course/index')
+#3 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/itplus/index.php/course/index
+---
+2015/12/17 06:32:14 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "CMenu.animated" chưa được định nghĩa.' in C:\xampp\htdocs\itplus\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWidgetFactory.php(161): CComponent->__set('animated', 'fast')
+#1 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CourseController), 'zii.widgets.CMe...', Array)
+#2 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 C:\xampp\htdocs\itplus\protected\views\course\admin.php(53): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(146): CController->render('admin', Array)
+#9 C:\xampp\htdocs\itplus\framework\web\actions\CInlineAction.php(49): CourseController->actionIndex()
+#10 C:\xampp\htdocs\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course/index')
+#20 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/itplus/index.php/course/index
+---
+2015/12/17 06:32:21 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "CMenu.collapsed" chưa được định nghĩa.' in C:\xampp\htdocs\itplus\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWidgetFactory.php(161): CComponent->__set('collapsed', 'false')
+#1 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CourseController), 'zii.widgets.CMe...', Array)
+#2 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CMe...', Array)
+#3 C:\xampp\htdocs\itplus\protected\views\course\admin.php(52): CBaseController->widget('zii.widgets.CMe...', Array)
+#4 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(146): CController->render('admin', Array)
+#9 C:\xampp\htdocs\itplus\framework\web\actions\CInlineAction.php(49): CourseController->actionIndex()
+#10 C:\xampp\htdocs\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course/index')
+#20 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/itplus/index.php/course/index
+---
+2015/12/17 06:33:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ID/view".' in C:\xampp\htdocs\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('ID/view')
+#1 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/itplus/index.php/ID/3
+HTTP_REFERER=http://localhost/itplus/index.php/course/index
+---
+2015/12/17 06:36:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ID/view".' in C:\xampp\htdocs\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('ID/view')
+#1 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/itplus/index.php/ID/5
+HTTP_REFERER=http://localhost/itplus/index.php/course/index
+---
+2015/12/17 06:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ID/view".' in C:\xampp\htdocs\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('ID/view')
+#1 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/itplus/index.php/ID/1
+HTTP_REFERER=http://localhost/itplus/index.php/course/index
+---
+2015/12/17 06:55:56 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "CTreeView.items" chưa được định nghĩa.' in C:\xampp\htdocs\itplus\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWidgetFactory.php(161): CComponent->__set('items', Array)
+#1 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CourseController), 'CTreeView', Array)
+#2 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(180): CBaseController->createWidget('CTreeView', Array)
+#3 C:\xampp\htdocs\itplus\protected\views\course\admin.php(38): CBaseController->widget('CTreeView', Array)
+#4 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(146): CController->render('admin', Array)
+#9 C:\xampp\htdocs\itplus\framework\web\actions\CInlineAction.php(49): CourseController->actionIndex()
+#10 C:\xampp\htdocs\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course/index')
+#20 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/itplus/index.php/course/index
+---
+2015/12/17 07:22:51 [error] [php] Object of class CTreeView could not be converted to string (C:\xampp\htdocs\itplus\protected\views\course\admin.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CourseController->renderFile()
+#1 C:\xampp\htdocs\itplus\framework\web\CController.php(782): CourseController->renderPartial()
+#2 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(146): CourseController->render()
+#3 C:\xampp\htdocs\itplus\framework\web\actions\CInlineAction.php(49): CourseController->actionIndex()
+#4 C:\xampp\htdocs\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#6 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#9 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#12 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#13 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/index
+in C:\xampp\htdocs\itplus\protected\views\course\admin.php (40)
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (146)
+in C:\xampp\htdocs\itplus\index.php (13)
+2015/12/17 07:27:27 [error] [php] Object of class CTreeView could not be converted to string (C:\xampp\htdocs\itplus\protected\views\course\admin.php:54)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CourseController->renderFile()
+#1 C:\xampp\htdocs\itplus\framework\web\CController.php(782): CourseController->renderPartial()
+#2 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(146): CourseController->render()
+#3 C:\xampp\htdocs\itplus\framework\web\actions\CInlineAction.php(49): CourseController->actionIndex()
+#4 C:\xampp\htdocs\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#6 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#9 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#12 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#13 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/index
+in C:\xampp\htdocs\itplus\protected\views\course\admin.php (54)
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (146)
+in C:\xampp\htdocs\itplus\index.php (13)
+2015/12/17 10:06:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ID/view".' in C:\xampp\htdocs\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('ID/view')
+#1 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/itplus/index.php/ID/3
+HTTP_REFERER=http://localhost/itplus/index.php/course
+---
+2015/12/17 10:24:02 [error] [php] Undefined variable: id (C:\xampp\htdocs\itplus\protected\views\course\_form.php:35)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CourseController->renderFile()
+#1 C:\xampp\htdocs\itplus\protected\views\course\create.php(18): CourseController->renderPartial()
+#2 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\itplus\framework\web\CBaseController.php(95): CourseController->renderInternal()
+#4 C:\xampp\htdocs\itplus\framework\web\CController.php(869): CourseController->renderFile()
+#5 C:\xampp\htdocs\itplus\framework\web\CController.php(782): CourseController->renderPartial()
+#6 C:\xampp\htdocs\itplus\protected\controllers\CourseController.php(80): CourseController->render()
+#7 C:\xampp\htdocs\itplus\framework\web\actions\CInlineAction.php(49): CourseController->actionCreate()
+#8 C:\xampp\htdocs\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#10 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#13 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#16 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#17 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/create?ID=1
+in C:\xampp\htdocs\itplus\protected\views\course\_form.php (35)
+in C:\xampp\htdocs\itplus\protected\views\course\create.php (18)
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (80)
+2015/12/17 10:37:27 [error] [php] Undefined index: ID (C:\xampp\htdocs\itplus\protected\controllers\CourseController.php:66)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#1 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#4 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#7 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#8 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/create
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (66)
+in C:\xampp\htdocs\itplus\index.php (13)
+2015/12/17 10:39:01 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\itplus\protected\controllers\CourseController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#1 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#4 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#7 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#8 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/create
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (72)
+in C:\xampp\htdocs\itplus\index.php (13)
+2015/12/17 10:39:22 [error] [php] Undefined index: ID (C:\xampp\htdocs\itplus\protected\controllers\CourseController.php:86)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#1 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#4 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#7 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#8 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/create
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (86)
+in C:\xampp\htdocs\itplus\index.php (13)
+2015/12/17 10:39:52 [error] [php] Undefined index: ID (C:\xampp\htdocs\itplus\protected\controllers\CourseController.php:86)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#1 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#4 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#7 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#8 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/create
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (86)
+in C:\xampp\htdocs\itplus\index.php (13)
+2015/12/17 10:45:13 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\itplus\protected\controllers\CourseController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#1 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#4 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#7 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#8 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/create
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (72)
+in C:\xampp\htdocs\itplus\index.php (13)
+2015/12/17 10:46:17 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\itplus\protected\controllers\CourseController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#1 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#4 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#7 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#8 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/create
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (72)
+in C:\xampp\htdocs\itplus\index.php (13)
+2015/12/17 10:50:52 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\itplus\protected\controllers\CourseController.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(133): CourseController->runAction()
+#1 C:\xampp\htdocs\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\itplus\framework\web\filters\CInlineFilter.php(58): CourseController->filterAccessControl()
+#4 C:\xampp\htdocs\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\itplus\framework\web\CController.php(265): CourseController->runActionWithFilters()
+#7 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(282): CourseController->run()
+#8 C:\xampp\htdocs\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/itplus/index.php/course/create
+in C:\xampp\htdocs\itplus\protected\controllers\CourseController.php (72)
+in C:\xampp\htdocs\itplus\index.php (13)

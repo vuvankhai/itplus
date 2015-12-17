@@ -56,6 +56,7 @@ class Course extends CActiveRecord
 		return array(
 			'classmanagers' => array(self::HAS_MANY, 'Classmanager', 'ID_course'),
 			'major' => array(self::BELONGS_TO, 'Major', 'Major_id'),
+                        'Childs' => array(self::HAS_MANY, 'Course', 'Parent_id'),
 		);
 	}
 
@@ -118,4 +119,8 @@ class Course extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+   
+        public static function getCourseOptions(){
+            return CHtml::listDate(Course::model()->findAll(), 'ID', 'Name');
+        }
 }
