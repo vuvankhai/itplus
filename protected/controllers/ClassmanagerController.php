@@ -144,8 +144,11 @@ class ClassmanagerController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$id = 0;
+		if(isset($_GET['ID'])) $id = $_GET['ID'];
 		$model=new Classmanager('search');
 		$model->unsetAttributes();  // clear any default values
+		$model->ID_course = $id;
 		if(isset($_GET['Classmanager']))
 			$model->attributes=$_GET['Classmanager'];
 

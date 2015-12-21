@@ -20,7 +20,7 @@ class TreeView{
         if (isset($modelRow->Childs)) {
             $chump = self::getMenuItems($modelRow->Childs);
             $controller = Yii::app()->controller->id;
-            $href = Yii::app()->createUrl($controller.'/create/', array('ID' => $modelRow->ID));
+            $href = Yii::app()->createUrl($controller.'/index/', array('ID' => $modelRow->ID));
             if ($chump != null){
                 $res = array('text' => '<a href="'.$href.'">'.$modelRow->Name.'</a>', 'children' => $chump);
             } else {

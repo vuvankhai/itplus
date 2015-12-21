@@ -28,12 +28,12 @@ $('.search-form form').submit(function(){
 
 <h1 class="text-success title">Manage Attendance Details</h1>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+<?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
+<!-- <div class="search-form" style="display:none"> -->
+<?php //$this->renderPartial('_search',array(
+	//'model'=>$model,
+//)); ?>
+<!-- </div>search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'attendance-detail-grid',

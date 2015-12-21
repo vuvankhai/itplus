@@ -83,7 +83,7 @@ class CourseController extends Controller
 			$model->attributes=$_POST['Course'];
             $model->Parent_id = $id;
 			if($model->save())
-				$this->redirect(array('view','id'=>$id));
+				$this->redirect(array('index','id'=>$id));
 		}
 
 		$this->render('create',array(
@@ -146,11 +146,11 @@ class CourseController extends Controller
 	 */
 	public function actionIndex()
 	{
-		
-		
-
-		$model=new Course('search');
+		$id = 0;
+		if(isset($_GET['ID'])) $id = $_GET['ID']; 
+		$model= new Course('search');
 		$model->unsetAttributes();  // clear any default values
+		$model->Parent_id = $id;
 		if(isset($_GET['Course']))
 			$model->attributes=$_GET['Course'];
 
