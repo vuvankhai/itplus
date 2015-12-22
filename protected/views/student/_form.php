@@ -56,7 +56,21 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Birthday', array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Birthday',array('size'=>20,'maxlength'=>20, 'class'=>'form-control')); ?>
+		<?php 
+			$form->widget(
+		        'booster.widgets.TbDatePicker',
+		        array(
+		        	'model'=>$model,
+		            'name' => 'Student[Birthday]',
+		            'value'=>$model->Birthday,
+		            'htmlOptions' => array('class'=>'form-control',),
+		            'options' => array(
+		            	'format'=>'yyyy-mm-dd',
+		                'language' => 'vi'
+		            )
+		        )
+		    );
+		//echo $form->textField($model,'Birthday',array('size'=>20,'maxlength'=>20, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Birthday', array('text-danger')); ?>
 	</div>
 

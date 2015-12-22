@@ -32,7 +32,21 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Date_post',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Date_post', array('class'=>'form-control')); ?>
+		<?php 
+			$form->widget(
+		        'booster.widgets.TbDatePicker',
+		        array(
+		        	'model'=>$model,
+		            'name' => 'Post[Date_post]',
+		            'value'=>$model->Date_post,
+		            'htmlOptions' => array('class'=>'form-control',),
+		            'options' => array(
+		            	'format'=>'yyyy-mm-dd',
+		                'language' => 'vi'
+		            )
+		        )
+		    );
+		//echo $form->textField($model,'Date_post', array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Date_post', array('class'=>'text-danger')); ?>
 	</div>
 
