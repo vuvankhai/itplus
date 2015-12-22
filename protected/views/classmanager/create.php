@@ -8,10 +8,9 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Classmanager', 'url'=>array('admin')),
-	array('label'=>'Manage Classmanager', 'url'=>array('index')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Create Classmanager</h1>
+<h1 class="text-success title">Tạo mới Lớp học</h1>
 <?php $this->renderPartial('_form', array('model'=>$model, 'id'=>$id)); ?>

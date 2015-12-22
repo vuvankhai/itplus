@@ -8,11 +8,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Room', 'url'=>array('admin')),
-	array('label'=>'Manage Room', 'url'=>array('index')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Create Room</h1>
+<h1 class="text-success title">Tạo mới</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

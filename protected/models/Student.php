@@ -80,14 +80,14 @@ class Student extends CActiveRecord
 			'Lastname' => 'Tên',
 			'Phonenumber' => 'Điện thoại',
 			'Email' => 'Email',
-			'ID_Account' => 'Id Account',
+			'ID_Account' => 'Id Tài khoản',
 			'Gender' => 'Giới tính',
 			'Birthday' => 'Ngày sinh',
 			'Status' => 'Trạng thái',
 			'Description' => 'Mô tả',
 			'ID_Class' => 'Lớp học',
 			'Address' => 'Địa chỉ',
-			'Phone_Parent' => 'Phone Parent',
+			'Phone_Parent' => 'Số ĐT cha/mẹ',
 		);
 	}
 

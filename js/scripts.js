@@ -40,11 +40,22 @@ $(document).ready(function(){
 	})
 
 	/*
-		Add class {.btn .btn-default btn-sm} to tag a in .box-btn and add it to tag a in .user-btn
+		Add class {.btn .btn-default btn-sm} to tag a in .user-btn
 	*/
 
-	$('.box-btn a').addClass('btn btn-default btn-sm');
+	//$('.box-btn a').addClass('btn btn-default btn-sm');
 	$('.user-btn a').addClass('btn btn-default btn-sm');
+
+	/*
+		Add css for btn in .operations
+	*/
+
+	$('.primary a').addClass('btn btn-primary btn-sm');
+	$('.success a').addClass('btn btn-success btn-sm');
+	$('.danger a').addClass('btn btn-danger btn-sm');
+	$('.warning a').addClass('btn btn-warning btn-sm');
+	$('.default a').addClass('btn btn-default btn-sm');
+
 
 	/*
 		Set scrollbar for .menu

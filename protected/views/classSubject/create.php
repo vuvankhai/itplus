@@ -8,11 +8,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ClassSubject', 'url'=>array('admin')),
-	array('label'=>'Manage ClassSubject', 'url'=>array('index')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Create ClassSubject</h1>
+<h1 class="text-success title">Tạo mới Lớp môn học</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

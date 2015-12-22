@@ -16,15 +16,22 @@ class TreeView{
  
         if (!$modelRow)
             return;
+
+        $id = 0;
+        if(isset($_GET['ID'])) $id = $_GET['ID'];
  
         if (isset($modelRow->Childs)) {
             $chump = self::getMenuItems($modelRow->Childs);
             $controller = Yii::app()->controller->id;
             $href = Yii::app()->createUrl($controller.'/index/', array('ID' => $modelRow->ID));
+
+            $class = '';
+            if($id == $modelRow->ID) $class = 'class="current-item"';
+            
             if ($chump != null){
-                $res = array('text' => '<a href="'.$href.'">'.$modelRow->Name.'</a>', 'children' => $chump);
+                $res = array('text' => '<a href="'.$href.'"'.$class.'>'.$modelRow->Name.'</a>', 'children' => $chump);
             } else {
-                $res = array('text' => '<a href="'.$href.'">'.$modelRow->Name.'</a>');//, 'url' => Yii::app()->createUrl('', array('ID' => $modelRow->ID));
+                $res = array('text' => '<a href="'.$href.'"'.$class.'>'.$modelRow->Name.'</a>');//, 'url' => Yii::app()->createUrl('', array('ID' => $modelRow->ID));
             }
             return $res;
         } else {

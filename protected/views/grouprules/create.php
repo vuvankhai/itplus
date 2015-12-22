@@ -8,8 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Grouprules', 'url'=>array('admin')),
-	array('label'=>'Manage Grouprules', 'url'=>array('index')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 

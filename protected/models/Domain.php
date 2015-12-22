@@ -52,8 +52,8 @@ class Domain extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Name',
-			'Type' => 'Type',
+			'Name' => 'Tên',
+			'Type' => 'Kiểu',
 		);
 	}
 
@@ -93,5 +93,13 @@ class Domain extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	public static function getAccoutTypeOptions(){
+		return CHtml::listData(Domain::model()->findAll('Type = :type', array('type'=>'type-account')), 'Name', 'Name');
+	}
+
+	public static function getAccoutStatusOptions(){
+		return CHtml::listData(Domain::model()->findAll('Type = :type', array('type'=>'status-account')), 'Name', 'Name');
 	}
 }

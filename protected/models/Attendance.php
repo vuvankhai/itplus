@@ -62,10 +62,10 @@ class Attendance extends CActiveRecord
 		return array(
 			'ID' => 'ID',
 			'Session' => 'Session',
-			'Present' => 'Present',
-			'Absent' => 'Absent',
-			'ID_Teacher' => 'Id Teacher',
-			'Date_create' => 'Date Create',
+			'Present' => 'Có mặt',
+			'Absent' => 'Vắng mặt',
+			'ID_Teacher' => 'ID Giảng viên',
+			'Date_create' => 'Ngày tạo',
 		);
 	}
 

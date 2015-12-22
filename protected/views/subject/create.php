@@ -8,11 +8,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Subject', 'url'=>array('admin')),
-	array('label'=>'Manage Subject', 'url'=>array('index')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Create Subject</h1>
+<h1 class="text-success title">Tạo mới Mộn học</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

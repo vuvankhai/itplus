@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Attendance', 'url'=>array('admin')),
-	array('label'=>'Create Attendance', 'url'=>array('create')),
-	array('label'=>'Update Attendance', 'url'=>array('update', 'id'=>$model->ID)),
-	array('label'=>'Delete Attendance', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Attendance', 'url'=>array('index')),
+	array('label'=>'Danh sách', 'url'=>array('admin'), 'itemOptions'=>array('class'=>'default')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
+	array('label'=>'Cập nhật', 'url'=>array('update', 'id'=>$model->ID), 'itemOptions'=>array('class'=>'warning')),
+	array('label'=>'Xóa', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Bạn có chắc chắn muốn xóa không?'), 'itemOptions'=>array('class'=>'danger')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">View Attendance #<?php echo $model->ID; ?></h1>
+<h1 class="text-success title">Chi tiết #<?php echo $model->ID; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

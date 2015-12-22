@@ -6,10 +6,8 @@ $this->breadcrumbs=array(
 	'Courses'=>array('index'),
 	'Manage',
 );
-
 $this->menu=array(
-	array('label'=>'List Course', 'url'=>array('admin')),
-	array('label'=>'Create Course', 'url'=>array('create')),
+	array('label'=>'Tạo mới', 'url'=>array('course/create/ID/'.$id), 'itemOptions'=>array('class'=>'success')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -43,7 +41,7 @@ $('.search-form form').submit(function(){
 </div>
   
 <div id="main-content">
-	<h1 class="text-success title">Manage Courses</h1>
+	<h1 class="text-success title">Quản lý Khóa học</h1>
 
 	<?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
 	<!-- <div class="search-form" style="display:none"> -->

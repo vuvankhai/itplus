@@ -8,8 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Room', 'url'=>array('admin')),
-	array('label'=>'Create Room', 'url'=>array('create')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +25,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1 class="text-success">Manage Rooms</h1>
+<h1 class="text-success">Quản lý Phòng học</h1>
 
 
 <?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>

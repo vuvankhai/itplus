@@ -23,7 +23,7 @@
 	</div>
 
 	<div class="form-group buttons">
-		<?php echo CHtml::submitButton('Search',array('class'=>'btn btn-success btn-sm')); ?>
+		<?php echo CHtml::submitButton('Tìm kiếm',array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

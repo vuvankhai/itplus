@@ -74,13 +74,13 @@ class Users extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'ID_Account' => 'Id Account',
+			'ID_Account' => 'Id Tài khoản',
 			'Name' => 'Tên',
 			'Phonenumber' => 'Điện thoại',
 			'Email' => 'Email',
 			'Address' => 'Địa chỉ',
 			'Description' => 'Mô tả',
-			'Avatar' => 'Avatar',
+			'Avatar' => 'Ảnh đại diện',
 			'Status' => 'Trạng thái',
 		);
 	}

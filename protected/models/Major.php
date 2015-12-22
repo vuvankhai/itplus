@@ -56,8 +56,8 @@ class Major extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Name',
-			'Description' => 'Description',
+			'Name' => 'Tên',
+			'Description' => 'Mô tả',
 		);
 	}
 

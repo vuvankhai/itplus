@@ -9,13 +9,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Account', 'url'=>array('admin')),
-	array('label'=>'Create Account', 'url'=>array('create')),
-	array('label'=>'View Account', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Account', 'url'=>array('index')),
+	array('label'=>'Thêm mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
+	array('label'=>'Chi tiết', 'url'=>array('view', 'id'=>$model->ID), 'itemOptions'=>array('class'=>'default')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Update Account <?php echo $model->ID; ?></h1>
+<h1 class="text-success title">Cập nhật <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model, 'user'=>$user)); ?>

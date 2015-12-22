@@ -69,11 +69,11 @@ class Course extends CActiveRecord
 			'ID' => 'ID',
 			'Name' => 'Tên khóa học',
 			'Description' => 'Mô tả',
-			'Parent_id' => 'Parent',
-			'Type' => 'Type',
-			'Major_id' => 'Major',
-			'Version' => 'Version',
-			'Status' => 'Status',
+			'Parent_id' => 'ID cha',
+			'Type' => 'Kiều',
+			'Major_id' => 'Khóa học',
+			'Version' => 'Phiên bản',
+			'Status' => 'Trạng thái',
 		);
 	}
 

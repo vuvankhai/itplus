@@ -61,11 +61,11 @@ class Menu extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Name',
-			'URL' => 'Url',
-			'Status' => 'Status',
-			'Parent_ID' => 'Parent',
-			'Type' => 'Type',
+			'Name' => 'Tên',
+			'URL' => 'Đường dẫn',
+			'Status' => 'Trạng thái',
+			'Parent_ID' => 'ID cha',
+			'Type' => 'Kiều',
 		);
 	}
 

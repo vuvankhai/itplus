@@ -8,8 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Hour', 'url'=>array('admin')),
-	array('label'=>'Create Hour', 'url'=>array('create')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +25,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1 class="text-successs title">Manage Hours</h1>
+<h1 class="text-successs title">Quản lý Giờ học</h1>
 
 
 <?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>

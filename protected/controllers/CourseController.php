@@ -156,6 +156,7 @@ class CourseController extends Controller
 
 		$this->render('admin',array(
 			'model'=>$model,
+			'id'=>$id,
 		));
 	}
 

@@ -9,13 +9,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Room', 'url'=>array('admin')),
-	array('label'=>'Create Room', 'url'=>array('create')),
-	array('label'=>'View Room', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Room', 'url'=>array('index')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
+	array('label'=>'Chi tiết', 'url'=>array('view', 'id'=>$model->ID), 'itemOptions'=>array('class'=>'default')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Update Room <?php echo $model->ID; ?></h1>
+<h1 class="text-success title">Cập nhật <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

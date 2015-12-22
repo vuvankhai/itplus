@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Domain', 'url'=>array('create')),
-	array('label'=>'Manage Domain', 'url'=>array('admin')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
+	array('label'=>'Quản lý', 'url'=>array('admin'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 

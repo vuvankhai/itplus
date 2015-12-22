@@ -8,8 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Classmanager', 'url'=>array('admin')),
-	array('label'=>'Create Classmanager', 'url'=>array('create')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -43,7 +42,7 @@ $('.search-form form').submit(function(){
 </div>
 
 <div id="main-content">
-<h1 class="text-success title">Manage Classmanagers</h1>
+<h1 class="text-success title">Quản lý Lớp học</h1>
 
 
 <?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>

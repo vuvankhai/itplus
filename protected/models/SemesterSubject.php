@@ -60,10 +60,10 @@ class SemesterSubject extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'ID_Semester' => 'Id Semester',
-			'ID_Subject' => 'Id Subject',
-			'Hour' => 'Hour',
-			'Description' => 'Description',
+			'ID_Semester' => 'Id Khóa học',
+			'ID_Subject' => 'Id Môn học',
+			'Hour' => 'Giờ học',
+			'Description' => 'Mô tả',
 		);
 	}
 

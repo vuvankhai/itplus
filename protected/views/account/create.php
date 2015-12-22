@@ -8,11 +8,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Account', 'url'=>array('admin')),
-	array('label'=>'Manage Account', 'url'=>array('index')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Create Account</h1>
+<h1 class="text-success title">Thêm mới tài khoản</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model,'user'=>$user)); ?>

@@ -16,7 +16,8 @@
 	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-
+	<p class="text-info bg-info pd-3-15">Trường có dấu <span class="required">*</span> là bắt buộc.</p>
+	
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Name',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Name',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
@@ -111,7 +112,7 @@
 	</div>
 
 	<div class="form-group buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-sm')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Tạo mới' : 'Lưu',array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

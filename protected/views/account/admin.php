@@ -8,8 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Account', 'url'=>array('admin')),
-	array('label'=>'Create Account', 'url'=>array('create')),
+	array('label'=>'Thêm mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +25,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1 class="text-success title">Manage Accounts</h1>
+<h1 class="text-success title">Quản lý tài khoản</h1>
 
 <?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
 <!-- <div class="search-form" style="display:none"> -->
@@ -68,7 +67,7 @@ $('.search-form form').submit(function(){
 	                        'options'=>array('title'=>'Xóa'),
 	                    ),
 	                    'update' => array(
-	                  		'label' => '<buttom type="button" class="btn btn-success btn-xs glyphicon glyphicon-pencil"></button>',
+	                  		'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
 	                        'url' => '$this->grid->controller->createUrl("account/update", array("id"=>$data->primaryKey,"type"=>$data->ID))',
 	                        'imageUrl' => false,
 	                        'options'=>array('title'=>'Cập nhật'),

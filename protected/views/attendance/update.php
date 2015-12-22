@@ -9,13 +9,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Attendance', 'url'=>array('admin')),
-	array('label'=>'Create Attendance', 'url'=>array('create')),
-	array('label'=>'View Attendance', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Attendance', 'url'=>array('index')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
+	array('label'=>'Chi tiết', 'url'=>array('view', 'id'=>$model->ID), 'itemOptions'=>array('class'=>'warning')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Update Attendance <?php echo $model->ID; ?></h1>
+<h1 class="text-success title">Cập nhật <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

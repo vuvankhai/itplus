@@ -56,8 +56,8 @@ class Semester extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Name',
-			'ID_Course' => 'Id Course',
+			'Name' => 'Tên',
+			'ID_Course' => 'Id Khóa học',
 		);
 	}
 

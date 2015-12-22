@@ -58,9 +58,9 @@ class AttendanceDetail extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'ID_Attendance' => 'Id Attendance',
-			'ID_Student' => 'Id Student',
-			'Status' => 'Status',
+			'ID_Attendance' => 'Id Điểm danh',
+			'ID_Student' => 'Id Học viên',
+			'Status' => 'Trạng thái',
 		);
 	}
 

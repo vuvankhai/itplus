@@ -16,7 +16,7 @@
 	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
+	<p class="text-info bg-info pd-3-15">Trường có dấu <span class="required">*</span> là bắt buộc.</p>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Session',array('class'=>'control-label')); ?>
@@ -49,8 +49,8 @@
 		        'booster.widgets.TbDatePicker',
 		        array(
 		        	'model'=>$model,
-		            'name' => 'Attendance[Start_date]',
-		            'value'=>$model->Start_date,
+		            'name' => 'Attendance[Date_create]',
+		            'value'=>$model->Date_create,
 		            'htmlOptions' => array('class'=>'form-control',),
 		            'options' => array(
 		            	'format'=>'yyyy-mm-dd',
@@ -63,7 +63,7 @@
 	</div>
 
 	<div class="form-group buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-success btn-sm')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Thêm mới' : 'Lưu',array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

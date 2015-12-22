@@ -9,13 +9,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Grouprules', 'url'=>array('admin')),
-	array('label'=>'Create Grouprules', 'url'=>array('create')),
-	array('label'=>'View Grouprules', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage Grouprules', 'url'=>array('index')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
+	array('label'=>'Chi tiết', 'url'=>array('view', 'id'=>$model->ID), 'itemOptions'=>array('class'=>'default')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Update Grouprules <?php echo $model->ID; ?></h1>
+<h1 class="text-success title">Cập nhật <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -9,13 +9,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ClassSubject', 'url'=>array('index')),
-	array('label'=>'Create ClassSubject', 'url'=>array('create')),
-	array('label'=>'View ClassSubject', 'url'=>array('view', 'id'=>$model->ID)),
-	array('label'=>'Manage ClassSubject', 'url'=>array('admin')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
+	array('label'=>'Chi tiết', 'url'=>array('view', 'id'=>$model->ID), 'itemOptions'=>array('class'=>'default')),
+	array('label'=>'Quản lý', 'url'=>array('admin'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-success title">Update ClassSubject <?php echo $model->ID; ?></h1>
+<h1 class="text-success title">Cập nhật <?php echo $model->ID; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

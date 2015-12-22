@@ -8,11 +8,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Hour', 'url'=>array('admin')),
-	array('label'=>'Manage Hour', 'url'=>array('index')),
+	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
 );
 ?>
 
-<h1 class="text-successs title">Create Hour</h1>
+<h1 class="text-successs title">Tạo mới Giờ học</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

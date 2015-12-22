@@ -78,7 +78,7 @@
 	</div>
 
 	<div class="form-group buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Tìm kiếm'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

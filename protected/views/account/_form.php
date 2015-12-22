@@ -16,7 +16,7 @@
 	'htmlOptions'=>array('class'=>'form', 'enctype' => 'multipart/form-data'),
 )); ?>
 
-	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
+	<p class="text-info bg-info pd-3-15">Trường có dấu <span class="required">*</span> là bắt buộc.</p>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Username', array('class'=>'control-label')); ?>
@@ -32,13 +32,13 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Type', array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Type',array('size'=>20,'maxlength'=>20,'class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'Type', Domain::getAccoutTypeOptions(), array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Type', array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Status', array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Status',array('size'=>20,'maxlength'=>20,'class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'Status',Domain::getAccoutStatusOptions(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Status', array('class'=>'text-danger')); ?>
 	</div>
 
@@ -91,7 +91,7 @@
 		<?php echo $form->error($user,'Status', array('class'=>'text-danger')); ?>
 	</div>
 	<div class="form-group buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-success btn-sm')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Thêm mới' : 'Lưu', array('class'=>'btn btn-success btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

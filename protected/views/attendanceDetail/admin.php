@@ -8,8 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List AttendanceDetail', 'url'=>array('admin')),
-	array('label'=>'Create AttendanceDetail', 'url'=>array('create')),
+	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +25,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1 class="text-success title">Manage Attendance Details</h1>
+<h1 class="text-success title">Quản lý Chi tiết điểm danh</h1>
 
 <?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
 <!-- <div class="search-form" style="display:none"> -->

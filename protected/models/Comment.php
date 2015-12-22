@@ -61,10 +61,10 @@ class Comment extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'ID_post' => 'Id Post',
-			'Date_comment' => 'Date Comment',
-			'Student' => 'Student',
-			'Content' => 'Content',
+			'ID_post' => 'Id Bài viết',
+			'Date_comment' => 'Ngày bình luận',
+			'Student' => 'Học viên',
+			'Content' => 'Nội dung',
 		);
 	}
 
