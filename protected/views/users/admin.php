@@ -73,7 +73,7 @@ $('.search-form form').submit(function(){
 	                        'options'=>array('title'=>'Xóa'),
 	                    ),
 	                    'update' => array(
-	                  		'label' => '<buttom type="button" class="btn btn-success btn-xs glyphicon glyphicon-pencil"></button>',
+	                  		'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
 	                        'url' => '$this->grid->controller->createUrl("users/update", array("id"=>$data->primaryKey,"type"=>$data->ID))',
 	                        'imageUrl' => false,
 	                        'options'=>array('title'=>'Cập nhật'),
