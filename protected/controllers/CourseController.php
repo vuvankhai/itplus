@@ -2,6 +2,7 @@
 
 class CourseController extends Controller
 {
+
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -63,14 +64,12 @@ class CourseController extends Controller
 	public function actionCreate()
 	{
 		$model=new Course;
-        $id = 0;
+        $_SESSION['course_id'] = 1;
         if(isset($_GET['ID'])){
-            $id = $_GET['ID'];
-            $course = Course::model()->find(' ID = :id', array('id'=>$id));
-            $model->Parent_id = $course->Name;
-        } else {
-        	$model->Parent_id = 0;
+            $_SESSION['course_id'] = $_GET['ID'];
         }
+        $course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
+        $model->Parent_id = $course->Name;
         
         
         
@@ -81,14 +80,13 @@ class CourseController extends Controller
 		if(isset($_POST['Course']))
 		{
 			$model->attributes=$_POST['Course'];
-            $model->Parent_id = $id;
+            $model->Parent_id = $_SESSION['course_id'];
 			if($model->save())
-				$this->redirect(array('index','id'=>$id));
+				$this->redirect(array('index','id'=>$_SESSION['course_id']));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-            'id'=>$id,
 		));
 	}
 
@@ -110,7 +108,6 @@ class CourseController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
-
 		$this->render('update',array(
 			'model'=>$model,
 		));
@@ -146,17 +143,18 @@ class CourseController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$id = 0;
-		if(isset($_GET['ID'])) $id = $_GET['ID']; 
+		if(!isset($_SESSION['course_id']))
+			$_SESSION['course_id'] = 1;
+
+		if(isset($_GET['ID'])) $_SESSION['course_id'] = $_GET['ID']; 
 		$model= new Course('search');
 		$model->unsetAttributes();  // clear any default values
-		$model->Parent_id = $id;
+		$model->Parent_id = $_SESSION['course_id'];
 		if(isset($_GET['Course']))
 			$model->attributes=$_GET['Course'];
 
 		$this->render('admin',array(
 			'model'=>$model,
-			'id'=>$id,
 		));
 	}
 

@@ -91,7 +91,7 @@
 		<?php echo $form->labelEx($model,'ID_course',array('class'=>'control-label')); ?>
 		<?php 
 			if(Yii::app()->controller->action->id =='create')
-				echo $form->textField($model,'ID_course',array('class'=>'form-control')); 
+				echo $form->textField($model,'ID_course',array('class'=>'form-control', 'readOnly'=>'readOnly')); 
 			else if(Yii::app()->controller->action->id =='update')
 				echo $form->dropDownList($model, 'ID_course', Course::getCourseOptions() ,array('class'=>'form-control'));
 		?>

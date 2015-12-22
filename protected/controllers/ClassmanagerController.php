@@ -64,14 +64,12 @@ class ClassmanagerController extends Controller
 	{
 		$model=new Classmanager;
 
-		$id = 0;
+		$_SESSION['course_id'] = 1;
 		if(isset($_GET['ID'])){
-			$id = $_GET['ID'];
-			$course = Course::model()->find(' ID = :id', array('id'=>$id));
-			$model->ID_course = $course->Name;
-		} else{
-			$model->ID_course = 0;
+			$_SESSION['course_id'] = $_GET['ID'];
 		}
+		$course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
+		$model->ID_course = $course->Name;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -79,14 +77,13 @@ class ClassmanagerController extends Controller
 		if(isset($_POST['Classmanager']))
 		{
 			$model->attributes=$_POST['Classmanager'];
-			$model->ID_course = $id;
+			$model->ID_course = $_SESSION['course_id'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->ID));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-			'id'=>$id,
 		));
 	}
 
@@ -144,11 +141,13 @@ class ClassmanagerController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$id = 0;
-		if(isset($_GET['ID'])) $id = $_GET['ID'];
+		if(!isset($_SESSION['course_id']))
+			$_SESSION['course_id'] = 1;
+		
+		if(isset($_GET['ID'])) $_SESSION['course_id'] = $_GET['ID'];
 		$model=new Classmanager('search');
 		$model->unsetAttributes();  // clear any default values
-		$model->ID_course = $id;
+		$model->ID_course = $_SESSION['course_id'];
 		if(isset($_GET['Classmanager']))
 			$model->attributes=$_GET['Classmanager'];
 

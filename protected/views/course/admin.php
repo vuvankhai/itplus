@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 	'Manage',
 );
 $this->menu=array(
-	array('label'=>'Tạo mới', 'url'=>array('course/create/ID/'.$id), 'itemOptions'=>array('class'=>'success')),
+	array('label'=>'Tạo mới', 'url'=>array('course/create/ID/'.$_SESSION['course_id']), 'itemOptions'=>array('class'=>'success')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

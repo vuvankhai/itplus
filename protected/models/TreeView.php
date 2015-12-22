@@ -17,8 +17,9 @@ class TreeView{
         if (!$modelRow)
             return;
 
-        $id = 0;
-        if(isset($_GET['ID'])) $id = $_GET['ID'];
+        if(!isset($_SESSION['course_id']))
+            $_SESSION['course_id'] = 1;
+        if(isset($_GET['ID'])) $_SESSION['course_id'] = $_GET['ID'];
  
         if (isset($modelRow->Childs)) {
             $chump = self::getMenuItems($modelRow->Childs);
@@ -26,7 +27,7 @@ class TreeView{
             $href = Yii::app()->createUrl($controller.'/index/', array('ID' => $modelRow->ID));
 
             $class = '';
-            if($id == $modelRow->ID) $class = 'class="current-item"';
+            if($_SESSION['course_id'] == $modelRow->ID) $class = 'class="current-item"';
             
             if ($chump != null){
                 $res = array('text' => '<a href="'.$href.'"'.$class.'>'.$modelRow->Name.'</a>', 'children' => $chump);

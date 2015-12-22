@@ -13,4 +13,4 @@ $this->menu=array(
 ?>
 
 <h1 class="text-success title">Tạo mới Khóa học</h1>
-<?php $this->renderPartial('_form', array('model'=>$model, 'id'=>$id)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model)); ?>
