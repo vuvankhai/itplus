@@ -18,7 +18,7 @@
     <div class="form-get-value">
 	<div class="form-group col-sm-3">
 		<?php echo $form->labelEx($model,'Select_class',array('class'=>'control-label')); ?>
-		<?php echo $form->dropDownList($model,'ID', $model->getClassOptionsByFacutyId(Yii::app()->user->idUser),array('class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'ID', $model->getClassOptionsByFacutyId(1),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID',array('class'=>'text-danger')); ?>
 	</div>
 	<div class="form-group col-sm-3">
