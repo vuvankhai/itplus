@@ -28,7 +28,7 @@ class MenuController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'ajaxcreate'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -71,7 +71,7 @@ class MenuController extends Controller
 		{
 			$model->attributes=$_POST['Menu'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -170,4 +170,12 @@ class MenuController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionAjaxCreate(){
+            $model = new Menu;
+            if(isset($_POST['Menu'])){
+                $this->redirect(array('index'));
+            }
+            $this->renderPartial('_form', array('model'=>$model));
+        }
 }

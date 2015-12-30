@@ -10,17 +10,11 @@ $this->breadcrumbs=array(
 $this->menu=array(
                 array(
                     'label'=>'Thêm mới', 
-                    'url'=>array('create'), 
-                    'itemOptions'=>array(
-                                'class'=>'success'
-                                ),
-                    'linkOptions' => array(
-                                'ajax' => array(
-                                    'type'=>'POST',
-                                    'url'=>array('create'),
-                                    'success'=>'js:{function(data){$("#create").html(data);}',
-                                ),
-                            ),
+                    'url'=>array('create'),
+                    'linkOptions'=>array(
+                        'class'=>'btn btn-success btn-sm',
+                        'onclick'=>'$("#userloginwidget").dialog("open"); return false;'
+                    ),
                 ), 
         );
 
@@ -48,32 +42,29 @@ $('.search-form form').submit(function(){
 //		'htmlOptions'=>array('class'=>'operations'),
 //	));
 //	$this->endWidget();
-
-    echo CHtml::ajaxLink("Thêm mới", 'create', array('update'=>'#create'), array('class'=>'btn btn-success btn-sm'))
-
 ?>
+<div class="fright">
+    
+    <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('menu/ajaxcreate'), array('update'=>'#dialog-create'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-create").dialog({resizable: false}).dialog("open"); return false;')); ?>
 </div>
-    <?php 
-    $this->beginWidget('zii.widgets.jui.CJuiDialog',array(
-                'id'=>'juiDialog',
-                'options'=>array(
-                    'title'=>'Show data',
-                    'autoOpen'=>true,
-                    'modal'=>true,
-                    'width'=>'auto',
-                    'height'=>'auto',
-                ),
-        ));
-    $this->endWidget('zii.widgets.jui.CJuiDialog');
+<?php 
+$this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+     'id'=>'dialog-create',
+     'options'=>array(
+         'title'=>'User Login Errors',
+         'autoOpen'=>false,
+         'modal'=>true,
+         'width'=>'auto',
+         'height'=>'auto',
+         'position'=>array(400, 50),
+     ),
+   ));
 
-    // the link that may open the dialog
+$this->endWidget('zii.widgets.jui.CJuiDialog');
 
-    echo CHtml::ajaxLink('Link', 'create', array(
-                                'onclick'=>'$("#juiDialog").dialog("open"); return false;',
-                                'update'=>'#juiDialog',
-                                )
-                 );
 ?>
+
+</div>
 <div id="create">
 </div>
 <div class="body">

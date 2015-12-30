@@ -7674,3 +7674,441 @@ Stack trace:
 REQUEST_URI=/framework/yii/itplus/index.php/attendance
 HTTP_REFERER=http://localhost/framework/yii/itplus/index.php
 ---
+2015/12/30 06:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453102494
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:25:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453102495
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453102496
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:25:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453102497
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453147349
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:25:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453158539
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:26:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453178375
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:26:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453201390
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:26:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453201391
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:26:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453201392
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:26:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453201393
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:26:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453201394
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:26:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453201395
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "create".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/create?_=1451453215232
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:27:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajax-create".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajax-create')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajax-create')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajax-creat...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajax-create?_=1451453252117
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:29:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajax-create".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajax-create')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajax-create')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajax-creat...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajax-create?_=1451453395975
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajax-create".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajax-create')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajax-create')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajax-creat...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajax-create?_=1451453395976
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:30:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajax-menu".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajax-menu')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajax-menu')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajax-menu')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajax-menu
+---
+2015/12/30 06:30:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajax-create".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajax-create')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajax-create')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajax-creat...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajax-create
+---
+2015/12/30 06:30:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajaxcreate')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxcreate
+---
+2015/12/30 06:30:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajax-create".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajax-create')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajax-create')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajax-creat...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajax-create
+---
+2015/12/30 06:30:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajaxcreate')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxcreate
+---
+2015/12/30 06:30:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajaxcreate')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxcreate
+---
+2015/12/30 06:30:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajaxcreate')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxcreate?_=1451453445169
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:31:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajaxcreate')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxcreate?_=1451453462608
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:31:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajaxcreate')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxcreate?_=1451453462609
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:31:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajaxcreate')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxcreate?_=1451453462610
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 06:44:36 [error] [exception.CException] exception 'CException' with message 'MenuController có nhiều endWidget(zii.widgets.CPortlet) trong view của nó.' in D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php:218
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php(51): CBaseController->endWidget('zii.widgets.CPo...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#5 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): CController->render('admin', Array)
+#6 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#16 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu')
+#17 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu
+---
+2015/12/30 07:44:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "menu".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('menu')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('menu')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/menu/ajaxc...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/menu/ajaxcreate?_=1451457836084
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu/index
+---
+2015/12/30 07:44:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "menu".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('menu')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('menu')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/menu/ajaxc...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/menu/ajaxcreate?_=1451457836085
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu/index
+---
+2015/12/30 07:44:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "menu".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('menu')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('menu')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/menu/ajaxc...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/menu/ajaxcreate?_=1451457866667
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu/index
+---
+2015/12/30 07:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "menu".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('menu')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('menu')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/menu/ajaxc...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/menu/ajaxcreate?_=1451457884604
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu/
+---
+2015/12/30 07:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "menu".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('menu')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('menu')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/menu/ajaxc...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/menu/ajaxcreate?_=1451457899198
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu/index
+---
+2015/12/30 07:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "menu".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('menu')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('menu')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/menu/ajaxc...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/menu/ajaxcreate?_=1451457928406
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu/index
+---
+2015/12/30 07:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/ajaxcreate?_=1451457948491
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 07:45:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/ajaxcreate?_=1451457948492
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/30 07:46:58 [error] [php] trim() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:297)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php(47): CWebApplication->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): MenuController->renderInternal()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): MenuController->renderFile()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): MenuController->renderPartial()
+#5 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): MenuController->render()
+#6 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#15 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu
+in D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php (47)
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
