@@ -8,8 +8,21 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Thêm mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
-);
+                array(
+                    'label'=>'Thêm mới', 
+                    'url'=>array('create'), 
+                    'itemOptions'=>array(
+                                'class'=>'success'
+                                ),
+                    'linkOptions' => array(
+                                'ajax' => array(
+                                    'type'=>'POST',
+                                    'url'=>array('create'),
+                                    'success'=>'js:{function(data){$("#create").html(data);}',
+                                ),
+                            ),
+                ), 
+        );
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -24,10 +37,47 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
-
+<div class="head">
 <h1 class="text-success title">Quản lý Menus</h1>
 
+<?php 
 
+//	$this->beginWidget('zii.widgets.CPortlet');
+//	$this->widget('zii.widgets.CMenu', array(
+//		'items'=>$this->menu,
+//		'htmlOptions'=>array('class'=>'operations'),
+//	));
+//	$this->endWidget();
+
+    echo CHtml::ajaxLink("Thêm mới", 'create', array('update'=>'#create'), array('class'=>'btn btn-success btn-sm'))
+
+?>
+</div>
+    <?php 
+    $this->beginWidget('zii.widgets.jui.CJuiDialog',array(
+                'id'=>'juiDialog',
+                'options'=>array(
+                    'title'=>'Show data',
+                    'autoOpen'=>true,
+                    'modal'=>true,
+                    'width'=>'auto',
+                    'height'=>'auto',
+                ),
+        ));
+    $this->endWidget('zii.widgets.jui.CJuiDialog');
+
+    // the link that may open the dialog
+
+    echo CHtml::ajaxLink('Link', 'create', array(
+                                'onclick'=>'$("#juiDialog").dialog("open"); return false;',
+                                'update'=>'#juiDialog',
+                                )
+                 );
+?>
+<div id="create">
+</div>
+<div class="body">
+    
 <?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
 <!-- <div class="search-form" style="display:none"> -->
 <?php //$this->renderPartial('_search',array(
@@ -77,3 +127,4 @@ $('.search-form form').submit(function(){
         ),
 	),
 )); ?>
+</div>

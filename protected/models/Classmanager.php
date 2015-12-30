@@ -135,4 +135,8 @@ class Classmanager extends CActiveRecord
 	public static function getClassOptions(){
 		return CHtml::listData(Classmanager::model()->findAll(), 'ID', 'Name');
 	}
+
+	public static function getClassOptionsByFacutyId($id){
+		return CHtml::listData(Classmanager::model()->findAll('Facuty_id=:Facuty_id', array('Facuty_id'=>$id)), 'ID', 'Name');
+	}
 }

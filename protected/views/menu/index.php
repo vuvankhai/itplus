@@ -12,10 +12,26 @@ $this->menu=array(
 ),
 );
 ?>
+<div class="head">
 
 <h1 class="text-success title">Danh sách Menu</h1>
 
+<?php 
+
+	$this->beginWidget('zii.widgets.CPortlet');
+	$this->widget('zii.widgets.CMenu', array(
+		'items'=>$this->menu,
+		'htmlOptions'=>array('class'=>'operations'),
+	));
+	$this->endWidget();
+
+?>
+
+</div>
+
+<div class="body">
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+</div>

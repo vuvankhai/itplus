@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/itplus/protected/views/course/_form.php</file>
-            <file>file:/C:/xampp/htdocs/itplus/protected/controllers/CourseController.php</file>
-            <file>file:/C:/xampp/htdocs/itplus/protected/views/course/update.php</file>
-            <file>file:/C:/xampp/htdocs/itplus/protected/models/Course.php</file>
-            <file>file:/C:/xampp/htdocs/itplus/protected/views/course/create.php</file>
-            <file>file:/C:/xampp/htdocs/itplus/protected/views/course/admin.php</file>
+            <file>file:/D:/web/projects/framework/yii/itplus/protected/views/menu/_form.php</file>
+            <file>file:/D:/web/projects/framework/yii/itplus/protected/views/menu/admin.php</file>
+            <file>file:/D:/web/projects/framework/yii/itplus/protected/views/menu/index.php</file>
+            <file>file:/D:/web/projects/framework/yii/itplus/css/style.css</file>
+            <file>file:/D:/web/projects/framework/yii/itplus/protected/views/menu/update.php</file>
+            <file>file:/D:/web/projects/framework/yii/itplus/protected/views/menu/create.php</file>
+            <file>file:/D:/web/projects/framework/yii/itplus/protected/views/menu/view.php</file>
         </group>
     </open-files>
 </project-private>

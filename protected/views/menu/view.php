@@ -15,8 +15,23 @@ $this->menu=array(
 );
 ?>
 
+<div class="head">
 <h1 class="text-success title">Chi tiết #<?php echo $model->ID; ?></h1>
 
+<?php 
+
+	$this->beginWidget('zii.widgets.CPortlet');
+	$this->widget('zii.widgets.CMenu', array(
+		'items'=>$this->menu,
+		'htmlOptions'=>array('class'=>'operations'),
+	));
+	$this->endWidget();
+
+?>
+
+</div>
+
+<div class="body">
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'htmlOptions'=>array('class'=>'table table-striped'),
@@ -29,3 +44,5 @@ $this->menu=array(
 		'Type',
 	),
 )); ?>
+
+</div>

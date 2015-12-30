@@ -134,12 +134,15 @@ class AttendanceController extends Controller
 	public function actionIndex()
 	{
 		$model=new Attendance('search');
+		$classmanager = new Classmanager();
+
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Attendance']))
 			$model->attributes=$_GET['Attendance'];
 
-		$this->render('admin',array(
+		$this->render('attendance',array(
 			'model'=>$model,
+			'classmanager'=>$classmanager,
 		));
 	}
 

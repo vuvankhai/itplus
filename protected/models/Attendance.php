@@ -66,6 +66,9 @@ class Attendance extends CActiveRecord
 			'Absent' => 'Vắng mặt',
 			'ID_Teacher' => 'ID Giảng viên',
 			'Date_create' => 'Ngày tạo',
+                        'Select_class' => 'Chọn Lớp:',
+                        'Select_subject' => 'Chọn Môn học:',
+                        'Select_session' => 'Chọn Session:',
 		);
 	}
 
@@ -109,4 +112,10 @@ class Attendance extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        
+	public static function getClassOptionsByFacutyId($id){
+		return CHtml::listData(Classmanager::model()->findAll('Facuty_id=:Facuty_id', array('Facuty_id'=>$id)), 'ID', 'Name');
+	}
+       
 }

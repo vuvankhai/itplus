@@ -15,6 +15,22 @@ $this->menu=array(
 );
 ?>
 
+<div class="head">
 <h1 class="text-success title">Cập nhật <?php echo $model->ID; ?></h1>
 
+<?php 
+
+	$this->beginWidget('zii.widgets.CPortlet');
+	$this->widget('zii.widgets.CMenu', array(
+		'items'=>$this->menu,
+		'htmlOptions'=>array('class'=>'operations'),
+	));
+	$this->endWidget();
+
+?>
+
+</div>
+
+<div class="body">
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>
