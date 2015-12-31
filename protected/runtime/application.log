@@ -8112,3 +8112,1966 @@ REQUEST_URI=/framework/yii/itplus/index.php/menu
 in D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php (47)
 in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (143)
 in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:36:01 [error] [php] Undefined variable: data (D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php:120)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): MenuController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): MenuController->renderPartial()
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): MenuController->render()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu
+in D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php (120)
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:36:38 [error] [php] Undefined variable: data (D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php:120)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): MenuController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): MenuController->renderPartial()
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): MenuController->render()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu
+in D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php (120)
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:37:29 [error] [php] Undefined variable: data (D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php:120)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): MenuController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): MenuController->renderPartial()
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): MenuController->render()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu
+in D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php (120)
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:38:11 [error] [php] Undefined variable: data (D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php:120)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): MenuController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): MenuController->renderPartial()
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): MenuController->render()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu
+in D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php (120)
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:52:27 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (96)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:52:37 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (96)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:53:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajaxupdate')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxupdate/1?ajax=menu-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/31 01:53:33 [error] [php] Undefined variable: id (D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxupdate/1?ajax=menu-grid&type=1
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:53:37 [error] [php] Undefined variable: id (D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxupdate/1?ajax=menu-grid&type=1
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:53:51 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:54:10 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:55:17 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 01:56:47 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:08:03 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:08:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxview/3?ajax=menu-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2015/12/31 02:09:11 [error] [php] Undefined variable: data (D:\web\projects\framework\yii\itplus\protected\views\menu\_view.php:8)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): MenuController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(206): MenuController->renderPartial()
+#2 unknown(0): MenuController->actionAjaxView()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#4 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxview/3?ajax=menu-grid&type=3
+in D:\web\projects\framework\yii\itplus\protected\views\menu\_view.php (8)
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (206)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:12:42 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:15:47 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:16:52 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:18:52 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:19:35 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:20:42 [error] [php] Undefined variable: id (D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxupdate/3?ajax=menu-grid&type=3
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:21:02 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:22:45 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:23:31 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:23:39 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:25:21 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:26:12 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:29:54 [error] [php] Undefined variable: title (D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php:54)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): MenuController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): MenuController->renderPartial()
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): MenuController->render()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu/index
+in D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php (54)
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:33:05 [error] [php] Undefined variable: name (D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php:54)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): MenuController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): MenuController->renderPartial()
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): MenuController->render()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): MenuController->runAction()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): MenuController->filterAccessControl()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): MenuController->runActionWithFilters()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): MenuController->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/menu/index
+in D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php (54)
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:35:36 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:36:27 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:36:32 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:36:34 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:37:06 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:37:08 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:37:46 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:38:15 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:39:24 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:39:58 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:40:52 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:43:43 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:43:45 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:43:48 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:44:32 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:44:38 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:44:49 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (195)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:50:38 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (197)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:51:12 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (197)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:51:19 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (197)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:51:23 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (197)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 02:51:29 [warning] [application] Failed to set unsafe attribute "ID" of "Menu".
+in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (197)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 03:11:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classmanager/aj...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classmanager/ajaxcreate?_=1451527890124
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classmanager/index?ID=6
+---
+2015/12/31 03:25:37 [error] [exception.CException] exception 'CException' with message 'Alias "ext.AjaxMenu" không có hiệu lực. Phải chắc chắn nó chỉ đến một tập tin PHP đã có.' in D:\web\projects\framework\yii\itplus\framework\YiiBase.php:323
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.AjaxMenu', true)
+#1 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(MenuController), 'ext.AjaxMenu', Array)
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(180): CBaseController->createWidget('ext.AjaxMenu', Array)
+#3 D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php(56): CBaseController->widget('ext.AjaxMenu', Array)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#5 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): CController->render('admin', Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu')
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu
+---
+2015/12/31 03:26:46 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widgets.AjaxMenu" không có hiệu lực. Phải chắc chắn nó chỉ đến một tập tin PHP đã có.' in D:\web\projects\framework\yii\itplus\framework\YiiBase.php:323
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWidgetFactory.php(146): YiiBase::import('zii.widgets.Aja...', true)
+#1 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(MenuController), 'zii.widgets.Aja...', Array)
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.Aja...', Array)
+#3 D:\web\projects\framework\yii\itplus\protected\views\menu\admin.php(56): CBaseController->widget('zii.widgets.Aja...', Array)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#5 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#8 D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php(143): CController->render('admin', Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): MenuController->actionIndex()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu')
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu
+---
+2015/12/31 03:38:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('account/ajaxcre...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/account/ajaxcreate?_=1451529531659
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/account
+---
+2015/12/31 03:40:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('account/ajaxvie...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/account/ajaxview/1?ajax=account-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/account
+---
+2015/12/31 03:42:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('account/ajaxcre...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/account/ajaxcreate?_=1451529739157
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/account
+---
+2015/12/31 03:42:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('account/ajaxcre...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/account/ajaxcreate?_=1451529744366
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/account
+---
+2015/12/31 03:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxupdate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxupdate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('account/ajaxupd...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/account/ajaxupdate/1?ajax=account-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/account
+---
+2015/12/31 03:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classmanager/aj...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classmanager/ajaxcreate?_=1451530215911
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classmanager
+---
+2015/12/31 03:54:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classmanager/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classmanager/ajaxcreate?_=1451530480287
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classmanager
+---
+2015/12/31 03:55:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classmanager/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classmanager/ajaxcreate?_=1451530503507
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classmanager
+---
+2015/12/31 03:56:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classmanager/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classmanager/ajaxcreate?_=1451530594916
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classmanager
+---
+2015/12/31 03:57:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classsubject/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classsubject/ajaxcreate?_=1451530624759
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classsubject
+---
+2015/12/31 03:58:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classsubject/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classsubject/ajaxcreate?_=1451530682449
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classsubject
+---
+2015/12/31 03:59:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classsubject/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classsubject/ajaxview/6?ajax=class-subject-grid&type=6
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classsubject
+---
+2015/12/31 03:59:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classsubject/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classsubject/ajaxupdate/6?ajax=class-subject-grid&type=6
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classsubject
+---
+2015/12/31 04:00:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classsubject/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classsubject/ajaxcreate?_=1451530796781
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classsubject
+---
+2015/12/31 04:05:12 [error] [exception.CException] exception 'CException' with message 'ClassmanagerController không tìm được view: "ajaxview".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:878
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\ClassmanagerController.php(192): CController->renderPartial('ajaxview', Array)
+#1 [internal function]: ClassmanagerController->actionAjaxView('1')
+#2 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClassmanagerController), Array)
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClassmanagerController), Object(ReflectionMethod), Array)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('classmanager/aj...')
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/classmanager/ajaxview/1?ajax=classmanager-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/classmanager/index?ID=6
+---
+2015/12/31 04:06:06 [warning] [application] Failed to set unsafe attribute "ID" of "Classmanager".
+in D:\web\projects\framework\yii\itplus\protected\controllers\ClassmanagerController.php (233)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 04:06:37 [warning] [application] Failed to set unsafe attribute "ID" of "Classmanager".
+in D:\web\projects\framework\yii\itplus\protected\controllers\ClassmanagerController.php (233)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 04:35:30 [error] [exception.CException] exception 'CException' with message 'CommentController không tìm được view: "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:878
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\CommentController.php(205): CController->renderPartial('ajaxcreate', Array, false, true)
+#1 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): CommentController->actionAjaxCreate()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#11 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/ajaxcre...')
+#12 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/comment/ajaxcreate?_=1451532928154
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/comment
+---
+2015/12/31 04:36:09 [error] [exception.CException] exception 'CException' with message 'CommentController không tìm được view: "ajaxupdate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:878
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\CommentController.php(229): CController->renderPartial('ajaxupdate', Array, false, true)
+#1 [internal function]: CommentController->actionAjaxUpdate('2')
+#2 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/ajaxupd...')
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/comment/ajaxupdate/2?ajax=comment-grid&type=2
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/comment
+---
+2015/12/31 04:36:12 [error] [exception.CException] exception 'CException' with message 'CommentController không tìm được view: "ajaxupdate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:878
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\CommentController.php(229): CController->renderPartial('ajaxupdate', Array, false, true)
+#1 [internal function]: CommentController->actionAjaxUpdate('2')
+#2 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/ajaxupd...')
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/comment/ajaxupdate/2?ajax=comment-grid&type=2
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/comment
+---
+2015/12/31 04:37:12 [error] [exception.CException] exception 'CException' with message 'CommentController không tìm được view: "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:878
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\CommentController.php(205): CController->renderPartial('ajaxcreate', Array, false, true)
+#1 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): CommentController->actionAjaxCreate()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#11 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('comment/ajaxcre...')
+#12 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/comment/ajaxcreate?_=1451533030264
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/comment
+---
+2015/12/31 05:11:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course/ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/course/ajaxview/6?ajax=course-grid&type=6
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/course/index?ID=5
+---
+2015/12/31 05:12:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course/ajaxcrea...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/course/ajaxcreate?_=1451535155825
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/course/index?ID=5
+---
+2015/12/31 05:49:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxcrea...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxcreate?_=1451537344277
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain/
+---
+2015/12/31 05:49:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxcrea...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxcreate?_=1451537367788
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain/
+---
+2015/12/31 05:49:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxcrea...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxcreate?_=1451537390200
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain/
+---
+2015/12/31 05:50:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxcrea...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxcreate?_=1451537445080
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:52:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/update')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/update/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:52:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/update')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/update/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:52:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/update')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/update/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:52:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/update')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/update/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:52:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:52:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxupda...')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxupdate/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:52:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxcrea...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxcreate?_=1451537576323
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:52:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:54:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxcrea...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxcreate?_=1451537644936
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:54:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxcrea...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxcreate?_=1451537644937
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:54:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:54:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:55:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:55:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxupda...')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxupdate/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:56:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:56:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 05:57:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview
+---
+2015/12/31 05:57:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajax-view".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajax-view')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajax-view')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajax-vie...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajax-view
+---
+2015/12/31 05:57:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview
+---
+2015/12/31 05:58:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview
+---
+2015/12/31 05:58:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview
+---
+2015/12/31 05:58:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview
+---
+2015/12/31 05:58:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview
+---
+2015/12/31 05:59:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('course/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/course/ajaxview
+---
+2015/12/31 05:59:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxupda...')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxupdate
+---
+2015/12/31 05:59:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Yêu cầu của bạn không hợp lệ.' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:336
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#10 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 06:02:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "r=gii/default/login".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('r=gii/default/l...')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/r=gii/default/login
+---
+2015/12/31 06:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "r=gi".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('r=gi')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/r=gi
+---
+2015/12/31 06:02:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "r=gii".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('r=gii')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/r=gii
+---
+2015/12/31 06:13:41 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(117): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (117)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:15:11 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(117): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (117)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:15:17 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(117): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (117)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:17:14 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(117): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (117)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:17:18 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(117): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain/index
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (117)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:17:23 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(117): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain/index
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (117)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:17:59 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(95): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain/index
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (95)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:20:33 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(95): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain/index
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (95)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:24:42 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(55): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (55)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:24:55 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(55): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionAdmin()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain/admin
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (55)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2015/12/31 06:34:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxview".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxview')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/1?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 06:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxupdate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxupdate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxupda...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxupdate/1?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 06:36:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxview')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxview/1?ajax=domain-grid&type=1
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2015/12/31 06:46:37 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Groupaccount.Type" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Type')
+#1 D:\web\projects\framework\yii\itplus\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('Type')
+#2 D:\web\projects\framework\yii\itplus\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Groupaccount), 'Type')
+#3 D:\web\projects\framework\yii\itplus\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Groupaccount), 'Type', Array)
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(Groupaccount), 'Type', Array)
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(538): CGridColumn->renderFilterCell()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(516): CGridView->renderFilter()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(486): CGridView->renderTableHeader()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CBaseListView->run()
+#15 D:\web\projects\framework\yii\itplus\protected\views\groupaccount\admin.php(108): CBaseController->widget('zii.widgets.gri...', Array)
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#17 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#19 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#20 D:\web\projects\framework\yii\itplus\protected\controllers\GroupaccountController.php(143): CController->render('admin', Array)
+#21 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): GroupaccountController->actionIndex()
+#22 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#29 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#31 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('groupaccount')
+#32 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#33 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/groupaccount
+---
+2015/12/31 06:47:01 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Groupaccount.Type" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Type')
+#1 D:\web\projects\framework\yii\itplus\protected\models\Groupaccount.php(83): CActiveRecord->__get('Type')
+#2 D:\web\projects\framework\yii\itplus\protected\views\groupaccount\admin.php(61): Groupaccount->search()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#4 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 D:\web\projects\framework\yii\itplus\protected\controllers\GroupaccountController.php(143): CController->render('admin', Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): GroupaccountController->actionIndex()
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('groupaccount')
+#19 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/groupaccount
+---
+2015/12/31 06:47:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('groupaccount/aj...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/groupaccount/ajaxcreate?_=1451540857868
+HTTP_REFERER=http://localhost/framework/Yii/itplus/index.php/groupaccount
+---
+2015/12/31 06:48:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('groupaccount/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/groupaccount/ajaxcreate?_=1451540916731
+HTTP_REFERER=http://localhost/framework/Yii/itplus/index.php/groupaccount
+---
+2015/12/31 06:49:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('groupaccount/aj...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/groupaccount/ajaxview/1?ajax=groupaccount-grid&type=1
+HTTP_REFERER=http://localhost/framework/Yii/itplus/index.php/groupaccount
+---
+2015/12/31 07:01:54 [error] [exception.CException] exception 'CException' with message 'HourController không tìm được view: "ajaxview".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:878
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\HourController.php(178): CController->renderPartial('ajaxview', Array)
+#1 [internal function]: HourController->actionAjaxView('1')
+#2 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(HourController), Array)
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(HourController), Object(ReflectionMethod), Array)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('hour/ajaxview')
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/hour/ajaxview/1?ajax=hour-grid&type=1
+HTTP_REFERER=http://localhost/framework/Yii/itplus/index.php/hour/
+---
+2015/12/31 07:06:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('major/ajaxcreat...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/major/ajaxcreate?_=1451541980893
+HTTP_REFERER=http://localhost/framework/Yii/itplus/index.php/major
+---
+2015/12/31 07:23:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('room/ajaxcreate')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/room/ajaxcreate?_=1451542984397
+HTTP_REFERER=http://localhost/framework/Yii/itplus/index.php/room
+---
+2015/12/31 07:39:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('semester/ajaxcr...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/semester/ajaxcreate?_=1451543985668
+HTTP_REFERER=http://localhost/framework/Yii/itplus/index.php/semester
+---
+2015/12/31 07:48:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "ajaxcreate".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('ajaxcreate')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('semestersubject...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/Yii/itplus/index.php/semestersubject/ajaxcreate?_=1451544502417
+HTTP_REFERER=http://localhost/framework/Yii/itplus/index.php/semestersubject
+---

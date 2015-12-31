@@ -7,21 +7,6 @@ $(document).ready(function(){
 		$("#user-dropdown").toggle(300);
 	})
 
-	/*
-		Set height for #content
-	*/
-
-	var header = $("#header").height();
-	var footer = $("#footer").height();
-	var content = $("#content").height();
-	var height = $(window).height() - header - footer;
-	if(height < 500)
-		height = 500;
-
-	$("#content").css('height', height+"px");
-	$("#main-content").css('height', height+"px");
-	$("#sidebar").css('height', height+"px");
-
 
 	/*
 		Display submenu

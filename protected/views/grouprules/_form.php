@@ -16,7 +16,7 @@
 	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-	<p class="text-info bg-info pd-3-15">Trường có dấu <span class="required">*</span> là bắt buộc.</p>
+	<p class="text-danger note-required">Trường có dấu <span class="required">*</span> là bắt buộc.</p>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_GroupAcc', array('class'=>'control-label')); ?>
@@ -36,9 +36,10 @@
 		<?php echo $form->error($model,'Status', array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="form-group buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Tạo mới' : 'Lưu', array('class'=>'btn btn-success btn-sm')); ?>
-	</div>
+	<div class="form-group buttons fright">
+		<?php //echo CHtml::submitButton($model->isNewRecord ? 'Tạo mới' : 'Lưu', array('class'=>'btn btn-success btn-sm')); ?>
+            <button class="btn btn-primary btn-sm" type="submit"><san class="glyphicon glyphicon-floppy-disk"></san></button>
+        </div>
 
 <?php $this->endWidget(); ?>
 

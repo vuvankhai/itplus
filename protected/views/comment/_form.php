@@ -20,7 +20,7 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'ID_post',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'ID_post',array('class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'ID_post', Post::getPostOptions(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID_post',array('class'=>'text-danger')); ?>
 	</div>
 
@@ -56,9 +56,10 @@
 		<?php echo $form->error($model,'Content',array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="form-group buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Tạo mới' : 'Lưu',array('class'=>'btn btn-success btn-sm')); ?>
-	</div>
+	<div class="form-group buttons fright">
+		<?php //echo CHtml::submitButton($model->isNewRecord ? 'Tạo mới' : 'Lưu',array('class'=>'btn btn-success btn-sm')); ?>
+            <button class="btn btn-sm btn-primary" type="submit"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+        </div>
 
 <?php $this->endWidget(); ?>
 

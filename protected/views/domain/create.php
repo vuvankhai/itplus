@@ -8,10 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
+	array('label'=>'List Domain', 'url'=>array('index')),
+	array('label'=>'Manage Domain', 'url'=>array('admin')),
 );
 ?>
 
-<h1 class="text-success title">Tạo mới Domain</h1>
+<h1>Create Domain</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

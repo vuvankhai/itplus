@@ -37,6 +37,13 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+                'clientScript' => array(
+                    'scriptMap' => array(
+                       'jquery.js' => false,
+                       'jquery.min.js' => false,
+                    ),
+                 ),
+
 
 		// uncomment the following to enable URLs in path-format
 	

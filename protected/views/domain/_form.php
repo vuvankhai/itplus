@@ -16,22 +16,31 @@
 	'htmlOptions'=>array('class'=>'form'),
 )); ?>
 
-	<p class="text-info bg-info pd-3-15">Fields with <span class="required">*</span> are required.</p>
+	<p class="text-danger note-required">Fields with <span class="required">*</span> are required.</p>
+
+	<?php echo $form->errorSummary($model); ?>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'ID',array('class'=>'control-label')); ?>
+		<?php echo $form->textField($model,'ID', array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'ID',array('class'=>'text-danger')); ?>
+	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Name',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Name',array('size'=>30,'maxlength'=>30,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'Name',array('size'=>30,'maxlength'=>30, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Name',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Type',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Type',array('size'=>20,'maxlength'=>20,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'Type',array('size'=>20,'maxlength'=>20, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Type',array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="form-group buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Tạo mới' : 'Lưu',array('class'=>'btn btn-success btn-sm')); ?>
+	<div class="form-group buttons fright">
+		<?php //echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+            <button class="btn btn-primary btn-sm" type="submit"><span class="glyphicon glyphicon-floppy-disk"></span></button>
 	</div>
 
 <?php $this->endWidget(); ?>

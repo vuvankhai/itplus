@@ -29,7 +29,7 @@ class CourseController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'ajaxcreate', 'ajaxupdate', 'ajaxview'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -184,6 +184,73 @@ class CourseController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+        
+	/**
+	 * Displays a particular model.
+	 * @param integer $id the ID of the model to be displayed
+	 */
+	public function actionAjaxView($id)
+	{
+		$this->renderPartial('ajaxview',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+
+	/**
+	 * Creates a new model.
+	 * If creation is successful, the browser will be redirected to the 'view' page.
+	 */
+	public function actionAjaxCreate()
+	{
+		$model=new Course;
+        $_SESSION['course_id'] = 1;
+        if(isset($_GET['ID'])){
+            $_SESSION['course_id'] = $_GET['ID'];
+        }
+        $course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
+        $model->Parent_id = $course->Name;
+        
+        
+        
+        
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Course']))
+		{
+			$model->attributes=$_POST['Course'];
+            $model->Parent_id = $_SESSION['course_id'];
+			if($model->save())
+				$this->redirect(array('index','id'=>$_SESSION['course_id']));
+		}
+
+		$this->renderPartial('_form',array(
+			'model'=>$model,
+		), false, true);
+	}
+
+	/**
+	 * Updates a particular model.
+	 * If update is successful, the browser will be redirected to the 'view' page.
+	 * @param integer $id the ID of the model to be updated
+	 */
+	public function actionAjaxUpdate($id)
+	{
+		$model=$this->loadModel($id);
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Course']))
+		{
+			$model->attributes=$_POST['Course'];
+			if($model->save())
+				$this->redirect(array('index','id'=>$model->ID));
+		}
+		$this->renderPartial('_form',array(
+			'model'=>$model,
+		),false, true);
 	}
         
 }

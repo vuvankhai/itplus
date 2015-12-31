@@ -28,7 +28,7 @@ class PostController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','ajaxview','ajaxcreate','ajaxupdate'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -169,5 +169,59 @@ class PostController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+        
+        public function actionAjaxView($id)
+	{
+		$this->renderPartial('ajaxview',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+
+	/**
+	 * Creates a new model.
+	 * If creation is successful, the browser will be redirected to the 'view' page.
+	 */
+	public function actionAjaxCreate()
+	{
+		$model=new Post;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Post']))
+		{
+			$model->attributes=$_POST['Post'];
+			if($model->save())
+				$this->redirect(array('index','id'=>$model->ID));
+		}
+
+		$this->renderPartial('_form',array(
+			'model'=>$model,
+		), false, true);
+	}
+
+	/**
+	 * Updates a particular model.
+	 * If update is successful, the browser will be redirected to the 'view' page.
+	 * @param integer $id the ID of the model to be updated
+	 */
+	public function actionAjaxUpdate($id)
+	{
+		$model=$this->loadModel($id);
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Post']))
+		{
+			$model->attributes=$_POST['Post'];
+			if($model->save())
+				$this->redirect(array('index','id'=>$model->ID));
+		}
+
+		$this->renderPartial('_form',array(
+			'model'=>$model,
+		), false, true);
 	}
 }

@@ -7,9 +7,10 @@ $this->breadcrumbs=array(
 	'Manage',
 );
 
-$this->menu=array(
-	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
-);
+//$this->menu=array(
+//	array('label'=>'List Domain', 'url'=>array('index')),
+//	array('label'=>'Create Domain', 'url'=>array('create')),
+//);
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -25,16 +26,37 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1 class="text-success title">Quản lý Domain</h1>
+<div class="head">
+<h1 class="text-success title">Manage Domains</h1>
+    <div class="fright">
+        <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('domain/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog("open"); return false;')); ?>
+    </div>
+    <?php 
+    $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+         'id'=>'dialog-content',
+         'options'=>array(
+             'title'=>'Menu Dialog',
+             'autoOpen'=>false,
+             'modal'=>true,
+             'width'=>'auto',
+             'height'=>'auto',
+             'position'=>array(400, 50),
+         ),
+       ));
+
+    $this->endWidget('zii.widgets.jui.CJuiDialog');
+
+    ?>
+</div>
 
 
-<?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
-<!-- <div class="search-form" style="display:none"> -->
-<?php //$this->renderPartial('_search',array(
+<?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<!--<div class="search-form" style="display:none">-->
+<?php // $this->renderPartial('_search',array(
 	//'model'=>$model,
 //)); ?>
 <!-- </div>search-form -->
-
+<div class="body">
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'domain-grid',
 	'dataProvider'=>$model->search(),
@@ -45,32 +67,54 @@ $('.search-form form').submit(function(){
 		'Name',
 		'Type',
 		array(
-            'header' => '<span class="glyphicon glyphicon-cog" ></span>',
-            'htmlOptions' => array(
-                            'style' => 'width: 100px; text-align: center;',
-		            ),
-		            'class' => 'CButtonColumn',
-		            'template' => '{view} {update} {delete}',
-		            'buttons' => array(
-	                    'view'=>array(
-	                    	'label' => '<buttom type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
-	                        'url' => '$this->grid->controller->createUrl("domain/view", array("id"=>$data->primaryKey,"type"=>$data->ID))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Chi tiết'),
-	                    ),
-	                    'delete' => array(
-	                  		'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
-	                        'url' => '$this->grid->controller->createUrl("domain/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Xóa'),
-	                    ),
-	                    'update' => array(
-	                  		'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
-	                        'url' => '$this->grid->controller->createUrl("domain/update", array("id"=>$data->primaryKey,"type"=>$data->ID))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Cập nhật'),
-	                    ),
-            		),
-        ),
+	            'header' => '<span class="glyphicon glyphicon-cog" ></span>',
+	            'htmlOptions' => array(
+	                            'style' => 'width: 100px; text-align: center;',
+			            ),
+			            'class' => 'CButtonColumn',
+			            'template' => '{view} {update} {delete}',
+			            'buttons' => array(
+		                    'view'=>array(
+		                    	'label' => '<buttom type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
+		                        'url' => '$this->grid->controller->createUrl("domain/ajaxview", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+		                        'imageUrl' => false,
+		                        'options'=>array('title'=>'Chi tiết'),
+                                        'click'=>'function(){
+                                                    $.fn.yiiGridView.update("domain-grid", {
+                                                        type: "GET",
+                                                        url: $(this).attr("href"),
+                                                        success: function(data){
+                                                            $("#dialog-content").html(data);
+                                                            $("#dialog-content").dialog("option", "title", "Chi tiết").dialog("open");;
+                                                        }
+                                                    })
+                                                    return false;
+                                                }'
+		                    ),
+		                    'delete' => array(
+		                  		'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
+		                        'url' => '$this->grid->controller->createUrl("domain/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
+		                        'imageUrl' => false,
+		                        'options'=>array('title'=>'Xóa'),
+		                    ),
+		                    'update' => array(
+		                  		'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
+		                        'url' => '$this->grid->controller->createUrl("domain/ajaxupdate", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+		                        'imageUrl' => false,
+		                        'options'=>array('title'=>'Cập nhật'),'click'=>'function(){
+                                                    $.fn.yiiGridView.update("domain-grid", {
+                                                        type: "GET",
+                                                        url: $(this).attr("href"),
+                                                        success: function(data){
+                                                            $("#dialog-content").html(data);
+                                                            $("#dialog-content").dialog("option", "title", "Chi tiết").dialog("open");;
+                                                        }
+                                                    })
+                                                    return false;
+                                                }'
+		                    ),
+	            		),
+	        ),
 	),
 )); ?>
+</div>

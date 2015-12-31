@@ -111,4 +111,8 @@ class Post extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public static function getPostOptions(){
+            return CHtml::listData(Post::model()->findAll(), 'ID', 'Title');
+        }
 }

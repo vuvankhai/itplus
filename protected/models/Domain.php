@@ -10,6 +10,9 @@
  */
 class Domain extends CActiveRecord
 {
+        public function primaryKey(){
+            return 'ID';
+        }
 	/**
 	 * @return string the associated database table name
 	 */
@@ -26,6 +29,8 @@ class Domain extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('ID', 'required'),
+			array('ID', 'numerical', 'integerOnly'=>true),
 			array('Name', 'length', 'max'=>30),
 			array('Type', 'length', 'max'=>20),
 			// The following rule is used by search().
@@ -52,8 +57,8 @@ class Domain extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Tên',
-			'Type' => 'Kiểu',
+			'Name' => 'Name',
+			'Type' => 'Type',
 		);
 	}
 
@@ -93,13 +98,5 @@ class Domain extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
-	}
-
-	public static function getAccoutTypeOptions(){
-		return CHtml::listData(Domain::model()->findAll('Type = :type', array('type'=>'type-account')), 'Name', 'Name');
-	}
-
-	public static function getAccoutStatusOptions(){
-		return CHtml::listData(Domain::model()->findAll('Type = :type', array('type'=>'status-account')), 'Name', 'Name');
 	}
 }

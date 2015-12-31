@@ -28,7 +28,7 @@ class UsersController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','ajaxview','ajaxcreate','ajaxupdate'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -184,5 +184,74 @@ class UsersController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+        
+        public function actionAjaxView($id)
+	{
+		$this->renderPartial('ajaxview',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+
+	/**
+	 * Creates a new model.
+	 * If creation is successful, the browser will be redirected to the 'view' page.
+	 */
+	public function actionAjaxCreate()
+	{
+		$model=new Users;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Users']))
+		{
+			$model->attributes=$_POST['Users'];
+
+			// save avatar
+			$model->Avatar = CUploadedFile::getInstance($model, 'Avatar');
+			if(!empry($model->Avatar)){
+				$model->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$model->Avatar->name);
+			}
+			
+			
+			if($model->save())
+				$this->redirect(array('index','id'=>$model->ID));
+		}
+
+		$this->renderPartial('_form',array(
+			'model'=>$model,
+		));
+	}
+
+	/**
+	 * Updates a particular model.
+	 * If update is successful, the browser will be redirected to the 'view' page.
+	 * @param integer $id the ID of the model to be updated
+	 */
+	public function actionAjaxUpdate($id)
+	{
+		$model=$this->loadModel($id);
+		$avatar = $model->Avatar;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Users']))
+		{
+			$model->attributes=$_POST['Users'];
+			$model->Avatar = CUploadedFile::getInstance($model, 'Avatar');
+			if(!empty($model->Avatar->name)){
+				$model->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$model->Avatar->name);
+			} else {
+				$model->Avatar = $avatar;
+			}
+			if($model->save())
+				$this->redirect(array('index','id'=>$model->ID));
+		}
+
+		$this->renderPartial('_form',array(
+			'model'=>$model,
+		));
 	}
 }

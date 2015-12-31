@@ -13,9 +13,5 @@
 	<?php echo CHtml::encode($data->Name); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Type')); ?>:</b>
-	<?php echo CHtml::encode($data->Type); ?>
-	<br />
-
 
 </div>

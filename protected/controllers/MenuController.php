@@ -28,7 +28,7 @@ class MenuController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'ajaxcreate'),
+				'actions'=>array('index','view', 'ajaxcreate', 'ajaxupdate', 'ajaxview'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -173,9 +173,38 @@ class MenuController extends Controller
         
         public function actionAjaxCreate(){
             $model = new Menu;
-            if(isset($_POST['Menu'])){
-                $this->redirect(array('index'));
+            
+            if(isset($_POST['Menu']))
+            {
+                $model->attributes=$_POST['Menu'];
+                if($model->save())
+                    $this->redirect(array('index'));
             }
+            
             $this->renderPartial('_form', array('model'=>$model));
         }
+        
+        public function actionAjaxUpdate($id){
+            $model=$this->loadModel($id);
+
+             //Uncomment the following line if AJAX validation is needed
+             //$this->performAjaxValidation($model);
+            
+          
+            
+            if(isset($_POST['Menu']))
+            {
+                $model->attributes=$_POST['Menu'];
+                if($model->save())
+                    $this->redirect(array('index'));
+            }
+
+            $this->renderPartial('_form', array('model'=>$model));
+        }
+        
+        public function actionAjaxView($id){
+            $this->renderPartial('ajaxview',array(
+			'model'=>$this->loadModel($id),
+		));
+        } 
 }

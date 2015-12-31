@@ -7,16 +7,7 @@ $this->breadcrumbs=array(
 	'Manage',
 );
 
-$this->menu=array(
-                array(
-                    'label'=>'Thêm mới', 
-                    'url'=>array('create'),
-                    'linkOptions'=>array(
-                        'class'=>'btn btn-success btn-sm',
-                        'onclick'=>'$("#userloginwidget").dialog("open"); return false;'
-                    ),
-                ), 
-        );
+//$this->menu=array(array('label'=>'Thêm mới', 'url'=>array('create'),linkOptions'=>array('class'=>'btn btn-success btn-sm' )));
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -44,14 +35,13 @@ $('.search-form form').submit(function(){
 //	$this->endWidget();
 ?>
 <div class="fright">
-    
-    <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('menu/ajaxcreate'), array('update'=>'#dialog-create'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-create").dialog({resizable: false}).dialog("open"); return false;')); ?>
+    <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('menu/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog({resizable: false}).dialog("open"); return false;')); ?>
 </div>
 <?php 
 $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
-     'id'=>'dialog-create',
+     'id'=>'dialog-content',
      'options'=>array(
-         'title'=>'User Login Errors',
+         'title'=>'Menu Dialog',
          'autoOpen'=>false,
          'modal'=>true,
          'width'=>'auto',
@@ -65,8 +55,6 @@ $this->endWidget('zii.widgets.jui.CJuiDialog');
 ?>
 
 </div>
-<div id="create">
-</div>
 <div class="body">
     
 <?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button btn btn-default btn-sm')); ?>
@@ -75,7 +63,14 @@ $this->endWidget('zii.widgets.jui.CJuiDialog');
 	//'model'=>$model,
 //)); ?>
 <!-- </div>search-form -->
+<?php 
+    Yii::app()->clientScript->registerScript("update","
+            function ajaxUpdate(){
+                
+            }
+        ");
 
+?>
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'menu-grid',
 	'dataProvider'=>$model->search(),
@@ -96,23 +91,45 @@ $this->endWidget('zii.widgets.jui.CJuiDialog');
 		            'class' => 'CButtonColumn',
 		            'template' => '{view} {update} {delete}',
 		            'buttons' => array(
+	                    'update' => array(
+	                  	'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
+	                        'url' => '$this->grid->controller->createUrl("menu/ajaxupdate", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+	                        'imageUrl' => false,
+	                        'options'=>array('title'=>'Cập nhật'),
+                                'click'=>'function(){
+                                            $.fn.yiiGridView.update("menu-grid", {
+                                                type: "GET",
+                                                url: $(this).attr("href"),
+                                                success: function(data){
+                                                    $("#dialog-content").html(data);
+                                                    $("#dialog-content").dialog("option", "title", "Cập nhật").dialog("open");;
+                                                }
+                                            })
+                                            return false;
+                                        }'
+	                    ),
 	                    'view'=>array(
 	                    	'label' => '<buttom type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
-	                        'url' => '$this->grid->controller->createUrl("menu/view", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+	                        'url' => '$this->grid->controller->createUrl("menu/ajaxview", array("id"=>$data->primaryKey,"type"=>$data->ID))',
 	                        'imageUrl' => false,
 	                        'options'=>array('title'=>'Chi tiết'),
+                                'click'=>'function(){
+                                            $.fn.yiiGridView.update("menu-grid", {
+                                                type: "GET",
+                                                url: $(this).attr("href"),
+                                                success: function(data){
+                                                    $("#dialog-content").html(data);
+                                                    $("#dialog-content").dialog("option", "title", "Chi tiết").dialog("open");;
+                                                }
+                                            })
+                                            return false;
+                                        }'
 	                    ),
 	                    'delete' => array(
-	                  		'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
+	                  	'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
 	                        'url' => '$this->grid->controller->createUrl("menu/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
 	                        'imageUrl' => false,
 	                        'options'=>array('title'=>'Xóa'),
-	                    ),
-	                    'update' => array(
-	                  		'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
-	                        'url' => '$this->grid->controller->createUrl("menu/update", array("id"=>$data->primaryKey,"type"=>$data->ID))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Cập nhật'),
 	                    ),
             		),
         ),

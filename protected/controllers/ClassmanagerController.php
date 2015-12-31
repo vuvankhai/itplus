@@ -28,7 +28,7 @@ class ClassmanagerController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','ajaxview','ajaxcreate','ajaxupdate'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -69,7 +69,8 @@ class ClassmanagerController extends Controller
 			$_SESSION['course_id'] = $_GET['ID'];
 		}
 		$course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
-		$model->ID_course = $course->Name;
+		if(!empty($course))
+                    $model->ID_course = $course->Name;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -79,7 +80,7 @@ class ClassmanagerController extends Controller
 			$model->attributes=$_POST['Classmanager'];
 			$model->ID_course = $_SESSION['course_id'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect(array('index','id'=>$model->ID));
 		}
 
 		$this->render('create',array(
@@ -103,7 +104,7 @@ class ClassmanagerController extends Controller
 		{
 			$model->attributes=$_POST['Classmanager'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect(array('index','id'=>$model->ID));
 		}
 
 		$this->render('update',array(
@@ -182,5 +183,62 @@ class ClassmanagerController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+        
+        
+	public function actionAjaxView($id)
+	{
+		$this->renderPartial('ajaxview',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+        
+        
+	public function actionAjaxCreate()
+	{
+		$model=new Classmanager;
+
+		$_SESSION['course_id'] = 1;
+		if(isset($_GET['ID'])){
+			$_SESSION['course_id'] = $_GET['ID'];
+		}
+		$course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
+		if(!empty($course))
+                    $model->ID_course = $course->Name;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Classmanager']))
+		{
+			$model->attributes=$_POST['Classmanager'];
+			$model->ID_course = $_SESSION['course_id'];
+			if($model->save())
+				$this->redirect(array('index','id'=>$model->ID));
+		}
+
+		$this->renderPartial('_form',array(
+			'model'=>$model,
+		), false, true);
+	}
+        
+        
+        public function actionAjaxUpdate($id)
+	{
+		$model=$this->loadModel($id);
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Classmanager']))
+		{
+			$model->attributes=$_POST['Classmanager'];
+			if($model->save())
+				$this->redirect(array('index','id'=>$model->ID));
+		}
+
+		$this->renderPartial('_form',array(
+			'model'=>$model,
+		), false, true);
 	}
 }

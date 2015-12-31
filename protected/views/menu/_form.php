@@ -50,7 +50,7 @@
 
 	<div class="form-group buttons">
 		<?php //echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-success btn-sm')); ?>
-                <button type="submit" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-floppy-disk"></i><?php //$model->isNewRecord ? '<span class="fa fa-floppy-o"></span>' : '<span class="fa fa-floppy-o"></span>' ?></button>
+                <button type="submit" name="yt0" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-floppy-disk"></i><?php //$model->isNewRecord ? '<span class="fa fa-floppy-o"></span>' : '<span class="fa fa-floppy-o"></span>' ?></button>
         </div>
 
 <?php $this->endWidget(); ?>
