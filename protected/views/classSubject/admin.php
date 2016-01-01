@@ -61,15 +61,34 @@ $this->endWidget('zii.widgets.jui.CJuiDialog');
 	'filter'=>$model,
 	'itemsCssClass'=>'table table-striped',
 	'columns'=>array(
+                array(
+                    'name'=>'ID_Class',
+                    'value'=>'$data->iDClass->Name',
+                ),
+                array(
+                    'name'=>'ID_Room',
+                    'value'=>'$data->iDRoom->Name',
+                ),
+                array(
+                    'name'=>'ID_Hour',
+                    'value'=>'$data->iDHour->Type',
+                ),
+                array(
+                    'name'=>'ID_Subject',
+                    'value'=>'$data->iDSubject->Name',
+                ),
+		array(
+                    'name'=>'ID_Facuty',
+                    'value'=>'$data->iDFacuty->Name',
+                ),
+		'Start_date',
+		'Finish_date',
+		/*
 		'ID',
 		'ID_Class',
 		'ID_Room',
 		'ID_Hour',
 		'ID_Subject',
-		'Start_date',
-		/*
-		'Finish_date',
-		'ID_Facuty',
 		'Date_Exam',
 		*/
 		array(

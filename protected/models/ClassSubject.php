@@ -23,6 +23,7 @@
  */
 class ClassSubject extends CActiveRecord
 {
+    
 	/**
 	 * @return string the associated database table name
 	 */
@@ -62,7 +63,7 @@ class ClassSubject extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'iDClass' => array(self::BELONGS_TO, 'Classmanager', 'ID_Class'),
+                        'iDClass' => array(self::BELONGS_TO, 'Classmanager', 'ID_Class'),
 			'iDFacuty' => array(self::BELONGS_TO, 'Users', 'ID_Facuty'),
 			'iDHour' => array(self::BELONGS_TO, 'Hour', 'ID_Hour'),
 			'iDRoom' => array(self::BELONGS_TO, 'Room', 'ID_Room'),
@@ -105,15 +106,17 @@ class ClassSubject extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
+                $criteria->with = array('iDClass', 'iDFacuty', 'iDHour', 'iDRoom', 'iDSubject');
+                
+                
 		$criteria->compare('ID',$this->ID);
-		$criteria->compare('ID_Class',$this->ID_Class);
-		$criteria->compare('ID_Room',$this->ID_Room);
-		$criteria->compare('ID_Hour',$this->ID_Hour);
-		$criteria->compare('ID_Subject',$this->ID_Subject);
+		$criteria->compare('iDClass.Name',$this->ID_Class, true);//ID_Class
+		$criteria->compare('iDRoom.Name',$this->ID_Room, true);//ID_Room
+		$criteria->compare('iDHour.Type',$this->ID_Hour, true);//ID_Hour
+		$criteria->compare('iDSubject.Name',$this->ID_Subject, true);//ID_Subject
 		$criteria->compare('Start_date',$this->Start_date,true);
 		$criteria->compare('Finish_date',$this->Finish_date,true);
-		$criteria->compare('ID_Facuty',$this->ID_Facuty);
+		$criteria->compare('iDFacuty.Name',$this->ID_Facuty, true);//ID_Facuty
 		$criteria->compare('Date_Exam',$this->Date_Exam,true);
 
 		return new CActiveDataProvider($this, array(

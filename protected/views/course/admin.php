@@ -44,7 +44,7 @@ $('.search-form form').submit(function(){
     <div class="head">
         <h1 class="text-success title">Quản lý Khóa học</h1>
     <div class="fright">
-        <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('course/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog({resizable: false}).dialog("open"); return false;')); ?>
+        <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('course/ajaxcreate/ID/'.$_SESSION['course_id']), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog({resizable: false}).dialog("open"); return false;')); ?>
     </div>
     <?php 
     $this->beginWidget('zii.widgets.jui.CJuiDialog', array(

@@ -65,7 +65,7 @@ class Menu extends CActiveRecord
 			'URL' => 'Đường dẫn',
 			'Status' => 'Trạng thái',
 			'Parent_ID' => 'ID cha',
-			'Type' => 'Kiều',
+			'Type' => 'Kiểu',
 		);
 	}
 
@@ -120,4 +120,10 @@ class Menu extends CActiveRecord
 
 		return $_menu;
 	}
+        
+        public static function getMenuOptions(){
+            $Data = array(0=>'Trống');
+            $listData = CHtml::listData(Menu::model()->findAll(), 'ID', 'Name');
+            return array_merge($Data, $listData);
+        }
 }

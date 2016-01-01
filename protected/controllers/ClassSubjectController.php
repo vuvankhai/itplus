@@ -122,7 +122,9 @@ class ClassSubjectController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$dataProvider=new CActiveDataProvider('ClassSubject');
+            
+		$dataProvider=new CActiveDataProvider('Classmanager');
+
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -133,7 +135,7 @@ class ClassSubjectController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$model=new ClassSubject('search');
+		$model= new ClassSubject('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['ClassSubject']))
 			$model->attributes=$_GET['ClassSubject'];
@@ -224,4 +226,5 @@ class ClassSubjectController extends Controller
 			'model'=>$model,
 		), false, true);
 	}
+        
 }

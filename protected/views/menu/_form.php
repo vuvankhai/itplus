@@ -35,10 +35,9 @@
 		<?php echo $form->textField($model,'Status',array('size'=>30,'maxlength'=>30, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Status', array('class'=>'text-danger')); ?>
 	</div>
-
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'Parent_ID', array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Parent_ID',array('class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'Parent_ID', Menu::getMenuOptions(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Parent_ID', array('class'=>'text-danger')); ?>
 	</div>
 

@@ -63,13 +63,13 @@ class CourseController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Course;
-        $_SESSION['course_id'] = 1;
-        if(isset($_GET['ID'])){
-            $_SESSION['course_id'] = $_GET['ID'];
-        }
-        $course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
-        $model->Parent_id = $course->Name;
+            $model=new Course;
+            $_SESSION['course_id'] = 1;
+            if(isset($_GET['ID'])){
+                $_SESSION['course_id'] = $_GET['ID'];
+            }
+            $course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
+            $model->Parent_id = $course->Name;
         
         
         
@@ -203,13 +203,13 @@ class CourseController extends Controller
 	 */
 	public function actionAjaxCreate()
 	{
-		$model=new Course;
-        $_SESSION['course_id'] = 1;
-        if(isset($_GET['ID'])){
-            $_SESSION['course_id'] = $_GET['ID'];
-        }
-        $course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
-        $model->Parent_id = $course->Name;
+            $model=new Course;
+            $_SESSION['course_id'] = 1;
+            if(isset($_GET['ID'])){
+                $_SESSION['course_id'] = $_GET['ID'];
+            }
+            $course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
+            $model->Parent_id = $course->Name;
         
         
         
