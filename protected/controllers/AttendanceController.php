@@ -28,7 +28,7 @@ class AttendanceController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','getsubjectoptions', 'getsessionoptions'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -136,14 +136,16 @@ class AttendanceController extends Controller
 		$model=new Attendance('search');
 		$classmanager = new Classmanager();
 
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Attendance']))
-			$model->attributes=$_GET['Attendance'];
+//		$model->unsetAttributes();  // clear any default values
+//		if(isset($_GET['Attendance']))
+//			$model->attributes=$_GET['Attendance'];
 
 		$this->render('attendance',array(
 			'model'=>$model,
 			'classmanager'=>$classmanager,
 		));
+            
+            
 	}
 
 	/**
@@ -173,4 +175,46 @@ class AttendanceController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionGetSubjectOptions(){
+            $_SESSION['idClass'] = $_POST['id'];
+            $result = '';
+            if($_SESSION['idClass'] != 0){
+                $sql = "SELECT sj.ID, sj.Name FROM tbl_subject AS sj INNER JOIN tbl_class_subject AS csj ON csj.ID_Subject = sj.ID WHERE csj.ID_Class = :ID_Class AND csj.ID_Facuty = :ID_Facuty";
+
+                $options = Subject::model()->findAllBySql($sql, array('ID_Class'=>$_SESSION['idClass'], 'ID_Facuty'=>1));
+                if(empty($options)){
+                    $result .= '<option value="0">Không có lớp học</option>';
+                } else {
+                    $result .= '<option value="0">Chọn lớp học</option>';
+                    foreach($options as $option){
+                        $result .= '<option value="'.$option->ID.'">'.$option->Name.'</option>';
+                    }
+                }
+                echo $result;
+            }else {
+                echo '<option value="0">Không có lớp học</option>';;
+            }
+        }
+        
+        public function actionGetSessionOptions(){
+            $_SESSION['idSubject'] = $_POST['id'];
+            $result = '';
+            if($_SESSION['idSubject'] != 0){
+                $sql = "SELECT * FROM tbl_hour AS h INNER JOIN tbl_class_subject AS csj ON h.ID = csj.ID_Hour WHERE csj.ID_Subject = :ID_Subject AND csj.ID_Class = :ID_Class AND csj.ID_Facuty = :ID_Facuty";
+
+                $options = Subject::model()->findAllBySql($sql, array('ID_Subject'=>$_SESSION['IDSubject'] ,'ID_Class'=>$_SESSION['idClass'], 'ID_Facuty'=>1));
+                if(empty($options)){
+                    $result .= '<option value="0">Không có lớp học</option>';
+                } else {
+                    $result .= '<option value="0">Chọn lớp học</option>';
+                    foreach($options as $option){
+                        $result .= '<option value="'.$option->ID.'">'.$option->Name.'</option>';
+                    }
+                }
+                echo $result;
+            }else {
+                echo '<option value="0">Không có lớp học</option>';;
+            }
+        }
 }

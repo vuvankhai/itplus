@@ -11174,3 +11174,1399 @@ REQUEST_URI=/framework/yii/itplus/index.php/menu/ajaxcreate?_=1451634900355
 in D:\web\projects\framework\yii\itplus\protected\models\Menu.php (125)
 in D:\web\projects\framework\yii\itplus\protected\views\menu\_form.php (38)
 in D:\web\projects\framework\yii\itplus\protected\controllers\MenuController.php (184)
+2016/01/01 09:00:34 [error] [php] Undefined variable: classmanager (D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php:23)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): AttendanceController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): AttendanceController->renderPartial()
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(149): AttendanceController->render()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionIndex()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance
+in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php (23)
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (149)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:01:19 [error] [php] Undefined variable: model (D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php:23)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): AttendanceController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): AttendanceController->renderPartial()
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(152): AttendanceController->render()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionIndex()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance
+in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php (23)
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (152)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:05:57 [error] [php] Missing argument 2 for CClientScript::registerScript(), called in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php on line 18 and defined (D:\web\projects\framework\yii\itplus\framework\web\CClientScript.php:682)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): AttendanceController->renderInternal()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): AttendanceController->renderFile()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): AttendanceController->renderPartial()
+#3 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(146): AttendanceController->render()
+#4 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionIndex()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance
+in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php (18)
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (146)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:06:23 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Attendance.Select_class" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Select_class')
+#1 D:\web\projects\framework\yii\itplus\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('Select_class')
+#2 D:\web\projects\framework\yii\itplus\framework\web\helpers\CHtml.php(1981): CHtml::resolveValue(Object(Attendance), 'Select_class')
+#3 D:\web\projects\framework\yii\itplus\framework\web\widgets\CActiveForm.php(914): CHtml::activeDropDownList(Object(Attendance), 'Select_class', Array, Array)
+#4 D:\web\projects\framework\yii\itplus\protected\views\attendance\_form_attendance.php(21): CActiveForm->dropDownList(Object(Attendance), 'Select_class', Array, Array)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#6 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#8 D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php(30): CController->renderPartial('_form_attendanc...', Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#10 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): CController->renderPartial('attendance', Array, true)
+#13 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(146): CController->render('attendance', Array)
+#14 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionIndex()
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#22 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#24 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance')
+#25 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:07:01 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Attendance.Select_subject" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Select_subject')
+#1 D:\web\projects\framework\yii\itplus\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('Select_subject')
+#2 D:\web\projects\framework\yii\itplus\framework\web\helpers\CHtml.php(1981): CHtml::resolveValue(Object(Attendance), 'Select_subject')
+#3 D:\web\projects\framework\yii\itplus\framework\web\widgets\CActiveForm.php(914): CHtml::activeDropDownList(Object(Attendance), 'Select_subject', Array, Array)
+#4 D:\web\projects\framework\yii\itplus\protected\views\attendance\_form_attendance.php(26): CActiveForm->dropDownList(Object(Attendance), 'Select_subject', Array, Array)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#6 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#8 D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php(30): CController->renderPartial('_form_attendanc...', Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#10 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): CController->renderPartial('attendance', Array, true)
+#13 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(146): CController->render('attendance', Array)
+#14 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionIndex()
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#22 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#24 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance')
+#25 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:10:34 [error] [php] Missing argument 2 for CClientScript::registerScript(), called in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php on line 37 and defined (D:\web\projects\framework\yii\itplus\framework\web\CClientScript.php:682)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): AttendanceController->renderInternal()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): AttendanceController->renderFile()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): AttendanceController->renderPartial()
+#3 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(146): AttendanceController->render()
+#4 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionIndex()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance
+in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php (37)
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (146)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:11:52 [error] [php] Missing argument 2 for CClientScript::registerScript(), called in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php on line 37 and defined (D:\web\projects\framework\yii\itplus\framework\web\CClientScript.php:682)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): AttendanceController->renderInternal()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): AttendanceController->renderFile()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): AttendanceController->renderPartial()
+#3 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(146): AttendanceController->render()
+#4 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionIndex()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance
+in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php (37)
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (146)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:12:00 [error] [php] Missing argument 2 for CClientScript::registerScript(), called in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php on line 37 and defined (D:\web\projects\framework\yii\itplus\framework\web\CClientScript.php:682)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): AttendanceController->renderInternal()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): AttendanceController->renderFile()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): AttendanceController->renderPartial()
+#3 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(146): AttendanceController->render()
+#4 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionIndex()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance
+in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php (37)
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (146)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:12:03 [error] [php] Missing argument 2 for CClientScript::registerScript(), called in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php on line 37 and defined (D:\web\projects\framework\yii\itplus\framework\web\CClientScript.php:682)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): AttendanceController->renderInternal()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): AttendanceController->renderFile()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): AttendanceController->renderPartial()
+#3 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(146): AttendanceController->render()
+#4 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionIndex()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance
+in D:\web\projects\framework\yii\itplus\protected\views\attendance\attendance.php (37)
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (146)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:32:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "gétubjectoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('g\xC3\xA9tubjectoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('g\xC3\xA9tubjectoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/g\xC3\xA9t...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/g%C3%A9tubjectoptions
+---
+2016/01/01 09:32:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsubjectoptio...')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+---
+2016/01/01 09:33:07 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:34:42 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:34:44 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:34:45 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:34:46 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:34:47 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:34:48 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:37:03 [error] [php] Undefined variable: c_id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:37:27 [error] [php] Undefined variable: c_id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:41:33 [error] [php] Undefined variable: c_id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:189)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (189)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:41:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "getsubjectoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('getsubjectoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/getsubjectoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:41:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "getsubjectoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('getsubjectoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/getsubjectoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:41:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "getsubjectoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('getsubjectoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/getsubjectoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:42:55 [error] [php] Undefined variable: c_id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:189)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (189)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:42:57 [error] [php] Undefined variable: c_id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:189)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (189)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:43:01 [error] [php] Undefined variable: c_id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:189)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (189)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:46:49 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:46:52 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:46:53 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:46:58 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:47:04 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:47:54 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:48:24 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:48:26 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:48:33 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:48:34 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "getsubjectoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('getsubjectoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/getsubjectoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:50:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "getsubjectoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('getsubjectoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/getsubjectoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:50:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('abc')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/abc')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/abc
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:50:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('abc')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/abc')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/abc
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:50:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('abc')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/abc')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/abc
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:50:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('abc')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/abc')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/abc
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:53:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('abc')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/abc')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/abc
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 09:59:00 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 09:59:02 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:03:40 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:188)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (188)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:04:28 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:05:02 [error] [php] Undefined variable: criteria (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:189)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (189)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:05:15 [error] [php] Undefined variable: c_id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:191)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (191)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:09:07 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Subject.findAll" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('findAll')
+#1 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(195): CActiveRecord->__get('findAll')
+#2 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionGetSubjectOptions()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsubjectoptio...')
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#13 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+---
+2016/01/01 10:11:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ID_Class' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_subject` `t` WHERE ID_Class = 1.
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (192)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:11:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ID_Class' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_subject` `t` WHERE ID_Class = 1' in D:\web\projects\framework\yii\itplus\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(192): CActiveRecord->findAll('ID_Class = 1')
+#4 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionGetSubjectOptions()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsubjectoptio...')
+#14 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#15 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+---
+2016/01/01 10:16:46 [error] [php] Trying to get property of non-object (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:193)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (193)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:19:33 [error] [php] Trying to get property of non-object (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:190)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (190)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:19:42 [error] [php] Trying to get property of non-object (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:190)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (190)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:20:19 [error] [php] Trying to get property of non-object (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:190)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (190)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:20:33 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:20:43 [error] [php] Undefined variable: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:182)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (182)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:20:55 [error] [php] Undefined variable: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:182)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (182)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:21:08 [error] [php] Undefined variable: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:182)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (182)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:21:27 [error] [php] Undefined variable: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:182)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (182)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:21:30 [error] [php] Undefined variable: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:182)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (182)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:21:42 [error] [php] Trying to get property of non-object (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:191)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (191)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:22:23 [error] [php] Trying to get property of non-object (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:191)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (191)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:23:07 [error] [exception.CException] exception 'CException' with message 'Subject and its behaviors do not have a method or closure named "all".' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(227): CComponent->__call('all', Array)
+#1 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(185): CActiveRecord->__call('all', Array)
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php(185): Subject->all()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): AttendanceController->actionGetSubjectOptions()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsubjectoptio...')
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+---
+2016/01/01 10:27:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:27:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:28:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:33:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:33:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:33:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:34:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:34:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:34:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:34:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:44:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:47:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "getsessionoptions".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('getsessionoptio...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:48:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:51:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/attendance
+---
+2016/01/01 10:51:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('getsessionoptio...')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('attendance/gets...')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+---
+2016/01/01 10:51:32 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:201)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (201)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:51:41 [error] [php] Undefined index: IDSubject (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:206)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (206)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:51:44 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:201)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (201)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:51:56 [error] [php] Undefined index: IDSubject (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:206)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsessionoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (206)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/01 10:52:23 [error] [php] Undefined index: id (D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php:180)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): AttendanceController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): AttendanceController->filterAccessControl()
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): AttendanceController->runActionWithFilters()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): AttendanceController->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/attendance/getsubjectoptions
+in D:\web\projects\framework\yii\itplus\protected\controllers\AttendanceController.php (180)
+in D:\web\projects\framework\yii\itplus\index.php (13)

@@ -18,18 +18,18 @@
     <div class="form-get-value">
 	<div class="form-group col-sm-3">
 		<?php echo $form->labelEx($model,'Select_class',array('class'=>'control-label')); ?>
-		<?php echo $form->dropDownList($model,'ID', $model->getClassOptionsByFacutyId(1),array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'ID',array('class'=>'text-danger')); ?>
+		<?php echo $form->dropDownList($model,'Select_class', $model->getClassOptionsByFacutyId(1),array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Select_class',array('class'=>'text-danger')); ?>
 	</div>
 	<div class="form-group col-sm-3">
 		<?php echo $form->labelEx($model,'Select_subject',array('class'=>'control-label')); ?>
-		<?php echo $form->dropDownList($model,'ID', array(0=>'Chọn Lớp học trước'),array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'ID',array('class'=>'text-danger')); ?>
+		<?php echo $form->dropDownList($model,'Select_subject', array(0=>'Chọn Lớp học trước'),array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Select_subject',array('class'=>'text-danger')); ?>
 	</div>
 	<div class="form-group col-sm-3">
 		<?php echo $form->labelEx($model,'Select_session',array('class'=>'control-label')); ?>
-		<?php echo $form->dropDownList($model,'ID', array(0=>'Chọn Môn học trước'),array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'ID',array('class'=>'text-danger')); ?>
+		<?php echo $form->dropDownList($model,'Select_session', array(0=>'Chọn Môn học trước'),array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'Select_session',array('class'=>'text-danger')); ?>
 	</div>
     </div>
     <div id="table-attendance">

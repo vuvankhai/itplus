@@ -11,12 +11,31 @@ $this->breadcrumbs=array(
 <div class="head">
 <h1 class="text-success title">Điểm danh</h1>
 <?php 
-	$this->beginWidget('zii.widgets.CPortlet');
-	$this->widget('zii.widgets.CMenu', array(
-		'items'=>$this->menu,
-		'htmlOptions'=>array('class'=>'operations'),
-	));
-	$this->endWidget();
+    Yii::app()->clientScript->registerScript("Get-Attendance","
+            $('#Attendance_Select_class').change(function(){
+                var c_id = $(this).val();
+                $.ajax({
+                    type: 'POST',
+                    url: '".Yii::app()->createUrl('attendance/getsubjectoptions')."',
+                    data: {id: c_id},
+                    success: function(data){
+                        $('#Attendance_Select_subject').html(data);
+                    }
+                })
+            }); 
+            $('#Attendance_Select_subject').change(function(){
+                var s_id = $(this).val();
+                $.ajax({
+                    type: 'POST',
+                    url: '".Yii::app()->createUrl('attendance/getsessionoptions')."',
+                    data: {id: s_id},
+                    success: function(data){
+                        $('#Attendance_Select_session').html(data);
+                    }
+                })
+            });         
+        ");
+
 ?>
 </div>
 <div class="body">

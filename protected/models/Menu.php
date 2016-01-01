@@ -124,6 +124,9 @@ class Menu extends CActiveRecord
         public static function getMenuOptions(){
             $Data = array(0=>'Trống');
             $listData = CHtml::listData(Menu::model()->findAll(), 'ID', 'Name');
-            return array_merge($Data, $listData);
+            foreach($listData AS $key=>$value){
+                $Data[$key] = $value;
+            }
+            return $Data;
         }
 }

@@ -17,6 +17,9 @@
  */
 class Attendance extends CActiveRecord
 {
+        public $Select_class;
+        public $Select_subject;
+        public $Select_session;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -115,7 +118,12 @@ class Attendance extends CActiveRecord
         
         
 	public static function getClassOptionsByFacutyId($id){
-		return CHtml::listData(Classmanager::model()->findAll('Facuty_id=:Facuty_id', array('Facuty_id'=>$id)), 'ID', 'Name');
-	}
+            $Data = array(0=>'Chọn lớp học');
+            $listData = CHtml::listData(Classmanager::model()->findAll('Facuty_id=:Facuty_id', array('Facuty_id'=>$id)), 'ID', 'Name');
+            foreach($listData as $key=>$value){
+                $Data[$key] = $value;
+            }
+            return $Data;
+        }
        
 }
