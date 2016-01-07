@@ -60,10 +60,14 @@ class SemesterSubject extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'ID_Semester' => 'Id Khóa học',
-			'ID_Subject' => 'Id Môn học',
-			'Hour' => 'Giờ học',
+			'ID_Semester' => 'Học kỳ',
+			'ID_Subject' => 'Môn học',
+			'Hour' => 'Tổng số giờ học',
 			'Description' => 'Mô tả',
+			'ID_Semester:' => 'Học kỳ:',
+			'ID_Subject:' => 'Môn học:',
+			'Hour:' => 'Tổng số giờ học:',
+			'Description:' => 'Mô tả:',
 		);
 	}
 
@@ -84,10 +88,11 @@ class SemesterSubject extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
+                $criteria->with = array('iDSemester', 'iDSubject');
+                
 		$criteria->compare('ID',$this->ID);
-		$criteria->compare('ID_Semester',$this->ID_Semester);
-		$criteria->compare('ID_Subject',$this->ID_Subject);
+		$criteria->compare('iDSemester.Name',$this->ID_Semester, true);
+		$criteria->compare('iDSubject.Name',$this->ID_Subject, true);
 		$criteria->compare('Hour',$this->Hour);
 		$criteria->compare('Description',$this->Description,true);
 

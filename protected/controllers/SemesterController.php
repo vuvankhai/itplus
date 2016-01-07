@@ -64,14 +64,22 @@ class SemesterController extends Controller
 	{
 		$model=new Semester;
 
+                if(!isset($_SESSION['course_id']))
+                    $_SESSION['course_id'] = 1;
+                if(isset($_GET['ID']))
+                    $_SESSION['course_id'] = $_GET['ID'];
+                
+                $course = Course::model()->find('ID=:ID', array("ID"=>$_SESSION['course_id']));
+                $model->ID_Course = $course->Name;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Semester']))
 		{
 			$model->attributes=$_POST['Semester'];
+                        $model->ID_Course = $_SESSION['course_id'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect(array('index','id'=>$model->ID));
 		}
 
 		$this->render('create',array(
@@ -95,7 +103,7 @@ class SemesterController extends Controller
 		{
 			$model->attributes=$_POST['Semester'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->ID));
+				$this->redirect(array('index','id'=>$model->ID));
 		}
 
 		$this->render('update',array(
@@ -133,8 +141,19 @@ class SemesterController extends Controller
 	 */
 	public function actionIndex()
 	{
+            if(isset($_GET['ID']))
+                $_SESSION['course_id'] = $_GET['ID'];
+            else
+                $_SESSION['course_id'] = 1;
+            
+            $course = Course::getCourseById($_SESSION['course_id']);
 		$model=new Semester('search');
 		$model->unsetAttributes();  // clear any default values
+                
+            if(!empty($course)){
+                $model->ID_Course = $course->Name;
+            }
+                
 		if(isset($_GET['Semester']))
 			$model->attributes=$_GET['Semester'];
 
@@ -175,7 +194,7 @@ class SemesterController extends Controller
 	{
 		$this->renderPartial('ajaxview',array(
 			'model'=>$this->loadModel($id),
-		));
+		),false, true);
 	}
 
 	/**
@@ -185,13 +204,24 @@ class SemesterController extends Controller
 	public function actionAjaxCreate()
 	{
 		$model=new Semester;
-
+                
+                if(!isset($_SESSION['course_id']))
+                    $_SESSION['course_id'] = 1;
+                if(isset($_GET['ID']))
+                    $_SESSION['course_id'] = $_GET['ID'];
+                
+                $course = Course::getCourseById($_SESSION['course_id']);
+                if(!empty($course)){
+                    $model->ID_Course = $course->Name;
+                }
+                
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+                
 		if(isset($_POST['Semester']))
 		{
 			$model->attributes=$_POST['Semester'];
+                        $model->ID_Course = $_SESSION['course_id'];
 			if($model->save())
 				$this->redirect(array('index','id'=>$model->ID));
 		}

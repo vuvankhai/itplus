@@ -57,8 +57,11 @@ class Domain extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Name',
-			'Type' => 'Type',
+			'Name' => 'Giá trị',
+			'Type' => 'Nhóm',
+			'ID:' => 'ID:',
+			'Name:' => 'Giá trị:',
+			'Type:' => 'Nhóm:',
 		);
 	}
 
@@ -99,4 +102,47 @@ class Domain extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public static function getAccountTypeOptions(){
+            $result = CHtml::listData(Domain::model()->findAll('Type=:Type', array('Type'=>'type_account')), 'ID', 'Name');
+            if(empty($result)){
+                return array(0=>'Chưa có dữ liệu');
+            }else{
+                return $result;
+            }
+        }
+        
+        public static function getAccountStatusOptions(){
+            $result = CHtml::listData(Domain::model()->findAll('Type=:Type', array('Type'=>'status_account')), 'ID', 'Name');
+            if(empty($result)){
+                return array(0=>'Chưa có dữ liệu');
+            }else{
+                return $result;
+            }
+        }
+        
+        public static function getSubjectTypeOptions(){
+            $result = CHtml::listData(Domain::model()->findAll('Type=:Type', array('Type'=>'subject')), 'ID', 'Name');
+            if(empty($result)){
+                return array(0=>'Chưa có dữ liệu');
+            }else{
+                return $result;
+            }
+        }
+        
+        public static function getDomainTypeOptions(){
+            $result = array(
+                'type_account'=>'Nhóm tài khoản',
+                'status_account'=>'Trạng thái tài khoản',
+                'classmanager'=>'Trạng thái lớp học',
+                'course'=>'Trạng thái khóa học',  
+                'grouprules'=>'Trạng thái nhóm phân quyền',
+                'hour'=>'Giờ học',
+                'post'=>'Trạng thái bài viết',
+                'student'=>'Trạng thái học viên',
+                'subject'=>'Trạng thái môn học',
+                'users'=>'Trạng thái giảng viên/giáo vụ',
+            );
+            return $result;
+        }
 }

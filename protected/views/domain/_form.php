@@ -21,26 +21,26 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'ID',array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'ID:',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'ID', array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'ID',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Name',array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'Name:',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Name',array('size'=>30,'maxlength'=>30, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Name',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Type',array('class'=>'control-label')); ?>
-		<?php echo $form->textField($model,'Type',array('size'=>20,'maxlength'=>20, 'class'=>'form-control')); ?>
+		<?php echo $form->labelEx($model,'Type:',array('class'=>'control-label')); ?>
+		<?php echo $form->dropDownList($model,'Type', Domain::getDomainTypeOptions(),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Type',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group buttons fright">
 		<?php //echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-            <button class="btn btn-primary btn-sm" type="submit"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+            <button class="btn btn-primary btn-sm" type="submit"><span class="glyphicon glyphicon-floppy-disk"></span>Lưu</button>
 	</div>
 
 <?php $this->endWidget(); ?>

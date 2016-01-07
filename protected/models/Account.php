@@ -75,6 +75,11 @@ class Account extends CActiveRecord
 			'Type' => 'Kiểu',
 			'Status' => 'Trạng thái',
 			'ID_GroupAcc' => 'Chức vụ',
+			'Username:' => 'Tên đăng nhập:',
+			'Password:' => 'Mật khẩu:',
+			'Type:' => 'Kiểu:',
+			'Status:' => 'Trạng thái:',
+			'ID_GroupAcc:' => 'Chức vụ:',
 		);
 	}
 
@@ -105,6 +110,9 @@ class Account extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'pagination'=>array(
+                            'pageSize'=>20,
+                        ),
 		));
 	}
 

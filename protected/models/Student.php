@@ -17,6 +17,9 @@
  * @property integer $ID_Class
  * @property string $Address
  * @property string $Phone_Parent
+ * @property string $Parent_Name
+ * @property string $Date_learning
+ * @property string $Code
  *
  * The followings are the available model relations:
  * @property AttendanceDetail[] $attendanceDetails
@@ -41,7 +44,7 @@ class Student extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Firstname, Phonenumber, Email, Gender', 'required'),
+			array('Firstname, Phonenumber, Email, Gender, Parent_Name, Date_learning, Code, Firstname:, Phonenumber:, Email:, Gender:, Parent_Name:, Date_learning:, Code:', 'required'),
 			array('ID_Account, Gender, Status, ID_Class', 'numerical', 'integerOnly'=>true),
 			array('Firstname', 'length', 'max'=>15),
 			array('Lastname, Birthday', 'length', 'max'=>20),
@@ -49,9 +52,11 @@ class Student extends CActiveRecord
 			array('Email', 'length', 'max'=>45),
 			array('Description', 'length', 'max'=>300),
 			array('Address', 'length', 'max'=>50),
+			array('Parent_Name', 'length', 'max'=>25),
+			array('Code', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, Firstname, Lastname, Phonenumber, Email, ID_Account, Gender, Birthday, Status, Description, ID_Class, Address, Phone_Parent', 'safe', 'on'=>'search'),
+			array('ID, Firstname, Lastname, Phonenumber, Email, ID_Account, Gender, Birthday, Status, Description, ID_Class, Address, Phone_Parent, Parent_Name, Date_learning, Code', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -76,18 +81,36 @@ class Student extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Firstname' => 'Họ',
-			'Lastname' => 'Tên',
-			'Phonenumber' => 'Điện thoại',
+			'Firstname' => 'Tên',
+			'Lastname' => 'Họ',
+			'Phonenumber' => 'Số điện thoại',
 			'Email' => 'Email',
-			'ID_Account' => 'Id Tài khoản',
+			'ID_Account' => 'Tài khoản',
 			'Gender' => 'Giới tính',
 			'Birthday' => 'Ngày sinh',
 			'Status' => 'Trạng thái',
 			'Description' => 'Mô tả',
 			'ID_Class' => 'Lớp học',
 			'Address' => 'Địa chỉ',
-			'Phone_Parent' => 'Số ĐT cha/mẹ',
+			'Phone_Parent' => 'Số điện thoại phụ huynh',
+			'Parent_Name' => 'Tên phụ huynh',
+			'Date_learning' => 'Ngày nhập học',
+			'Code' => 'Mã học viên',
+			'Firstname:' => 'Tên:',
+			'Lastname:' => 'Họ:',
+			'Phonenumber:' => 'Số điện thoại:',
+			'Email:' => 'Email:',
+			'ID_Account:' => 'Tài khoản:',
+			'Gender:' => 'Giới tính:',
+			'Birthday:' => 'Ngày sinh:',
+			'Status:' => 'Trạng thái:',
+			'Description:' => 'Mô tả:',
+			'ID_Class:' => 'Lớp học:',
+			'Address:' => 'Địa chỉ:',
+			'Phone_Parent:' => 'Số điện thoại phụ huynh:',
+			'Parent_Name:' => 'Tên phụ huynh:',
+			'Date_learning:' => 'Ngày nhập học:',
+			'Code:' => 'Mã học viên:',
 		);
 	}
 
@@ -122,6 +145,9 @@ class Student extends CActiveRecord
 		$criteria->compare('ID_Class',$this->ID_Class);
 		$criteria->compare('Address',$this->Address,true);
 		$criteria->compare('Phone_Parent',$this->Phone_Parent,true);
+		$criteria->compare('Parent_Name',$this->Parent_Name,true);
+		$criteria->compare('Date_learning',$this->Date_learning,true);
+		$criteria->compare('Code',$this->Code,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

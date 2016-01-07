@@ -58,6 +58,8 @@ class Room extends CActiveRecord
 			'ID' => 'ID',
 			'Name' => 'Phòng học',
 			'Desccription' => 'Mô tả',
+			'Name:' => 'Phòng học:',
+			'Desccription:' => 'Mô tả:',
 		);
 	}
 

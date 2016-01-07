@@ -82,6 +82,14 @@ class Users extends CActiveRecord
 			'Description' => 'Mô tả',
 			'Avatar' => 'Ảnh đại diện',
 			'Status' => 'Trạng thái',
+			'ID_Account:' => 'Tài khoản:',
+			'Name:' => 'Tên:',
+			'Phonenumber:' => 'Số điện thoại:',
+			'Email:' => 'Email:',
+			'Address:' => 'Địa chỉ:',
+			'Description:' => 'Mô tả:',
+			'Avatar:' => 'Ảnh đại diện:',
+			'Status:' => 'Trạng thái:',
 		);
 	}
 

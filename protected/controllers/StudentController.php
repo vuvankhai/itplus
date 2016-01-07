@@ -28,7 +28,7 @@ class StudentController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','ajaxview','ajaxcreate','ajaxupdate'),
+				'actions'=>array('index','view', 'ajaxcreate', 'ajaxupdate', 'ajaxview'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -171,7 +171,14 @@ class StudentController extends Controller
 		}
 	}
         
-        public function actionAjaxView($id)
+        
+        
+
+	/**
+	 * Displays a particular model.
+	 * @param integer $id the ID of the model to be displayed
+	 */
+	public function actionAjaxView($id)
 	{
 		$this->renderPartial('ajaxview',array(
 			'model'=>$this->loadModel($id),
@@ -185,19 +192,27 @@ class StudentController extends Controller
 	public function actionAjaxCreate()
 	{
 		$model=new Student;
+                $account = new Account;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Student']))
-		{
+		if(isset($_POST['Account']) &&isset($_POST['Student']))
+		{       
+                        $account->attributes = $_POST['Account'];
 			$model->attributes=$_POST['Student'];
-			if($model->save())
+                        if($account->save()){
+                            $model->ID_Account = (int)$account->ID;
+                            if($model->save())
 				$this->redirect(array('index','id'=>$model->ID));
+                        }
+                              
+			
 		}
 
 		$this->renderPartial('_form',array(
 			'model'=>$model,
+                        'account'=>$account,
 		), false, true);
 	}
 
@@ -209,6 +224,7 @@ class StudentController extends Controller
 	public function actionAjaxUpdate($id)
 	{
 		$model=$this->loadModel($id);
+                
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);

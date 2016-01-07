@@ -25,7 +25,7 @@ html .form-get-value .form-group label{
     margin:5px 0
 } 
 html .form-group .control-label{
-	width:25%;
+	width:30%;
 	float:left;
 }
 html .form-group .form-control{
@@ -40,8 +40,8 @@ html .form-group .form-control{
 .form-group .text-danger{
 	clear:both;
 }
-html .btn a{
-	display: block;
+html .btn{
+    border-radius: 0;
 }
 
 html h1.welcome{
@@ -54,7 +54,7 @@ html h1.welcome{
 .fright{
    float:right; 
 }
-fleft{
+.fleft{
     float:left;
 }
 
@@ -354,11 +354,34 @@ fleft{
     width:100%;
 }
 #dialog-content form input,
-#dialog-content form select{
+#dialog-content form select,
+#dialog-content form textarea{
     width:70%;
     border-radius:0;
     padding:3px 8px;
 }
+#dialog-content form .btn .glyphicon{
+    margin-right:5px;
+}
+#dialog-content form .col-6{
+    width:48%;
+}
+#dialog-content form .col-3{
+    width:32%;
+}
+#dialog-content form .col-9{
+    width:64%;
+}
+
+table.table thead tr:first-child{
+    background:#5cb85c;
+}
+table.table thead tr:first-child th,
+table.table thead tr:first-child th a{
+    color:#fff;
+    border-bottom:none;
+}
+
 /*----------------------------------Restyle bootstrap----------------------------------*/
 /*-------------------------------------------------------------------------------------*/
 

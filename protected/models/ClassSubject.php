@@ -68,6 +68,7 @@ class ClassSubject extends CActiveRecord
 			'iDHour' => array(self::BELONGS_TO, 'Hour', 'ID_Hour'),
 			'iDRoom' => array(self::BELONGS_TO, 'Room', 'ID_Room'),
 			'iDSubject' => array(self::BELONGS_TO, 'Subject', 'ID_Subject'),
+			'iDAttendance' => array(self::BELONGS_TO, 'Attendance', 'ID_Class_Subject'),
 		);
 	}
 
@@ -86,6 +87,14 @@ class ClassSubject extends CActiveRecord
 			'Finish_date' => 'Ngày kết thúc',
 			'ID_Facuty' => 'Giảng viên',
 			'Date_Exam' => 'Ngày thi',
+			'ID_Class:' => 'Lớp học:',
+			'ID_Room:' => 'Phòng học:',
+			'ID_Hour:' => 'Giờ học:',
+			'ID_Subject:' => 'Môn học:',
+			'Start_date:' => 'Ngày bắt đầu:',
+			'Finish_date:' => 'Ngày kết thúc:',
+			'ID_Facuty:' => 'Giảng viên:',
+			'Date_Exam:' => 'Ngày thi:',
 		);
 	}
 

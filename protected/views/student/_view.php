@@ -58,6 +58,18 @@
 	<?php echo CHtml::encode($data->Phone_Parent); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Parent_Name')); ?>:</b>
+	<?php echo CHtml::encode($data->Parent_Name); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Date_learning')); ?>:</b>
+	<?php echo CHtml::encode($data->Date_learning); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Code')); ?>:</b>
+	<?php echo CHtml::encode($data->Code); ?>
+	<br />
+
 	*/ ?>
 
 </div>

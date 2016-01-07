@@ -63,6 +63,9 @@ class Subject extends CActiveRecord
 			'Name' => 'Tên môn học',
 			'Description' => 'Mô tả',
 			'Status' => 'Trạng thái',
+			'Name:' => 'Tên môn học:',
+			'Description:' => 'Mô tả:',
+			'Status:' => 'Trạng thái:',
 		);
 	}
 

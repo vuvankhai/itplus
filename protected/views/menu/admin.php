@@ -7,6 +7,11 @@ $this->breadcrumbs=array(
 	'Manage',
 );
 
+//$this->widget('zii.widgets.CBreadcrumbs', array(
+//    'links'=>$this->breadcrumbs,
+//    'separator'=>'<span class="separator">/</span>',
+//));
+
 //$this->menu=array(array('label'=>'Thêm mới', 'url'=>array('create'),linkOptions'=>array('class'=>'btn btn-success btn-sm' )));
 
 Yii::app()->clientScript->registerScript('search', "
@@ -35,7 +40,7 @@ $('.search-form form').submit(function(){
 //	$this->endWidget();
 ?>
 <div class="fright">
-    <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('menu/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog({resizable: false}).dialog("open"); return false;')); ?>
+    <?php echo CHtml::ajaxLink("<span class='glyphicon glyphicon-plus'></span>Thêm mới", Yii::app()->createUrl('menu/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog({resizable: false}).dialog("open"); return false;')); ?>
 </div>
 <?php 
 $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
@@ -74,65 +79,85 @@ $this->endWidget('zii.widgets.jui.CJuiDialog');
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'menu-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'itemsCssClass'=>'table table-striped',
+	//'filter'=>$model,
+	'itemsCssClass'=>'table table-bordered',
 	'columns'=>array(
-		'ID',
+		/*'ID',
+		'Type',
+		'Status',*/
 		'Name',
 		'URL',
-		'Status',
 		'Parent_ID',
-		'Type',
 		array(
-            'header' => '<span class="glyphicon glyphicon-cog" ></span>',
-            'htmlOptions' => array(
-                            'style' => 'width: 100px; text-align: center;',
-		            ),
-		            'class' => 'CButtonColumn',
-		            'template' => '{view} {update} {delete}',
-		            'buttons' => array(
-	                    'update' => array(
-	                  	'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
-	                        'url' => '$this->grid->controller->createUrl("menu/ajaxupdate", array("id"=>$data->primaryKey,"type"=>$data->ID))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Cập nhật'),
-                                'click'=>'function(){
-                                            $.fn.yiiGridView.update("menu-grid", {
-                                                type: "GET",
-                                                url: $(this).attr("href"),
-                                                success: function(data){
-                                                    $("#dialog-content").html(data);
-                                                    $("#dialog-content").dialog("option", "title", "Cập nhật").dialog("open");;
-                                                }
-                                            })
-                                            return false;
-                                        }'
-	                    ),
-	                    'view'=>array(
-	                    	'label' => '<buttom type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
-	                        'url' => '$this->grid->controller->createUrl("menu/ajaxview", array("id"=>$data->primaryKey,"type"=>$data->ID))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Chi tiết'),
-                                'click'=>'function(){
-                                            $.fn.yiiGridView.update("menu-grid", {
-                                                type: "GET",
-                                                url: $(this).attr("href"),
-                                                success: function(data){
-                                                    $("#dialog-content").html(data);
-                                                    $("#dialog-content").dialog("option", "title", "Chi tiết").dialog("open");;
-                                                }
-                                            })
-                                            return false;
-                                        }'
-	                    ),
-	                    'delete' => array(
-	                  	'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
-	                        'url' => '$this->grid->controller->createUrl("menu/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
-	                        'imageUrl' => false,
-	                        'options'=>array('title'=>'Xóa'),
-	                    ),
-            		),
-        ),
+                    'header' => 'Chi tiết',
+                    'htmlOptions' => array(
+                                    'style' => 'width: 70px; text-align: center;',
+                                    ),
+                                    'class' => 'CButtonColumn',
+                                    'template' => '{view}',
+                                    'buttons' => array(
+                                    'view'=>array(
+                                        'label' => '<buttom type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
+                                        'url' => '$this->grid->controller->createUrl("menu/ajaxview", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+                                        'imageUrl' => false,
+                                        'options'=>array('title'=>'Chi tiết'),
+                                        'click'=>'function(){
+                                                    $.fn.yiiGridView.update("menu-grid", {
+                                                        type: "GET",
+                                                        url: $(this).attr("href"),
+                                                        success: function(data){
+                                                            $("#dialog-content").html(data);
+                                                            $("#dialog-content").dialog("option", "title", "Chi tiết").dialog("open");;
+                                                        }
+                                                    })
+                                                    return false;
+                                                }'
+                                    ),
+                                ),
+                ),
+		array(
+                    'header' => 'Cập nhật',
+                    'htmlOptions' => array(
+                                    'style' => 'width: 80px; text-align: center;',
+                                    ),
+                                    'class' => 'CButtonColumn',
+                                    'template' => '{update}',
+                                    'buttons' => array(
+                                    'update' => array(
+                                        'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
+                                        'url' => '$this->grid->controller->createUrl("menu/ajaxupdate", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+                                        'imageUrl' => false,
+                                        'options'=>array('title'=>'Cập nhật'),
+                                        'click'=>'function(){
+                                                    $.fn.yiiGridView.update("menu-grid", {
+                                                        type: "GET",
+                                                        url: $(this).attr("href"),
+                                                        success: function(data){
+                                                            $("#dialog-content").html(data);
+                                                            $("#dialog-content").dialog("option", "title", "Cập nhật").dialog("open");;
+                                                        }
+                                                    })
+                                                    return false;
+                                                }'
+                                    ),
+                                ),
+                ),
+		array(
+                    'header' => 'Xóa',
+                    'htmlOptions' => array(
+                                    'style' => 'width: 60px; text-align: center;',
+                                    ),
+                                    'class' => 'CButtonColumn',
+                                    'template' => '{delete}',
+                                    'buttons' => array(
+                                    'delete' => array(
+                                        'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
+                                        'url' => '$this->grid->controller->createUrl("menu/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
+                                        'imageUrl' => false,
+                                        'options'=>array('title'=>'Xóa'),
+                                    ),
+                                ),
+                ),
 	),
 )); ?>
 </div>

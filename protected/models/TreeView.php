@@ -2,7 +2,7 @@
 class TreeView{
 	private static $menuTree = array();
  	
-   	public static function getMenuTree() {
+    public static function getMenuTree() {
         if (empty(self::$menuTree)) {
             $rows = Course::model()->findAll('Parent_id = 0');
             foreach ($rows as $item) {
@@ -16,11 +16,14 @@ class TreeView{
  
         if (!$modelRow)
             return;
-
-        if(!isset($_SESSION['course_id']))
-            $_SESSION['course_id'] = 1;
+        
+        if(empty($_SESSION['course_id'])){
+            $course = Course::model()->find();
+            $_SESSION['course_id'] = (int)$course->ID;
+        }
+        
         if(isset($_GET['ID'])) $_SESSION['course_id'] = $_GET['ID'];
- 
+        
         if (isset($modelRow->Childs)) {
             $chump = self::getMenuItems($modelRow->Childs);
             $controller = Yii::app()->controller->id;

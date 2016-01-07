@@ -27,9 +27,9 @@ $('.search-form form').submit(function(){
 ?>
 
 <div class="head">
-<h1 class="text-success title">Manage Domains</h1>
+<h1 class="text-success title">Quản lý Domains</h1>
     <div class="fright">
-        <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('domain/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog("open"); return false;')); ?>
+        <?php echo CHtml::ajaxLink("<span class='glyphicon glyphicon-plus'></span>Thêm mới", Yii::app()->createUrl('domain/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog("open"); return false;')); ?>
     </div>
     <?php 
     $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
@@ -60,19 +60,19 @@ $('.search-form form').submit(function(){
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'domain-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'itemsCssClass'=>'table table-striped',
+	//'filter'=>$model,
+	'itemsCssClass'=>'table table-bordered',
 	'columns'=>array(
-		'ID',
+		/*'ID',*/
 		'Name',
 		'Type',
 		array(
-	            'header' => '<span class="glyphicon glyphicon-cog" ></span>',
+	            'header' => 'Chi tiết',
 	            'htmlOptions' => array(
-	                            'style' => 'width: 100px; text-align: center;',
+	                            'style' => 'width: 70px; text-align: center;',
 			            ),
 			            'class' => 'CButtonColumn',
-			            'template' => '{view} {update} {delete}',
+			            'template' => '{view}',
 			            'buttons' => array(
 		                    'view'=>array(
 		                    	'label' => '<buttom type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
@@ -91,12 +91,16 @@ $('.search-form form').submit(function(){
                                                     return false;
                                                 }'
 		                    ),
-		                    'delete' => array(
-		                  		'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
-		                        'url' => '$this->grid->controller->createUrl("domain/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
-		                        'imageUrl' => false,
-		                        'options'=>array('title'=>'Xóa'),
-		                    ),
+	            		),
+	        ),
+		array(
+	            'header' => 'Cập nhật',
+	            'htmlOptions' => array(
+	                            'style' => 'width: 80px; text-align: center;',
+			            ),
+			            'class' => 'CButtonColumn',
+			            'template' => '{update}',
+			            'buttons' => array(
 		                    'update' => array(
 		                  		'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
 		                        'url' => '$this->grid->controller->createUrl("domain/ajaxupdate", array("id"=>$data->primaryKey,"type"=>$data->ID))',
@@ -112,6 +116,22 @@ $('.search-form form').submit(function(){
                                                     })
                                                     return false;
                                                 }'
+		                    ),
+	            		),
+	        ),
+		array(
+	            'header' => 'Xóa',
+	            'htmlOptions' => array(
+	                            'style' => 'width: 60px; text-align: center;',
+			            ),
+			            'class' => 'CButtonColumn',
+			            'template' => '{delete}',
+			            'buttons' => array(
+		                    'delete' => array(
+		                  		'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
+		                        'url' => '$this->grid->controller->createUrl("domain/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
+		                        'imageUrl' => false,
+		                        'options'=>array('title'=>'Xóa'),
 		                    ),
 	            		),
 	        ),

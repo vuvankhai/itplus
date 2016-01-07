@@ -59,9 +59,12 @@ class Grouprules extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'ID_GroupAcc' => 'Id Nhóm tài khoản',
-			'ID_menu' => 'Id Danh mục',
+			'ID_GroupAcc' => 'Nhóm tài khoản',
+			'ID_menu' => 'Danh mục',
 			'Status' => 'Trạng thái',
+			'ID_GroupAcc:' => 'Nhóm tài khoản:',
+			'ID_menu:' => 'Danh mục:',
+			'Status:' => 'Trạng thái:',
 		);
 	}
 

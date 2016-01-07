@@ -30,7 +30,7 @@ $('.search-form form').submit(function(){
 
 
     <div class="fright">
-        <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('major/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog({resizable: false}).dialog("open"); return false;')); ?>
+        <?php echo CHtml::ajaxLink("<span class='glyphicon glyphicon-plus'></span>Thêm mới", Yii::app()->createUrl('major/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog({resizable: false}).dialog("open"); return false;')); ?>
     </div>
     <?php 
     $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
@@ -39,8 +39,8 @@ $('.search-form form').submit(function(){
              'title'=>'Menu Dialog',
              'autoOpen'=>false,
              'modal'=>true,
-             'width'=>'400',
-             'height'=>'400',
+             'width'=>'auto',
+             'height'=>'auto',
              'position'=>array(400, 50),
          ),
        ));
@@ -60,7 +60,7 @@ $('.search-form form').submit(function(){
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'major-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+	//'filter'=>$model,
 	'itemsCssClass'=>'table table-striped',
 	'columns'=>array(
 		'ID',

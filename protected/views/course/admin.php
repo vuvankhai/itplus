@@ -6,6 +6,9 @@ $this->breadcrumbs=array(
 	'Courses'=>array('index'),
 	'Manage',
 );
+//$this->widget('zii.widgets.CBreadcrumbs', array(
+//    'links'=>$this->breadcrumbs
+//));
 //$this->menu=array(
 //	array('label'=>'Tạo mới', 'url'=>array('course/create/ID/'.$_SESSION['course_id']), 'itemOptions'=>array('class'=>'success')),
 //);
@@ -26,7 +29,6 @@ $('.search-form form').submit(function(){
 
 <div id="tree-view-wrap">
  <?php
-// echo '<pre>';print_r($this->getMenuTree());exit();
         $this->widget('CTreeView', array(
             'data' => TreeView::getMenuTree(),
             'animated'=>'fast', 
@@ -35,7 +37,9 @@ $('.search-form form').submit(function(){
 	        	'id'=>'treeview-catg',
 	            'class'=>'treeview-gray',
 	        ),
+            
 ));
+    
 ?>
  
 </div>
@@ -44,7 +48,7 @@ $('.search-form form').submit(function(){
     <div class="head">
         <h1 class="text-success title">Quản lý Khóa học</h1>
     <div class="fright">
-        <?php echo CHtml::ajaxLink("Thêm mới", Yii::app()->createUrl('course/ajaxcreate/ID/'.$_SESSION['course_id']), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog({resizable: false}).dialog("open"); return false;')); ?>
+        <?php echo CHtml::ajaxLink("<span class='glyphicon glyphicon-plus'></span>Thêm mới", Yii::app()->createUrl('course/ajaxcreate/ID/'.$_SESSION['course_id']), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog({resizable: false}).dialog("open"); return false;')); ?>
     </div>
     <?php 
     $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
@@ -75,69 +79,93 @@ $('.search-form form').submit(function(){
 	<?php $this->widget('zii.widgets.grid.CGridView', array(
 		'id'=>'course-grid',
 		'dataProvider'=>$model->search(),
-		'filter'=>$model,
-		'itemsCssClass'=>'table table-striped',
+		//'filter'=>$model,
+		'itemsCssClass'=>'table table-bordered',
 		'columns'=>array(
-			'ID',
-			'Name',
-			'Description',
-			'Parent_id',
-			'Type',
-			'Major_id',
-			/*
-			'Version',
-			'Status',
-			*/
-			array(
-	            'header' => '<span class="glyphicon glyphicon-cog" ></span>',
-	            'htmlOptions' => array(
-	                            'style' => 'width: 100px; text-align: center;',
-			            ),
-			            'class' => 'CButtonColumn',
-			            'template' => '{view} {update} {delete}',
-			            'buttons' => array(
-		                    'view'=>array(
-		                    	'label' => '<buttom type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
-		                        'url' => '$this->grid->controller->createUrl("course/ajaxview", array("id"=>$data->primaryKey,"type"=>$data->ID))',
-		                        'imageUrl' => false,
-		                        'options'=>array('title'=>'Chi tiết'),
-                                        'click'=>'function(){
-                                                    $.fn.yiiGridView.update("course-grid", {
-                                                        type: "GET",
-                                                        url: $(this).attr("href"),
-                                                        success: function(data){
-                                                            $("#dialog-content").html(data);
-                                                            $("#dialog-content").dialog("option", "title", "Chi tiết").dialog("open");;
-                                                        }
-                                                    })
-                                                    return false;
-                                                }'
-		                    ),
-		                    'delete' => array(
-		                  		'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
-		                        'url' => '$this->grid->controller->createUrl("course/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
-		                        'imageUrl' => false,
-		                        'options'=>array('title'=>'Xóa'),
-		                    ),
-		                    'update' => array(
-		                  		'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
-		                        'url' => '$this->grid->controller->createUrl("course/ajaxupdate", array("id"=>$data->primaryKey,"type"=>$data->ID))',
-		                        'imageUrl' => false,
-		                        'options'=>array('title'=>'Cập nhật'),
-                                        'click'=>'function(){
-                                                    $.fn.yiiGridView.update("course-grid", {
-                                                        type: "GET",
-                                                        url: $(this).attr("href"),
-                                                        success: function(data){
-                                                            $("#dialog-content").html(data);
-                                                            $("#dialog-content").dialog("option", "title", "Chi tiết").dialog("open");;
-                                                        }
-                                                    })
-                                                    return false;
-                                                }'
-		                    ),
-	            		),
-	        ),
+                    'Name',
+                    'Code', 
+                    array(
+                        'header'=>'Description',
+                        'value'=>'$data->Description',
+                        'filter'=>false
+                    ),
+                    /*
+                    'ID',
+                    'Version',
+                    'Parent_id',
+                    'Major_id',
+                    'Status',
+                    */
+                    array(
+                        'header' => 'Chi tiết',
+                        'htmlOptions' => array(
+                                        'style' => 'width: 70px; text-align: center;',
+                                        ),
+                                        'class' => 'CButtonColumn',
+                                        'template' => '{view}',
+                                        'buttons' => array(
+                                        'view'=>array(
+                                            'label' => '<buttom type="button" class="btn btn-primary btn-xs glyphicon glyphicon-eye-open"></button>',
+                                            'url' => '$this->grid->controller->createUrl("course/ajaxview", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+                                            'imageUrl' => false,
+                                            'options'=>array('title'=>'Chi tiết'),
+                                            'click'=>'function(){
+                                                        $.fn.yiiGridView.update("course-grid", {
+                                                            type: "GET",
+                                                            url: $(this).attr("href"),
+                                                            success: function(data){
+                                                                $("#dialog-content").html(data);
+                                                                $("#dialog-content").dialog("option", "title", "Chi tiết").dialog("open");;
+                                                            }
+                                                        })
+                                                        return false;
+                                                    }'
+                                        ),
+                                    ),
+                    ),
+                    array(
+                        'header' => 'Cập nhật',
+                        'htmlOptions' => array(
+                                        'style' => 'width: 80px; text-align: center;',
+                                        ),
+                                        'class' => 'CButtonColumn',
+                                        'template' => '{update}',
+                                        'buttons' => array(
+                                        'update' => array(
+                                            'label' => '<buttom type="button" class="btn btn-warning btn-xs glyphicon glyphicon-pencil"></button>',
+                                            'url' => '$this->grid->controller->createUrl("course/ajaxupdate", array("id"=>$data->primaryKey,"type"=>$data->ID))',
+                                            'imageUrl' => false,
+                                            'options'=>array('title'=>'Cập nhật'),
+                                            'click'=>'function(){
+                                                        $.fn.yiiGridView.update("course-grid", {
+                                                            type: "GET",
+                                                            url: $(this).attr("href"),
+                                                            success: function(data){
+                                                                $("#dialog-content").html(data);
+                                                                $("#dialog-content").dialog("option", "title", "Chi tiết").dialog("open");;
+                                                            }
+                                                        })
+                                                        return false;
+                                                    }'
+                                        ),
+                                    ),
+                    ),
+                    array(
+                        'header' => 'Xóa',
+                        'htmlOptions' => array(
+                                            'style' => 'width: 60px; text-align: center;',
+                                        ),
+                                        'class' => 'CButtonColumn',
+                                        'template' => '{delete}',
+                                        'buttons' => array(
+                                            'delete' => array(
+                                                'label' => '<buttom type="button" class="btn btn-danger btn-xs glyphicon glyphicon-trash"></button>',
+                                                'url' => '$this->grid->controller->createUrl("course/delete", array("id"=>$data->primaryKey,"type"=>$data->ID ))',
+                                                'imageUrl' => false,
+                                                'options'=>array('title'=>'Xóa'),
+                                            ),
+                                        ),
+                    ),
 		),
 	)); ?>
         </div>

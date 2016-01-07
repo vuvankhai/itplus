@@ -64,7 +64,7 @@ class CourseController extends Controller
 	public function actionCreate()
 	{
             $model=new Course;
-            $_SESSION['course_id'] = 1;
+            $_SESSION['course_id'] = 0;
             if(isset($_GET['ID'])){
                 $_SESSION['course_id'] = $_GET['ID'];
             }
@@ -143,9 +143,11 @@ class CourseController extends Controller
 	 */
 	public function actionIndex()
 	{
-		if(!isset($_SESSION['course_id']))
-			$_SESSION['course_id'] = 1;
-
+		if(!isset($_SESSION['course_id'])){
+                    $course = Course::model()->find();
+                    $_SESSION['course_id'] = (int)$course->ID;
+                }
+                
 		if(isset($_GET['ID'])) $_SESSION['course_id'] = $_GET['ID']; 
 		$model= new Course('search');
 		$model->unsetAttributes();  // clear any default values
@@ -204,13 +206,15 @@ class CourseController extends Controller
 	public function actionAjaxCreate()
 	{
             $model=new Course;
-            $_SESSION['course_id'] = 1;
+            $_SESSION['course_id'] = 0;
             if(isset($_GET['ID'])){
                 $_SESSION['course_id'] = $_GET['ID'];
             }
             $course = Course::model()->find(' ID = :id', array('id'=>$_SESSION['course_id']));
-            $model->Parent_id = $course->Name;
-        
+            if(!empty($course))
+                $model->Parent_id = $course->Name;
+            else 
+                $model->Parent_id = $_SESSION['course_id'];
         
         
         
@@ -220,7 +224,7 @@ class CourseController extends Controller
 		if(isset($_POST['Course']))
 		{
 			$model->attributes=$_POST['Course'];
-            $model->Parent_id = $_SESSION['course_id'];
+                        $model->Parent_id = $_SESSION['course_id'];
 			if($model->save())
 				$this->redirect(array('index','id'=>$_SESSION['course_id']));
 		}

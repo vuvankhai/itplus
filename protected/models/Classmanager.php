@@ -83,6 +83,16 @@ class Classmanager extends CActiveRecord
 			'ID_course' => 'Khóa học',
 			'Facuty_id' => 'Giảng viên',
 			'Status' => 'Trạng thái',
+			'Name:' => 'Tên lớp:',
+			'Description:' => 'Mô tả:',
+			'Code:' => 'Mã viện:',
+			'Code_ITI:' => 'Mã itplus:',
+			'Start_date:' => 'Ngày bắt đầu:',
+			'Finish_date:' => 'Ngày kết thúc:',
+			'Numberofstudent:' => 'Tổng số học viên:',
+			'ID_course:' => 'Khóa học:',
+			'Facuty_id:' => 'Giảng viên:',
+			'Status:' => 'Trạng thái:',
 		);
 	}
 

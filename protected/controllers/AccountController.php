@@ -218,13 +218,13 @@ class AccountController extends Controller
 		if(isset($_POST['Account']) && isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Account'];
-            $user->attributes=$_POST['Users'];
+                        $user->attributes=$_POST['Users'];
 
-            //save avatar
-            $user->Avatar = CUploadedFile::getInstance($user, 'Avatar');
-            if(!empty($user->Avatar)){
-				$user->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$user->Avatar->name);
-            }
+                        //save avatar
+                        $user->Avatar = CUploadedFile::getInstance($user, 'Avatar');
+                        if(!empty($user->Avatar)){
+                                            $user->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$user->Avatar->name);
+                }
             
 
 			if($model->save()){

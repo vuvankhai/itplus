@@ -36,11 +36,11 @@ class Attendance extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Session, Present, Absent, ID_Teacher', 'numerical', 'integerOnly'=>true),
+			array('Session, Present, Absent, ID_Teacher, ID_Class_Subject', 'numerical', 'integerOnly'=>true),
 			array('Date_create', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, Session, Present, Absent, ID_Teacher, Date_create', 'safe', 'on'=>'search'),
+			array('ID, Session, Present, Absent, ID_Teacher, ID_Class_Subject, Date_create', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,6 +54,7 @@ class Attendance extends CActiveRecord
 		return array(
 			'iDTeacher' => array(self::BELONGS_TO, 'Users', 'ID_Teacher'),
 			'attendanceDetails' => array(self::HAS_MANY, 'AttendanceDetail', 'ID_Attendance'),
+                        'IDClassSubject'=>array(self::HAS_MANY, 'ClassSubejct', 'ID'),
 		);
 	}
 

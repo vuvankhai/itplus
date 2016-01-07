@@ -9,5 +9,3 @@ $this->pageTitle=Yii::app()->name;
 		$this->redirect(Yii::app()->request->baseUrl.'/index.php/site/login');
 ?>
 
-
-<h1 class="welcome">Chao mung toi trang quan ly hoc vien cua ITPlus-Academy</h1>

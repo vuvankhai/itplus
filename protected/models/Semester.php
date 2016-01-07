@@ -9,6 +9,7 @@
  * @property integer $ID_Course
  *
  * The followings are the available model relations:
+ * @property Course $iDCourse
  * @property SemesterSubject[] $semesterSubjects
  */
 class Semester extends CActiveRecord
@@ -45,6 +46,7 @@ class Semester extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'iDCourse' => array(self::BELONGS_TO, 'Course', 'ID_Course'),
 			'semesterSubjects' => array(self::HAS_MANY, 'SemesterSubject', 'ID_Semester'),
 		);
 	}
@@ -56,8 +58,10 @@ class Semester extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Tên',
-			'ID_Course' => 'Id Khóa học',
+			'Name' => 'Học kỳ',
+			'ID_Course' => 'Khóa học',
+			'Name:' => 'Học kỳ:',
+			'ID_Course:' => 'Khóa học:',
 		);
 	}
 
@@ -78,10 +82,11 @@ class Semester extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
+                $criteria->with = array('iDCourse');
+                
 		$criteria->compare('ID',$this->ID);
 		$criteria->compare('Name',$this->Name,true);
-		$criteria->compare('ID_Course',$this->ID_Course);
+		$criteria->compare('iDCourse.Name',$this->ID_Course, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -98,4 +103,8 @@ class Semester extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public static function getSemesterOptions(){
+            return CHtml::listData(Semester::model()->findAll(), 'ID', 'Name');
+        }
 }

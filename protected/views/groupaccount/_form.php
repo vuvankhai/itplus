@@ -19,14 +19,14 @@
 	<p class="text-danger note-required">Trường có dấu <span class="required">*</span> là bắt buộc.</p>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Name', array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'Name:', array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Name',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Name', array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group buttons fright">
 		<?php //echo CHtml::submitButton($model->isNewRecord ? 'Tạo mới' : 'Lưu', array('class'=>'btn btn-success btn-sm')); ?>
-            <button class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+            <button class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span>Lưu</button>
         </div>
 
 <?php $this->endWidget(); ?>

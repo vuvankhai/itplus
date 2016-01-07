@@ -7,12 +7,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Tạo mới', 'url'=>array('create'), 'itemOptions'=>array('class'=>'success')),
-	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
+	array('label'=>'Create Student', 'url'=>array('create')),
+	array('label'=>'Manage Student', 'url'=>array('admin')),
 );
 ?>
 
-<h1 class="text-success title">Học viên</h1>
+<h1>Students</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

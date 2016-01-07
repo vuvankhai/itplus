@@ -63,11 +63,16 @@ class Post extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'ID_Account' => 'Id Tài khoản',
+			'ID_Account' => 'Tài khoản',
 			'Title' => 'Tiêu đề',
 			'Date_post' => 'Ngày đăng bài',
 			'Content' => 'Nội dung',
 			'Status' => 'Trạng thái',
+			'ID_Account:' => 'Tài khoản:',
+			'Title:' => 'Tiêu đề:',
+			'Date_post:' => 'Ngày đăng bài:',
+			'Content:' => 'Nội dung:',
+			'Status:' => 'Trạng thái:',
 		);
 	}
 

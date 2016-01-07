@@ -39,10 +39,10 @@ class Course extends CActiveRecord
 			array('Parent_id, Type, Major_id', 'numerical', 'integerOnly'=>true),
 			array('Name, Status', 'length', 'max'=>45),
 			array('Description', 'length', 'max'=>500),
-			array('Version', 'length', 'max'=>10),
+			array('Version, Code', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, Name, Description, Parent_id, Type, Major_id, Version, Status', 'safe', 'on'=>'search'),
+			array('ID, Name, Description, Parent_id, Type, Major_id, Version, Status, Code', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,6 +57,7 @@ class Course extends CActiveRecord
 			'classmanagers' => array(self::HAS_MANY, 'Classmanager', 'ID_course'),
 			'major' => array(self::BELONGS_TO, 'Major', 'Major_id'),
                         'Childs' => array(self::HAS_MANY, 'Course', 'Parent_id'),
+			'semester' => array(self::HAS_MANY, 'Semester', 'ID'),
 		);
 	}
 
@@ -74,6 +75,15 @@ class Course extends CActiveRecord
 			'Major_id' => 'Khóa học',
 			'Version' => 'Phiên bản',
 			'Status' => 'Trạng thái',
+			'Code' => 'Mã',
+			'Name:' => 'Tên khóa học:',
+			'Description:' => 'Mô tả:',
+			'Parent_id:' => 'ID cha:',
+			'Type:' => 'Kiều:',
+			'Major_id:' => 'Khóa học:',
+			'Version:' => 'Phiên bản:',
+			'Status:' => 'Trạng thái:',
+			'Code:' => 'Mã:',
 		);
 	}
 
@@ -103,6 +113,7 @@ class Course extends CActiveRecord
 		$criteria->compare('Major_id',$this->Major_id);
 		$criteria->compare('Version',$this->Version,true);
 		$criteria->compare('Status',$this->Status,true);
+		$criteria->compare('Code',$this->Code);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -121,6 +132,14 @@ class Course extends CActiveRecord
 	}
    
     public static function getCourseOptions(){
-        return CHtml::listData(Course::model()->findAll(), 'ID', 'Name');
+        $result = array(0=>'Trống');
+        $data = CHtml::listData(Course::model()->findAll(), 'ID', 'Name');
+        foreach($data as $key=>$value){
+            $result[$key] = $value;
+        } return $result;
+    }
+    
+    public static function getCourseById($id){
+        return Course::model()->find('ID = :ID', array("ID"=>$id));
     }
 }

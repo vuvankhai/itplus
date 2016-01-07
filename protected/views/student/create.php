@@ -8,10 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Quản lý', 'url'=>array('index'), 'itemOptions'=>array('class'=>'primary')),
+	array('label'=>'List Student', 'url'=>array('index')),
+	array('label'=>'Manage Student', 'url'=>array('admin')),
 );
 ?>
 
-<h1 class="text-success title">Tạo mới Học viên</h1>
+<h1>Create Student</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

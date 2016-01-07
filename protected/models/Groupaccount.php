@@ -56,7 +56,8 @@ class Groupaccount extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'Name' => 'Tên',
+			'Name' => 'Nhóm',
+			'Name:' => 'Nhóm:',
 		);
 	}
 

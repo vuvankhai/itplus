@@ -200,27 +200,33 @@ class UsersController extends Controller
 	public function actionAjaxCreate()
 	{
 		$model=new Users;
-
+                $account = new Account;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Users']))
-		{
+                
+		if(isset($_POST['Account']) && isset($_POST['Users']))
+		{       
+                        $account->attributes=$_POST['Account'];
 			$model->attributes=$_POST['Users'];
 
 			// save avatar
 			$model->Avatar = CUploadedFile::getInstance($model, 'Avatar');
-			if(!empry($model->Avatar)){
+			if(!empty($model->Avatar)){
 				$model->Avatar->saveAs(Yii::getPathOfAlias('webroot').'/images/avatars/'.$model->Avatar->name);
 			}
 			
-			
-			if($model->save())
+			if($account->save()){
+                            $model->ID_Account = (int)$account->ID;
+                            if($model->save())
 				$this->redirect(array('index','id'=>$model->ID));
+                        }
+			
 		}
 
 		$this->renderPartial('_form',array(
 			'model'=>$model,
+                        'account'=>$account,
 		));
 	}
 
