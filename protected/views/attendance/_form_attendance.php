@@ -48,20 +48,13 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="no">1</td>
-                    <td class="code">LT0914B</td>
-                    <td class="last-name">Nguyễn Xuân</td>
-                    <td class="first-name">Thủy</td>
-                    <td class="status"><input type="radio" name="Thuy"/></td>
-                    <td class="status"><input type="radio" name="Thuy"/></td>
-                    <td class="status"><input type="radio" name="Thuy"/></td>
-                    <td class="note"><textarea></textarea></td>
+                    <td colspan="8">Chọn session để lấy thông tin điểm danh</td>
                 </tr>
             </tbody>
         </table>
     </div>
 	<div class="form-group buttons fright">
-            <button type="submit" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-floppy-disk"></i></button>
+            <?php echo CHtml::ajaxSubmitButton('Lưu', 'attendance/ajaxsave', array('update'=>'#table-attendance'), array('class'=>'btn btn-sm btn-success floppy-disk')) ?>
         </div>
 
 <?php $this->endWidget(); ?>

@@ -130,16 +130,14 @@ class Users extends CActiveRecord
 	}
         
         public function getAccountUser(){
-               //$sql = "SELECT * FROM `tbl_users` AS users INNER JOIN `tbl_account` AS acc ON users.ID_Account = acc.ID WHERE acc.ID_GroupAcc = 3 ";
-               //return CHtml::listData(Users::model()->findBySql($sql), 'ID_Account', 'Name') ;   
-               //return Users::model()->findBySql($sql);
-               //return CHtml::listData(Users::model()->findAll('with'=>), 'ID_Account', 'Name');
                 
+                $user = Account::model()->find('ID=:ID', array('ID'=>Yii::app()->user->getState('idAccount')));
+            
                $criteria = new CDbCriteria;
                 
                $criteria->select = ' t.ID, t.Name ';
                $criteria->join = ' JOIN `tbl_account` ON t.ID_Account = tbl_account.ID ';
-               $criteria->addCondition(' tbl_account.ID_GroupAcc = 3 ');
+               $criteria->addCondition(' tbl_account.ID_GroupAcc = '.$user->ID_GroupAcc);
                return CHtml::listData(Users::model()->findAll($criteria), 'ID', 'Name');
         }
 }

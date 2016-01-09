@@ -154,4 +154,8 @@ class Domain extends CActiveRecord
         public static function getUserStatusOptions(){
             return CHtml::listData(Domain::model()->findAll('Type=:Type', array('Type'=>'users')), 'ID', 'Name');
         }
+        
+        public static function getAttendanceStatus(){
+            return Domain::model()->findAll('Type=:Type', array('Type'=>'attendance'));
+        }
 }

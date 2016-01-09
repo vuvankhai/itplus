@@ -28,16 +28,16 @@ class AttendanceController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','getsubjectoptions', 'getsessionoptions'),
+				'actions'=>array('index','view','getsubjectoptions', 'getsessionoptions', 'getstudentattendance', 'ajaxsave'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('*'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -181,8 +181,9 @@ class AttendanceController extends Controller
             $result = '';
             if($_SESSION['idClass'] != 0){
                 $sql = "SELECT sj.ID, sj.Name FROM tbl_subject AS sj INNER JOIN tbl_class_subject AS csj ON csj.ID_Subject = sj.ID WHERE csj.ID_Class = :ID_Class AND csj.ID_Facuty = :ID_Facuty";
-
-                $options = Subject::model()->findAllBySql($sql, array('ID_Class'=>$_SESSION['idClass'], 'ID_Facuty'=>1));
+                $user = Users::model()->find('ID_Account=:ID', array('ID'=>Yii::app()->user->getState('idAccount')));
+                $_SESSION['idUser'] = $user->ID;
+                $options = Subject::model()->findAllBySql($sql, array('ID_Class'=>$_SESSION['idClass'], 'ID_Facuty'=>$_SESSION['idUser']));
                 if(empty($options)){
                     $result .= '<option value="0">Không có lớp học</option>';
                 } else {
@@ -201,20 +202,133 @@ class AttendanceController extends Controller
             $_SESSION['idSubject'] = $_POST['id'];
             $result = '';
             if($_SESSION['idSubject'] != 0){
-                $sql = "SELECT * FROM tbl_hour AS h INNER JOIN tbl_class_subject AS csj ON h.ID = csj.ID_Hour WHERE csj.ID_Subject = :ID_Subject AND csj.ID_Class = :ID_Class AND csj.ID_Facuty = :ID_Facuty";
+                $sql_hour = "SELECT 
+                        ssj.Hour
+                        FROM tbl_classmanager AS cm 
+                        INNER JOIN tbl_class_subject AS csj ON csj.ID_CLass = cm.ID 
+                        INNER JOIN tbl_subject AS sj ON sj.ID = csj.ID_Subject 
+                        INNER JOIN tbl_semester_subject AS ssj ON ssj.ID_Subject = sj.ID 
+                        INNER JOIN tbl_hour AS h ON h.ID = csj.ID_Hour 
+                        WHERE ssj.ID_Subject = :idSubject AND csj.ID_Class = :idClass AND csj.ID_Facuty = :idFacuty";
+                
+                $sql_type = "SELECT 
+                        h.Type
+                        FROM tbl_classmanager AS cm 
+                        INNER JOIN tbl_class_subject AS csj ON csj.ID_CLass = cm.ID 
+                        INNER JOIN tbl_subject AS sj ON sj.ID = csj.ID_Subject 
+                        INNER JOIN tbl_semester_subject AS ssj ON ssj.ID_Subject = sj.ID 
+                        INNER JOIN tbl_hour AS h ON h.ID = csj.ID_Hour 
+                        WHERE ssj.ID_Subject = :idSubject AND csj.ID_Class = :idClass AND csj.ID_Facuty = :idFacuty";
 
-                $options = Subject::model()->findAllBySql($sql, array('ID_Subject'=>$_SESSION['IDSubject'] ,'ID_Class'=>$_SESSION['idClass'], 'ID_Facuty'=>1));
-                if(empty($options)){
-                    $result .= '<option value="0">Không có lớp học</option>';
+                $total_hour = SemesterSubject::model()->findBySql($sql_hour, array('idSubject'=>$_SESSION['idSubject'], 'idClass'=>$_SESSION['idClass'], 'idFacuty'=>$_SESSION['idUser']));
+                $hour_type = Hour::model()->findBySql($sql_type, array('idSubject'=>$_SESSION['idSubject'], 'idClass'=>$_SESSION['idClass'], 'idFacuty'=>$_SESSION['idUser']));
+                
+                if(strtoupper($hour_type->Type) == 'E'){
+                    $session = $total_hour->Hour / 3;
+                }  else {
+                    $session = $total_hour->Hour / 2;
+                }
+                
+                if($session == 0){
+                    $result .= '<option value="0">Không Session</option>';
                 } else {
-                    $result .= '<option value="0">Chọn lớp học</option>';
-                    foreach($options as $option){
-                        $result .= '<option value="'.$option->ID.'">'.$option->Name.'</option>';
+                    $result .= '<option value="0">Chọn session</option>';
+                    for($i=0;$i<$session;$i++){
+                        $result .= '<option value="'.$i.'"> Session'.$i.'</option>';
                     }
                 }
                 echo $result;
             }else {
-                echo '<option value="0">Không có lớp học</option>';;
+                echo '<option value="0">Chưa chọn lớp học</option>';;
             }
+        }
+        
+        public function actionGetStudentAttendance(){
+            $_SESSION['idSession'] = $_POST['id'];
+            $students = Student::model()->findAll('ID_Class=:idClass', array('idClass'=>$_SESSION['idClass']));
+            $atttendance_status = Domain::getAttendanceStatus();
+            echo $this->createTableAddtendance($atttendance_status, $students);
+        }
+        
+        public function actionAjaxSave(){
+            $attendance = array();
+            $students = Student::model()->findAll('ID_Class=:idClass', array('idClass'=>$_SESSION['idClass']));
+            $atttendance_status = Domain::getAttendanceStatus();
+            
+            $attendance = $_POST['Attendance'];
+            $error = array();
+            $check = array();
+            foreach($students as $student){
+                if(!isset($attendance['Status_'.$student->Code])){
+                    $error['Status_'.$student->Code] = 'error';
+                } else {
+                    $check['Status_'.$student->Code] = $attendance['Status_'.$student->Code];
+                }
+            }
+            
+            if(empty($error)){
+                echo 'success';
+            } else {
+                echo $this->createTableAddtendance($atttendance_status, $students, $check);
+            }
+        }
+        
+        public function createTableAddtendance($atttendance_status = array(), $students = array(), $checked = array()){
+            
+            $result = '';
+            $result .= '<table id="tbl-attendance" class="table table-bordered">';
+                $result .= '<thead>';
+                    $result .= '<tr>'; 
+                        $result .= '<th class="no">STT</th>';
+                        $result .= '<th class="code">Mã học viên</th>';
+                        $result .= '<th class="last-name">Họ</th>';
+                        $result .= '<th class="first-name">Tên</th>';
+                        foreach($atttendance_status as $status){
+                            $result .= '<th class="status">'.$status->Name.'</th>';
+                        }
+                        $result .= '<th class="note">Ghi chú</th>';
+                    $result .= '</tr>';
+                $result .= '</thead>';
+                $result .= '</tbody>';
+            $i = 1;
+            foreach($students as $student){
+                    $result .= '<tr>';
+                        $result .= '<td>';
+                            $result .= $i++;
+                        $result .= '</td>';
+                        $result .= '<td>';
+                            $result .= $student->Code;
+                        $result .= '</td>';
+                        $result .= '<td>';
+                            $result .= $student->Lastname;
+                        $result .= '</td>';
+                        $result .= '<td>';
+                            $result .= $student->Firstname;
+                        $result .= '</td>';
+                        
+                        if(isset($check['Status'.$student->Code]))
+                            $sts = $check['Status_'.$student->Code];
+                        else 
+                            $sts = 0;
+                        
+                        foreach($atttendance_status as $status){
+                            if($sts == $status->ID)
+                                $checked = ' checked="checked" ';
+                            else 
+                                $checked = '';
+                            
+                            $result .= '<th class="status"><input type="radio" '.$checked.' value="'.$status->ID.'" name="Attendance[Status_'.$student->Code.']"/></th>';
+                        }
+                        $result .= '<td class="note">';
+                            $result .= '<textarea name="Attendance[Comment_'.$student->Code.']"></textarea>';
+                        $result .= '</td>';
+                    $result .= '</tr>';
+            }
+            
+                $result .= '</tbody>';
+            $result .= '</table>';
+            
+            return $result;
+            
         }
 }

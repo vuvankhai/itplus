@@ -42,7 +42,7 @@ class UserIdentity extends CUserIdentity
 		else
 			$this->errorCode=self::ERROR_NONE;
 
-		$this->setState('idUser', $user->ID);
+		$this->setState('idAccount', $user->ID);
 		
 		return !$this->errorCode;
 	}

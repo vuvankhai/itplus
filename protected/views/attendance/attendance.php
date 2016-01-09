@@ -33,7 +33,18 @@ $this->breadcrumbs=array(
                         $('#Attendance_Select_session').html(data);
                     }
                 })
-            });         
+            });
+            $('#Attendance_Select_session').change(function(){
+                var s_id = $(this).val();
+                $.ajax({
+                    type: 'POST',
+                    url: '".Yii::app()->createUrl('attendance/getstudentattendance')."',
+                    data: {id: s_id},
+                    success: function(data){
+                        $('#table-attendance').html(data);
+                    }
+                })
+            });          
         ");
 
 ?>

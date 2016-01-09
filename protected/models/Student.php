@@ -54,6 +54,7 @@ class Student extends CActiveRecord
 			array('Address', 'length', 'max'=>50),
 			array('Parent_Name', 'length', 'max'=>25),
 			array('Code', 'length', 'max'=>10),
+			array('Code', 'unique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('ID, Firstname, Lastname, Phonenumber, Email, ID_Account, Gender, Birthday, Status, Description, ID_Class, Address, Phone_Parent, Parent_Name, Date_learning, Code', 'safe', 'on'=>'search'),

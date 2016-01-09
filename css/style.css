@@ -57,7 +57,7 @@ html h1.welcome{
 .fleft{
     float:left;
 }
-.floppy-disk{
+#content .btn-sm.floppy-disk{
     padding-left:25px;
     background-image:url(../images/floppy-disk.png);
     background-repeat: no-repeat;
