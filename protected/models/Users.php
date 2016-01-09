@@ -38,7 +38,7 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ID_Account, Name, Phonenumber, Address, Description', 'required'),
+			array('ID_Account, Name, Phonenumber, Address', 'required'),
 			array('ID_Account', 'numerical', 'integerOnly'=>true),
 			array('Name, Address, Avatar', 'length', 'max'=>50),
 			array('Phonenumber', 'length', 'max'=>12),
@@ -74,7 +74,7 @@ class Users extends CActiveRecord
 	{
 		return array(
 			'ID' => 'ID',
-			'ID_Account' => 'Id Tài khoản',
+			'ID_Account' => 'Tài khoản',
 			'Name' => 'Tên',
 			'Phonenumber' => 'Điện thoại',
 			'Email' => 'Email',
@@ -82,14 +82,6 @@ class Users extends CActiveRecord
 			'Description' => 'Mô tả',
 			'Avatar' => 'Ảnh đại diện',
 			'Status' => 'Trạng thái',
-			'ID_Account:' => 'Tài khoản:',
-			'Name:' => 'Tên:',
-			'Phonenumber:' => 'Số điện thoại:',
-			'Email:' => 'Email:',
-			'Address:' => 'Địa chỉ:',
-			'Description:' => 'Mô tả:',
-			'Avatar:' => 'Ảnh đại diện:',
-			'Status:' => 'Trạng thái:',
 		);
 	}
 
@@ -111,7 +103,7 @@ class Users extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('ID',$this->ID);
+		$criteria->compare('iDAccount.Name',$this->ID, true);
 		$criteria->compare('ID_Account',$this->ID_Account);
 		$criteria->compare('Name',$this->Name,true);
 		$criteria->compare('Phonenumber',$this->Phonenumber,true);

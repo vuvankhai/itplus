@@ -44,7 +44,7 @@ class Student extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Firstname, Phonenumber, Email, Gender, Parent_Name, Date_learning, Code, Firstname:, Phonenumber:, Email:, Gender:, Parent_Name:, Date_learning:, Code:', 'required'),
+			array('Firstname, Phonenumber, Email, Gender, Parent_Name, Date_learning, Code', 'required'),
 			array('ID_Account, Gender, Status, ID_Class', 'numerical', 'integerOnly'=>true),
 			array('Firstname', 'length', 'max'=>15),
 			array('Lastname, Birthday', 'length', 'max'=>20),
@@ -96,21 +96,6 @@ class Student extends CActiveRecord
 			'Parent_Name' => 'Tên phụ huynh',
 			'Date_learning' => 'Ngày nhập học',
 			'Code' => 'Mã học viên',
-			'Firstname:' => 'Tên:',
-			'Lastname:' => 'Họ:',
-			'Phonenumber:' => 'Số điện thoại:',
-			'Email:' => 'Email:',
-			'ID_Account:' => 'Tài khoản:',
-			'Gender:' => 'Giới tính:',
-			'Birthday:' => 'Ngày sinh:',
-			'Status:' => 'Trạng thái:',
-			'Description:' => 'Mô tả:',
-			'ID_Class:' => 'Lớp học:',
-			'Address:' => 'Địa chỉ:',
-			'Phone_Parent:' => 'Số điện thoại phụ huynh:',
-			'Parent_Name:' => 'Tên phụ huynh:',
-			'Date_learning:' => 'Ngày nhập học:',
-			'Code:' => 'Mã học viên:',
 		);
 	}
 

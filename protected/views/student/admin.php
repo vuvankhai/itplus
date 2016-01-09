@@ -41,7 +41,7 @@
              'modal'=>true,
              'width'=>'auto',
              'height'=>'auto',
-             'position'=>array(400, 50),
+             'position'=>array(130, 50),
          ),
        ));
 
@@ -89,7 +89,7 @@
                                         'imageUrl' => false,
                                         'options'=>array('title'=>'Chi tiết'),
                                         'click'=>'function(){
-                                                    $.fn.yiiGridView.update("semester-subject-grid", {
+                                                    $.fn.yiiGridView.update("student-grid", {
                                                         type: "GET",
                                                         url: $(this).attr("href"),
                                                         success: function(data){
@@ -116,7 +116,7 @@
                                         'imageUrl' => false,
                                         'options'=>array('title'=>'Cập nhật'),
                                         'click'=>'function(){
-                                                    $.fn.yiiGridView.update("semester-subject-grid", {
+                                                    $.fn.yiiGridView.update("student-grid", {
                                                         type: "GET",
                                                         url: $(this).attr("href"),
                                                         success: function(data){

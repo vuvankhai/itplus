@@ -75,11 +75,6 @@ class Account extends CActiveRecord
 			'Type' => 'Kiểu',
 			'Status' => 'Trạng thái',
 			'ID_GroupAcc' => 'Chức vụ',
-			'Username:' => 'Tên đăng nhập:',
-			'Password:' => 'Mật khẩu:',
-			'Type:' => 'Kiểu:',
-			'Status:' => 'Trạng thái:',
-			'ID_GroupAcc:' => 'Chức vụ:',
 		);
 	}
 

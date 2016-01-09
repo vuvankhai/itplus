@@ -63,13 +63,16 @@ $('.search-form form').submit(function(){
 	//'filter'=>$model,
 	'itemsCssClass'=>'table table-bordered',
 	'columns'=>array(
-		'ID',
-		'ID_Account',
+		array(
+                    'name'=>'ID_Account',
+                    'value'=>'$data->iDAccount->Username',
+                ),
 		'Name',
 		'Phonenumber',
 		'Email',
 		'Address',
 		/*
+		'ID',
 		'Description',
 		'Avatar',
 		'Status',

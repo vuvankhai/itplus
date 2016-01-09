@@ -57,6 +57,13 @@ html h1.welcome{
 .fleft{
     float:left;
 }
+.floppy-disk{
+    padding-left:25px;
+    background-image:url(../images/floppy-disk.png);
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+    width:auto;
+}
 
 /*-----------------------------------Style header--------------------------------------*/
 /*-------------------------------------------------------------------------------------*/
@@ -353,12 +360,14 @@ html h1.welcome{
 #dialog-content form{
     width:100%;
 }
-#dialog-content form input,
+#dialog-content form input[type='text'],
+#dialog-content form input[type='password'],
 #dialog-content form select,
 #dialog-content form textarea{
     width:70%;
     border-radius:0;
     padding:3px 8px;
+    min-width:auto;
 }
 #dialog-content form .btn .glyphicon{
     margin-right:5px;

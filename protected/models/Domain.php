@@ -89,6 +89,7 @@ class Domain extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'pagination'=>array('pageSize'=>20),
 		));
 	}
 
@@ -144,5 +145,13 @@ class Domain extends CActiveRecord
                 'users'=>'Trạng thái giảng viên/giáo vụ',
             );
             return $result;
+        }
+        
+        public static function getStudentStatusOptions(){
+            return CHtml::listData(Domain::model()->findAll('Type=:Type', array('Type'=>'student')), 'ID', 'Name');
+        }
+        
+        public static function getUserStatusOptions(){
+            return CHtml::listData(Domain::model()->findAll('Type=:Type', array('Type'=>'users')), 'ID', 'Name');
         }
 }

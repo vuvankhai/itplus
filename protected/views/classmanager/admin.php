@@ -73,13 +73,18 @@ $this->endWidget('zii.widgets.jui.CJuiDialog');
 	//'filter'=>$model,
 	'itemsCssClass'=>'table table-bordered',
 	'columns'=>array(
-		'Name',
+                array(
+                    'class'=>'CLinkColumn',
+                    'labelExpression'=>'$data->Name',
+                    'urlExpression'=>'array("student/index", "cID"=>$data->ID)',
+                ),
 		'Code',
 		'Code_ITI',
 		'Start_date',
 		'Finish_date',
 		/*
 		'ID',
+		'Name',
 		'Numberofstudent',
 		'ID_course',
 		'Facuty_id',

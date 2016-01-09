@@ -31,11 +31,11 @@ class ClassmanagerController extends Controller {
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
                 'actions' => array('create', 'update'),
-                'users' => array('@'),
+                'users' => array('*'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
                 'actions' => array('admin', 'delete'),
-                'users' => array('admin'),
+                'users' => array('*'),
             ),
             array('deny', // deny all users
                 'users' => array('*'),
@@ -132,11 +132,15 @@ class ClassmanagerController extends Controller {
      * Manages all models.
      */
     public function actionIndex() {
-        if (!isset($_SESSION['course_id']))
-            $_SESSION['course_id'] = 1;
+        if (!isset($_SESSION['course_id'])){
+            $course = Course::model()->find();
+            $_SESSION['course_id'] = (int)$course->ID;
+        }
+        
 
         if (isset($_GET['ID']))
             $_SESSION['course_id'] = $_GET['ID'];
+        
         $model = new Classmanager('search');
         $model->unsetAttributes();  // clear any default values
         $model->ID_course = $_SESSION['course_id'];

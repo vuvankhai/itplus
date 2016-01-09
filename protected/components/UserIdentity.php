@@ -20,30 +20,30 @@ class UserIdentity extends CUserIdentity
 	public function authenticate()
 	{
             
-            $users=array(
-                    // username => password
-                    'demo'=>'demo',
-                    'admin'=>'admin',
-            );
-            if(!isset($users[$this->username]))
-                    $this->errorCode=self::ERROR_USERNAME_INVALID;
-            elseif($users[$this->username]!==$this->password)
-                    $this->errorCode=self::ERROR_PASSWORD_INVALID;
-            else
-                    $this->errorCode=self::ERROR_NONE;
-            return !$this->errorCode;
+//            $users=array(
+//                    // username => password
+//                    'demo'=>'demo',
+//                    'admin'=>'admin',
+//            );
+//            if(!isset($users[$this->username]))
+//                    $this->errorCode=self::ERROR_USERNAME_INVALID;
+//            elseif($users[$this->username]!==$this->password)
+//                    $this->errorCode=self::ERROR_PASSWORD_INVALID;
+//            else
+//                    $this->errorCode=self::ERROR_NONE;
+//            return !$this->errorCode;
             
-//		$user = Account::model()->find('Username=:Username', array('Username'=>$this->username));
-//		
-//		if(!isset($user->Username))
-//			$this->errorCode=self::ERROR_USERNAME_INVALID;
-//		elseif($user->Password!==$this->password)
-//			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-//		else
-//			$this->errorCode=self::ERROR_NONE;
-//
-//		$this->setState('idUser', $user->ID);
-//		
-//		return !$this->errorCode;
+		$user = Account::model()->find('Username=:Username', array('Username'=>$this->username));
+		
+		if(!isset($user->Username))
+			$this->errorCode=self::ERROR_USERNAME_INVALID;
+		elseif($user->Password!==$this->password)
+			$this->errorCode=self::ERROR_PASSWORD_INVALID;
+		else
+			$this->errorCode=self::ERROR_NONE;
+
+		$this->setState('idUser', $user->ID);
+		
+		return !$this->errorCode;
 	}
 }
