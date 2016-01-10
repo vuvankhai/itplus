@@ -17,6 +17,9 @@ html .form-group{
 	clear: both;
 	overflow: hidden;
 }
+html .form-get-value{
+    overflow: hidden;
+}
 html .form-get-value .form-group{
 	clear: none;
 	overflow: hidden;
@@ -389,6 +392,10 @@ table.table thead tr:first-child th,
 table.table thead tr:first-child th a{
     color:#fff;
     border-bottom:none;
+}
+
+option[disabled='disabled']{
+    background:#f1f1f1;
 }
 
 /*----------------------------------Restyle bootstrap----------------------------------*/

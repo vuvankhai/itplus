@@ -223,6 +223,8 @@ class AttendanceController extends Controller
                 $total_hour = SemesterSubject::model()->findBySql($sql_hour, array('idSubject'=>$_SESSION['idSubject'], 'idClass'=>$_SESSION['idClass'], 'idFacuty'=>$_SESSION['idUser']));
                 $hour_type = Hour::model()->findBySql($sql_type, array('idSubject'=>$_SESSION['idSubject'], 'idClass'=>$_SESSION['idClass'], 'idFacuty'=>$_SESSION['idUser']));
                 
+                $sessions = $this->getAttendanceSession($_SESSION['idUser'], $this->getIdClassSubject($_SESSION['idClass'], $_SESSION['idSubject'], $_SESSION['idUser']));
+                
                 if(strtoupper($hour_type->Type) == 'E'){
                     $session = $total_hour->Hour / 3;
                 }  else {
@@ -234,7 +236,11 @@ class AttendanceController extends Controller
                 } else {
                     $result .= '<option value="0">Chọn session</option>';
                     for($i=0;$i<$session;$i++){
-                        $result .= '<option value="'.$i.'"> Session'.$i.'</option>';
+                        $disabled = '';
+                        foreach($sessions as $value)
+                            if($value->Session == $i+1)
+                                $disabled = ' disabled="disabled" ';
+                        $result .= '<option value="'.($i+1).'" '.$disabled.'> Session'.($i+1).'</option>';
                     }
                 }
                 echo $result;
@@ -243,37 +249,47 @@ class AttendanceController extends Controller
             }
         }
         
+        public function getAttendanceSession($idTeacher, $idClassSubject){
+            
+            return Attendance::model()->findAll(array('select'=>'t.Session', 
+                                                        'distinct'=>true, 
+                                                        'condition'=>'ID_Teacher = :idTeacher AND ID_Class_Subject = :idClassSubject',
+                                                        'params' => array('idTeacher'=>$idTeacher, 'idClassSubject'=>$idClassSubject)));
+        }
+        
         public function actionGetStudentAttendance(){
             $_SESSION['idSession'] = $_POST['id'];
             $students = Student::model()->findAll('ID_Class=:idClass', array('idClass'=>$_SESSION['idClass']));
-            $atttendance_status = Domain::getAttendanceStatus();
-            echo $this->createTableAddtendance($atttendance_status, $students);
+            $attendance_status = Domain::getAttendanceStatus();
+            echo $this->createTableAddtendance($attendance_status, $students);
         }
         
         public function actionAjaxSave(){
             $attendance = array();
             $students = Student::model()->findAll('ID_Class=:idClass', array('idClass'=>$_SESSION['idClass']));
-            $atttendance_status = Domain::getAttendanceStatus();
-            
+            $attendance_status = Domain::getAttendanceStatus();
             $attendance = $_POST['Attendance'];
             $error = array();
-            $check = array();
             foreach($students as $student){
                 if(!isset($attendance['Status_'.$student->Code])){
                     $error['Status_'.$student->Code] = 'error';
-                } else {
-                    $check['Status_'.$student->Code] = $attendance['Status_'.$student->Code];
                 }
             }
             
             if(empty($error)){
-                echo 'success';
+                if(empty($this->getAttendanceSession($_SESSION['idUser'], $this->getIdClassSubject($_SESSION['idClass'], $_SESSION['idSubject'], $_SESSION['idUser'])))){
+                    $idAttendance = $this->saveAttendance($attendance);
+                    $this->saveAttendanceDetails($idAttendance, $students, $attendance);
+                    echo '<p class="text-success pd-3-15">Điểm danh thành công</p>'.$this->createTableAddtendance($attendance_status, $students, $attendance);
+                }else{
+                    echo '<p class="text-danger pd-3-15">Session đã tồn tại</p>'.$this->createTableAddtendance($attendance_status, $students, $attendance);
+                }        
             } else {
-                echo $this->createTableAddtendance($atttendance_status, $students, $check);
+                echo '<p class="text-danger pd-3-15">Chưa điểm danh hết học viên</p>'.$this->createTableAddtendance($attendance_status, $students, $attendance);
             }
         }
         
-        public function createTableAddtendance($atttendance_status = array(), $students = array(), $checked = array()){
+        public function createTableAddtendance($attendance_status = array(), $students = array(), $attendance = array()){
             
             $result = '';
             $result .= '<table id="tbl-attendance" class="table table-bordered">';
@@ -283,7 +299,7 @@ class AttendanceController extends Controller
                         $result .= '<th class="code">Mã học viên</th>';
                         $result .= '<th class="last-name">Họ</th>';
                         $result .= '<th class="first-name">Tên</th>';
-                        foreach($atttendance_status as $status){
+                        foreach($attendance_status as $status){
                             $result .= '<th class="status">'.$status->Name.'</th>';
                         }
                         $result .= '<th class="note">Ghi chú</th>';
@@ -306,13 +322,8 @@ class AttendanceController extends Controller
                             $result .= $student->Firstname;
                         $result .= '</td>';
                         
-                        if(isset($check['Status'.$student->Code]))
-                            $sts = $check['Status_'.$student->Code];
-                        else 
-                            $sts = 0;
-                        
-                        foreach($atttendance_status as $status){
-                            if($sts == $status->ID)
+                        foreach($attendance_status as $status){
+                            if(isset($attendance['Status_'.$student->Code]) && (int)$attendance['Status_'.$student->Code] == $status->ID)
                                 $checked = ' checked="checked" ';
                             else 
                                 $checked = '';
@@ -320,7 +331,12 @@ class AttendanceController extends Controller
                             $result .= '<th class="status"><input type="radio" '.$checked.' value="'.$status->ID.'" name="Attendance[Status_'.$student->Code.']"/></th>';
                         }
                         $result .= '<td class="note">';
-                            $result .= '<textarea name="Attendance[Comment_'.$student->Code.']"></textarea>';
+                        if(isset($attendance['Comment_'.$student->Code]) && $attendance['Comment_'.$student->Code] != '')
+                            $comment = $attendance['Status_'.$student->Code];
+                        else 
+                            $comment = '';
+                        
+                            $result .= '<textarea name="Attendance[Comment_'.$student->Code.']">'.$comment.'</textarea>';
                         $result .= '</td>';
                     $result .= '</tr>';
             }
@@ -330,5 +346,57 @@ class AttendanceController extends Controller
             
             return $result;
             
+        }
+        
+        public function getIdClassSubject($idClass, $idSubject, $idFacuty){
+            $classSubject = ClassSubject::model()->find(
+                                        'ID_Class=:idClass AND ID_Subject=:idSubject AND ID_Facuty=:idFacuty',
+                                        array('idClass'=>$idClass, 
+                                                'idSubject'=>$idSubject, 
+                                                'idFacuty'=>$idFacuty));
+            return $classSubject->ID;
+        }
+        
+        public function saveAttendance($attendance){
+            $present = 0;
+            $absent = 0;
+            $legal = 0;
+            foreach($attendance as $key=>$value){
+                if(strpos($key, 'Status') == 0)
+                    switch((int)$value){
+                        case 1:
+                            $present++;
+                            break;
+                        case 2:
+                            $absent++;
+                            break;
+                        case 3:
+                            $legal++;
+                            break;
+                    }
+            }
+            $model = new Attendance;
+            $model->Session = $_SESSION['idSession'];
+            $model->Present = $present;
+            $model->Absent = $absent;
+            $model->Legal = $legal;
+            $model->ID_Teacher = $_SESSION['idUser'];
+            $model->ID_Class_Subject = $this->getIdClassSubject($_SESSION['idClass'], $_SESSION['idSubject'], $_SESSION['idUser']);
+            $model->Date_create = date('Y-m-d');
+            if($model->validate() && $model->save()){
+                return $model->ID;
+            }
+        }
+        
+        public function saveAttendanceDetails($idAttendance, $students, $attendance){
+            
+            foreach($students as $student){
+                $model = new AttendanceDetail;
+                $model->ID_Attendance = $idAttendance;
+                $model->ID_Student = $student->ID;
+                $model->Note = $attendance['Comment_'.$student->Code];
+                $model->Status = (int)$attendance['Status_'.$student->Code];
+                $model->save();
+            }
         }
 }

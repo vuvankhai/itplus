@@ -36,11 +36,11 @@ class Attendance extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Session, Present, Absent, ID_Teacher, ID_Class_Subject', 'numerical', 'integerOnly'=>true),
+			array('Session, Present, Absent, Legal,  ID_Teacher, ID_Class_Subject', 'numerical', 'integerOnly'=>true),
 			array('Date_create', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, Session, Present, Absent, ID_Teacher, ID_Class_Subject, Date_create', 'safe', 'on'=>'search'),
+			array('ID, Session, Present, Absent, Legal, ID_Teacher, ID_Class_Subject, Date_create', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,6 +68,7 @@ class Attendance extends CActiveRecord
 			'Session' => 'Session',
 			'Present' => 'Có mặt',
 			'Absent' => 'Vắng mặt',
+			'Legal' => 'Nghỉ có phép',
 			'ID_Teacher' => 'ID Giảng viên',
 			'Date_create' => 'Ngày tạo',
                         'Select_class' => 'Chọn Lớp:',
@@ -98,6 +99,7 @@ class Attendance extends CActiveRecord
 		$criteria->compare('Session',$this->Session);
 		$criteria->compare('Present',$this->Present);
 		$criteria->compare('Absent',$this->Absent);
+		$criteria->compare('Legal',$this->Legal);
 		$criteria->compare('ID_Teacher',$this->ID_Teacher);
 		$criteria->compare('Date_create',$this->Date_create,true);
 
