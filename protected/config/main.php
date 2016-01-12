@@ -17,6 +17,7 @@ return array(
 		'application.models.*',
 		'application.controllers.*',
 		'application.components.*',
+		'application.extensions.*',
 	),
 
 	'modules'=>array(
@@ -84,6 +85,9 @@ return array(
 		'booster' => array(
 		    'class' => 'application.extensions.booster.components.Booster',
 		),
+                'excel'=>array(
+                    'class'=> 'application.extensions.PHPExcel',
+                ),
 
 	),
 

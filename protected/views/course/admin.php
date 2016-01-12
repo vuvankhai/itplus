@@ -84,17 +84,13 @@ $('.search-form form').submit(function(){
 		'columns'=>array(
                     'Name',
                     'Code', 
-                    array(
-                        'header'=>'Description',
-                        'value'=>'$data->Description',
-                        'filter'=>false
-                    ),
+                    'Version',
+                    'Status',
                     /*
                     'ID',
-                    'Version',
+                    'Description',
                     'Parent_id',
                     'Major_id',
-                    'Status',
                     */
                     array(
                         'header' => 'Chi tiết',

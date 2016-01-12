@@ -43,6 +43,7 @@ class Users extends CActiveRecord
 			array('Name, Address, Avatar', 'length', 'max'=>50),
 			array('Phonenumber', 'length', 'max'=>12),
 			array('Email', 'length', 'max'=>45),
+			array('Email', 'email'),
 			array('Description', 'length', 'max'=>500),
 			array('Status', 'length', 'max'=>30),
 			array('Avatar', 'file', 'types'=>'jpg,jpeg,gif,png', 'maxSize'=>1024*1024*2, 'on'=>'upload'),
@@ -102,9 +103,10 @@ class Users extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
+                $criteria->with = array('iDAccount');
+                
 		$criteria->compare('iDAccount.Name',$this->ID, true);
-		$criteria->compare('ID_Account',$this->ID_Account);
+		$criteria->compare('iDAccount.Username',$this->ID_Account, true);
 		$criteria->compare('Name',$this->Name,true);
 		$criteria->compare('Phonenumber',$this->Phonenumber,true);
 		$criteria->compare('Email',$this->Email,true);
@@ -140,5 +142,14 @@ class Users extends CActiveRecord
                $criteria->addCondition(' tbl_account.ID_GroupAcc = '.$user->ID_GroupAcc);
                return CHtml::listData(Users::model()->findAll($criteria), 'ID', 'Name');
         }
+
+    public static function getStatus($status) {
+        $domainStatus = Domain::model()->findAll('Type=:Type', array('Type'=>'users'));
+        foreach($domainStatus as $domain){
+            if($domain->ID = $status){
+                return $domain->Name;
+            }
+        }
+    }
 }
     

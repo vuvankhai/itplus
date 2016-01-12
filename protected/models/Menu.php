@@ -123,7 +123,12 @@ class Menu extends CActiveRecord
 		$_menu = array();
 		$base = Yii::app()->request->baseUrl.'/index.php';
 		foreach($menus as $menu){
-			$_menu[] = array('label'=>$menu->Name, 'url'=>$base.$menu->URL, 'submenuOptions'=>array('class'=>'submenu'),'items'=>$this->getMenu($menu->ID));
+                    if($menu->URL != 'javascript:;'){
+                        $_menu[] = array('label'=>$menu->Name, 'url'=>$base.$menu->URL, 'submenuOptions'=>array('class'=>'submenu'),'items'=>$this->getMenu($menu->ID));
+                    } else {
+                        $_menu[] = array('label'=>$menu->Name, 'url'=>$menu->URL, 'submenuOptions'=>array('class'=>'submenu'),'items'=>$this->getMenu($menu->ID));
+                    }
+			
 		}
 
 		return $_menu;

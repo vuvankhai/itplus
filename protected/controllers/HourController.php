@@ -33,11 +33,11 @@ class HourController extends Controller
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('*'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -187,7 +187,7 @@ class HourController extends Controller
 		$model=new Hour;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Hour']))
 		{
@@ -198,7 +198,7 @@ class HourController extends Controller
 
 		$this->renderPartial('_form',array(
 			'model'=>$model,
-		));
+		), false, true);
 	}
 
 	/**
@@ -211,7 +211,7 @@ class HourController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Hour']))
 		{
@@ -222,6 +222,6 @@ class HourController extends Controller
 
 		$this->renderPartial('_form',array(
 			'model'=>$model,
-		));
+		), false, true);
 	}
 }

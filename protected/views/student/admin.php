@@ -27,7 +27,7 @@
 ?>
 
 <div class="head">
-<h1 class="text-success title">Manage Students</h1>
+<h1 class="text-success title">Quản lý học viên</h1>
 
     <div class="fright">
         <?php echo CHtml::ajaxLink("<span class='glyphicon glyphicon-plus'></span>Thêm mới", Yii::app()->createUrl('student/ajaxcreate'), array('update'=>'#dialog-content'), array('class'=>'btn btn-success btn-sm', 'onClick'=>'$("#dialog-content").dialog("option", "title", "Thêm mới").dialog("open"); return false;')); ?>

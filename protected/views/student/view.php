@@ -1,41 +1,30 @@
-<?php
-/* @var $this StudentController */
-/* @var $model Student */
 
-$this->breadcrumbs=array(
-	'Students'=>array('index'),
-	$model->ID,
-);
-
-$this->menu=array(
-	array('label'=>'List Student', 'url'=>array('index')),
-	array('label'=>'Create Student', 'url'=>array('create')),
-	array('label'=>'Update Student', 'url'=>array('update', 'id'=>$model->ID)),
-	array('label'=>'Delete Student', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->ID),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Student', 'url'=>array('admin')),
-);
-?>
-
-<h1>View Student #<?php echo $model->ID; ?></h1>
-
+<div calss="head">
+<h1 class="text-success title">Chi tiết #<?php echo $model->ID; ?></h1>
+</div>
+<div class="body">
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
+	'htmlOptions'=>array('class'=>'table table-striped'),
 	'attributes'=>array(
-		'ID',
-		'Firstname',
 		'Lastname',
+		'Firstname',
 		'Phonenumber',
 		'Email',
-		'ID_Account',
-		'Gender',
+		array(
+                    'name'=>'ID_Account',
+                    'value'=>$model->iDAccount->Username),
+		array(
+                    'name'=>'Gender',
+                    'value'=>$model->getGender($model->Gender)),
 		'Birthday',
-		'Status',
+		array('name'=>'Status',
+                    'value'=>$model->getStatus($model->Status)),
 		'Description',
-		'ID_Class',
+		array('name'=>'ID_Class',
+                    'value'=>$model->iDClass->Name),
 		'Address',
 		'Phone_Parent',
-		'Parent_Name',
-		'Date_learning',
-		'Code',
 	),
 )); ?>
+</div>

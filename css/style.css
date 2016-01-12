@@ -173,6 +173,7 @@ html h1.welcome{
 	position: absolute;
 	top:30px;
 	left:0;
+        z-index: 1000;
 }
 .menu .list-item li ul li{
 	background-color: #5cb85c;

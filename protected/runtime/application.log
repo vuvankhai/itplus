@@ -16999,3 +16999,695 @@ REQUEST_URI=/framework/yii/itplus/index.php/site/login
 in D:\web\projects\framework\yii\itplus\protected\components\UserIdentity.php (36)
 in D:\web\projects\framework\yii\itplus\protected\models\LoginForm.php (52)
 in D:\web\projects\framework\yii\itplus\protected\controllers\SiteController.php (95)
+2016/01/12 07:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "report/excel".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('report/excel')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/report/excel
+---
+2016/01/12 07:34:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "report".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('report')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/report
+---
+2016/01/12 07:34:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "repost".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('repost')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/repost
+---
+2016/01/12 07:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Không thể giải quyết yêu cầu "report".' in D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('report')
+#1 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/report
+---
+2016/01/12 07:35:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "index".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('report')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/report
+---
+2016/01/12 07:35:04 [error] [php] include(PHPExcel.php): failed to open stream: No such file or directory (D:\web\projects\framework\yii\itplus\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\ReportController.php(5): spl_autoload_call()
+#1 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): ReportController->actionExcel()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(286): ReportController->runAction()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): ReportController->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/report/excel
+in D:\web\projects\framework\yii\itplus\protected\controllers\ReportController.php (5)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 07:36:31 [error] [php] include(PHPExcel.php): failed to open stream: No such file or directory (D:\web\projects\framework\yii\itplus\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\ReportController.php(5): spl_autoload_call()
+#1 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): ReportController->actionExcel()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(286): ReportController->runAction()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): ReportController->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/report/excel
+in D:\web\projects\framework\yii\itplus\protected\controllers\ReportController.php (5)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 07:36:34 [error] [php] include(PHPExcel.php): failed to open stream: No such file or directory (D:\web\projects\framework\yii\itplus\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\ReportController.php(5): spl_autoload_call()
+#1 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): ReportController->actionExcel()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(286): ReportController->runAction()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): ReportController->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/report/excel
+in D:\web\projects\framework\yii\itplus\protected\controllers\ReportController.php (5)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 07:40:42 [error] [php] Use of undefined constant Y - assumed 'Y' (D:\web\projects\framework\yii\itplus\protected\controllers\ReportController.php:21)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(286): ReportController->runAction()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): ReportController->run()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/report/excel
+in D:\web\projects\framework\yii\itplus\protected\controllers\ReportController.php (21)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 07:45:03 [error] [exception.PHPExcel_Exception] exception 'PHPExcel_Exception' with message 'You tried to set a sheet active by the out of bounds index: 1. The actual number of sheets is 1.' in D:\web\projects\framework\yii\itplus\protected\extensions\PHPExcel.php:688
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\controllers\ReportController.php(13): PHPExcel->setActiveSheetIndex(1)
+#1 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): ReportController->actionExcel()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\web\projects\framework\yii\itplus\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('excel')
+#6 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('report/excel')
+#7 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/report/excel
+---
+2016/01/12 07:53:20 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "request".' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\views\layouts\main.php(24): CComponent->__call('request', Array)
+#1 D:\web\projects\framework\yii\itplus\protected\views\layouts\main.php(24): CWebApplication->request()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#4 D:\web\projects\framework\yii\itplus\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="main-c...')
+#6 D:\web\projects\framework\yii\itplus\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="main-c...')
+#7 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 D:\web\projects\framework\yii\itplus\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#11 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(784): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#13 D:\web\projects\framework\yii\itplus\protected\controllers\SiteController.php(32): CController->render('index')
+#14 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php
+---
+2016/01/12 07:53:25 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "baseUrl".' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\protected\views\layouts\main.php(24): CComponent->__call('baseUrl', Array)
+#1 D:\web\projects\framework\yii\itplus\protected\views\layouts\main.php(24): CHttpRequest->baseUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#4 D:\web\projects\framework\yii\itplus\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="main-c...')
+#6 D:\web\projects\framework\yii\itplus\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="main-c...')
+#7 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(214): COutputProcessor->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#9 D:\web\projects\framework\yii\itplus\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#11 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(784): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#13 D:\web\projects\framework\yii\itplus\protected\controllers\SiteController.php(32): CController->render('index')
+#14 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController(false)
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php
+---
+2016/01/12 07:54:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Bạn không có quyền để thực hiện hành động này.' in D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'B\xE1\xBA\xA1n kh\xC3\xB4ng c\xC3...')
+#1 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('menu/delete')
+#9 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/menu/delete/17?ajax=menu-grid&type=17
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/menu
+---
+2016/01/12 08:14:47 [error] [php] Undefined variable: data (D:\web\projects\framework\yii\itplus\protected\views\student\view.php:16)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): StudentController->renderFile()
+#1 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): StudentController->renderPartial()
+#2 unknown(0): StudentController->actionAjaxView()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#4 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): StudentController->runAction()
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): StudentController->filterAccessControl()
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): StudentController->runActionWithFilters()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): StudentController->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+in D:\web\projects\framework\yii\itplus\protected\views\student\view.php (16)
+in D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php (174)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 08:14:56 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Account.Name" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Name')
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(16): CActiveRecord->__get('Name')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#6 [internal function]: StudentController->actionAjaxView('3')
+#7 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#19 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:15:00 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Student.Name" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Name')
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(16): CActiveRecord->__get('Name')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#6 [internal function]: StudentController->actionAjaxView('2')
+#7 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#19 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/2?ajax=student-grid&type=2
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:15:04 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Student.Name" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Name')
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(16): CActiveRecord->__get('Name')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#6 [internal function]: StudentController->actionAjaxView('3')
+#7 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#19 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:15:20 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Account.Name" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Name')
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(16): CActiveRecord->__get('Name')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#6 [internal function]: StudentController->actionAjaxView('3')
+#7 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#19 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:16:01 [error] [exception.CException] exception 'CException' with message 'Thuộc tính "Account.Name" chưa được định nghĩa.' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Name')
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(16): CActiveRecord->__get('Name')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#6 [internal function]: StudentController->actionAjaxView('3')
+#7 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#19 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:19:24 [error] [exception.CException] exception 'CException' with message 'Student and its behaviors do not have a method or closure named "getGender".' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getGender', Array)
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): CActiveRecord->__call('getGender', Array)
+#2 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): Student->getGender()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#4 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#7 [internal function]: StudentController->actionAjaxView('3')
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:19:43 [error] [exception.CException] exception 'CException' with message 'Student and its behaviors do not have a method or closure named "getGender".' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getGender', Array)
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): CActiveRecord->__call('getGender', Array)
+#2 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): Student->getGender()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#4 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#7 [internal function]: StudentController->actionAjaxView('3')
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:20:49 [error] [exception.CException] exception 'CException' with message 'Student and its behaviors do not have a method or closure named "getGender".' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getGender', Array)
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): CActiveRecord->__call('getGender', Array)
+#2 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): Student->getGender(NULL)
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#4 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#7 [internal function]: StudentController->actionAjaxView('3')
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:21:56 [error] [exception.CException] exception 'CException' with message 'Student and its behaviors do not have a method or closure named "getGender".' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getGender', Array)
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): CActiveRecord->__call('getGender', Array)
+#2 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): Student->getGender()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#4 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#7 [internal function]: StudentController->actionAjaxView('3')
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:22:36 [error] [exception.CException] exception 'CException' with message 'Student and its behaviors do not have a method or closure named "getGender".' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getGender', Array)
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): CActiveRecord->__call('getGender', Array)
+#2 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(19): Student->getGender()
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#4 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#7 [internal function]: StudentController->actionAjaxView('3')
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 08:22:55 [error] [php] Missing argument 1 for Student::getGender(), called in D:\web\projects\framework\yii\itplus\protected\views\student\view.php on line 19 and defined (D:\web\projects\framework\yii\itplus\protected\models\Student.php:156)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): StudentController->renderInternal()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): StudentController->renderFile()
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): StudentController->renderPartial()
+#3 unknown(0): StudentController->actionAjaxView()
+#4 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#5 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): StudentController->runAction()
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): StudentController->filterAccessControl()
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): StudentController->runActionWithFilters()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): StudentController->run()
+#15 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+in D:\web\projects\framework\yii\itplus\protected\models\Student.php (156)
+in D:\web\projects\framework\yii\itplus\protected\views\student\view.php (19)
+in D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php (174)
+2016/01/12 08:25:52 [error] [exception.CException] exception 'CException' with message 'Student and its behaviors do not have a method or closure named "getStatus".' in D:\web\projects\framework\yii\itplus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getStatus', Array)
+#1 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(22): CActiveRecord->__call('getStatus', Array)
+#2 D:\web\projects\framework\yii\itplus\protected\views\student\view.php(22): Student->getStatus('1')
+#3 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require('D:\\web\\projects...')
+#4 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\web\\projects...', Array, true)
+#5 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): CBaseController->renderFile('D:\\web\\projects...', Array, true)
+#6 D:\web\projects\framework\yii\itplus\protected\controllers\StudentController.php(174): CController->renderPartial('view', Array)
+#7 [internal function]: StudentController->actionAjaxView('3')
+#8 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#9 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#17 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxview')
+#19 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('student/ajaxvie...')
+#20 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#21 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/student/ajaxview/3?ajax=student-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/student/index?cID=1
+---
+2016/01/12 17:12:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3-type_account' for key 'PRIMARY'. The SQL statement executed was: UPDATE `tbl_domain` SET `ID`=:yp0, `Name`=:yp1, `Type`=:yp2 WHERE `tbl_domain`.`ID`=3.
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (221)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 17:12:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3-type_account' for key 'PRIMARY'. The SQL statement executed was: UPDATE `tbl_domain` SET `ID`=:yp0, `Name`=:yp1, `Type`=:yp2 WHERE `tbl_domain`.`ID`=3' in D:\web\projects\framework\yii\itplus\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(1753): CDbCommand->execute()
+#1 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(1127): CActiveRecord->updateByPk('3', Array)
+#2 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(809): CActiveRecord->update(NULL)
+#3 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(221): CActiveRecord->save()
+#4 [internal function]: DomainController->actionAjaxUpdate('3')
+#5 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DomainController), Array)
+#6 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DomainController), Object(ReflectionMethod), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#16 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxupda...')
+#17 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxupdate/3?ajax=domain-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2016/01/12 17:13:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3-course' for key 'PRIMARY'. The SQL statement executed was: UPDATE `tbl_domain` SET `ID`=:yp0, `Name`=:yp1, `Type`=:yp2 WHERE `tbl_domain`.`ID`=3.
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (221)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 17:13:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3-course' for key 'PRIMARY'. The SQL statement executed was: UPDATE `tbl_domain` SET `ID`=:yp0, `Name`=:yp1, `Type`=:yp2 WHERE `tbl_domain`.`ID`=3' in D:\web\projects\framework\yii\itplus\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(1753): CDbCommand->execute()
+#1 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(1127): CActiveRecord->updateByPk('3', Array)
+#2 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(809): CActiveRecord->update(NULL)
+#3 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(221): CActiveRecord->save()
+#4 [internal function]: DomainController->actionAjaxUpdate('3')
+#5 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DomainController), Array)
+#6 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DomainController), Object(ReflectionMethod), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#16 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxupda...')
+#17 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxupdate/3?ajax=domain-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2016/01/12 17:14:09 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3-course' for key 'PRIMARY'. The SQL statement executed was: UPDATE `tbl_domain` SET `ID`=:yp0, `Name`=:yp1, `Type`=:yp2 WHERE `tbl_domain`.`ID`=3.
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (221)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 17:14:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3-course' for key 'PRIMARY'. The SQL statement executed was: UPDATE `tbl_domain` SET `ID`=:yp0, `Name`=:yp1, `Type`=:yp2 WHERE `tbl_domain`.`ID`=3' in D:\web\projects\framework\yii\itplus\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(1753): CDbCommand->execute()
+#1 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(1127): CActiveRecord->updateByPk('3', Array)
+#2 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(809): CActiveRecord->update(NULL)
+#3 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(221): CActiveRecord->save()
+#4 [internal function]: DomainController->actionAjaxUpdate('3')
+#5 D:\web\projects\framework\yii\itplus\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(DomainController), Array)
+#6 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(DomainController), Object(ReflectionMethod), Array)
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxupdate')
+#16 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxupda...')
+#17 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxupdate/3?ajax=domain-grid&type=3
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain
+---
+2016/01/12 17:44:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_domain` (`Type`, `Name`) VALUES (:yp0, :yp1).
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (196)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 17:44:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand không thể thi hành câu truy vấn SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_domain` (`Type`, `Name`) VALUES (:yp0, :yp1)' in D:\web\projects\framework\yii\itplus\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(1080): CDbCommand->execute()
+#1 D:\web\projects\framework\yii\itplus\framework\db\ar\CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(196): CActiveRecord->save()
+#3 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionAjaxCreate()
+#4 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('ajaxcreate')
+#13 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('domain/ajaxcrea...')
+#14 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/domain/ajaxcreate?_=1452617067412
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/domain/index/
+---
+2016/01/12 17:47:08 [error] [php] urlencode() expects parameter 1 to be string, array given (D:\web\projects\framework\yii\itplus\framework\web\CUrlManager.php:762)
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(551): CUrlManager->createUrl()
+#1 D:\web\projects\framework\yii\itplus\framework\web\CController.php(967): CWebApplication->createUrl()
+#2 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612) : eval()'d code(1): DomainController->createUrl()
+#3 D:\web\projects\framework\yii\itplus\framework\base\CComponent.php(612): eval()
+#4 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(342): CButtonColumn->evaluateExpression()
+#5 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CButtonColumn.php(321): CButtonColumn->renderButton()
+#6 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(231): CButtonColumn->getDataCellContent()
+#7 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridColumn.php(154): CButtonColumn->renderDataCellContent()
+#8 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(638): CButtonColumn->renderDataCell()
+#9 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#10 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#11 D:\web\projects\framework\yii\itplus\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#12 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#13 unknown(0): CGridView->renderSection()
+#14 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#15 D:\web\projects\framework\yii\itplus\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#16 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(181): CGridView->run()
+#17 D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php(139): DomainController->widget()
+#18 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(126): require()
+#19 D:\web\projects\framework\yii\itplus\framework\web\CBaseController.php(95): DomainController->renderInternal()
+#20 D:\web\projects\framework\yii\itplus\framework\web\CController.php(869): DomainController->renderFile()
+#21 D:\web\projects\framework\yii\itplus\framework\web\CController.php(782): DomainController->renderPartial()
+#22 D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php(143): DomainController->render()
+#23 D:\web\projects\framework\yii\itplus\framework\web\actions\CInlineAction.php(49): DomainController->actionIndex()
+#24 D:\web\projects\framework\yii\itplus\framework\web\CController.php(308): CInlineAction->runWithParams()
+#25 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(133): DomainController->runAction()
+#26 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 D:\web\projects\framework\yii\itplus\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#28 D:\web\projects\framework\yii\itplus\framework\web\filters\CInlineFilter.php(58): DomainController->filterAccessControl()
+#29 D:\web\projects\framework\yii\itplus\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#30 D:\web\projects\framework\yii\itplus\framework\web\CController.php(291): CFilterChain->run()
+#31 D:\web\projects\framework\yii\itplus\framework\web\CController.php(265): DomainController->runActionWithFilters()
+#32 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): DomainController->run()
+#33 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#34 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#35 D:\web\projects\framework\yii\itplus\index.php(13): CWebApplication->run()
+REQUEST_URI=/framework/yii/itplus/index.php/domain/index/3
+in D:\web\projects\framework\yii\itplus\protected\views\domain\admin.php (139)
+in D:\web\projects\framework\yii\itplus\protected\controllers\DomainController.php (143)
+in D:\web\projects\framework\yii\itplus\index.php (13)
+2016/01/12 18:04:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Hệ thống không thể tìm được hành động yêu cầu "index".' in D:\web\projects\framework\yii\itplus\framework\web\CController.php:483
+Stack trace:
+#0 D:\web\projects\framework\yii\itplus\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\web\projects\framework\yii\itplus\framework\web\CWebApplication.php(141): CWebApplication->runController('report')
+#3 D:\web\projects\framework\yii\itplus\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\web\projects\framework\yii\itplus\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/framework/yii/itplus/index.php/report
+HTTP_REFERER=http://localhost/framework/yii/itplus/index.php/hour
+---

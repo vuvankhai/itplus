@@ -174,7 +174,7 @@ class UsersController extends Controller {
     }
 
     public function actionAjaxView($id) {
-        $this->renderPartial('ajaxview', array(
+        $this->renderPartial('view', array(
             'model' => $this->loadModel($id),
         ));
     }

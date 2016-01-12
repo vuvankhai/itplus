@@ -70,20 +70,12 @@ class Course extends CActiveRecord
 			'ID' => 'ID',
 			'Name' => 'Tên khóa học',
 			'Description' => 'Mô tả',
-			'Parent_id' => 'ID cha',
+			'Parent_id' => 'Cha',
 			'Type' => 'Kiều',
 			'Major_id' => 'Khóa học',
 			'Version' => 'Phiên bản',
 			'Status' => 'Trạng thái',
 			'Code' => 'Mã',
-			'Name:' => 'Tên khóa học:',
-			'Description:' => 'Mô tả:',
-			'Parent_id:' => 'ID cha:',
-			'Type:' => 'Kiều:',
-			'Major_id:' => 'Khóa học:',
-			'Version:' => 'Phiên bản:',
-			'Status:' => 'Trạng thái:',
-			'Code:' => 'Mã:',
 		);
 	}
 

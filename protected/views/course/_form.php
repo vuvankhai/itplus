@@ -19,13 +19,13 @@
 	<p class="text-danger note-required">Trường có dấu <span class="required">*</span> là bắt buộc.</p>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Name:',array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'Name',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Name',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Name',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Code:',array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'Code',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Code',array('size'=>45,'maxlength'=>10, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Code',array('class'=>'text-danger')); ?>
 	</div>
@@ -33,7 +33,7 @@
     //var_dump(Course::model()->find(' ID = :id', array('id'=>$id)));die();
 ?>
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Parent_id:',array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'Parent_id',array('class'=>'control-label')); ?>
 		<?php   if(Yii::app()->controller->action->id == 'ajaxcreate' ||Yii::app()->controller->action->id == 'create') 
                     echo $form->textField($model,'Parent_id', array('class'=>'form-control', 'readOnly'=>'readOnly')); 
                 else if(Yii::app()->controller->action->id == 'ajaxupdate' || Yii::app()->controller->action->id == 'update')
@@ -43,25 +43,25 @@
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Type:',array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'Type',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Type', array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Type',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Version:',array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'Version',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Version',array('size'=>10,'maxlength'=>10, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Version',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Status:',array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'Status',array('class'=>'control-label')); ?>
 		<?php echo $form->textField($model,'Status',array('size'=>45,'maxlength'=>45, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Status',array('class'=>'text-danger')); ?>
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'Description:',array('class'=>'control-label')); ?>
+		<?php echo $form->labelEx($model,'Description',array('class'=>'control-label')); ?>
 		<?php echo $form->textArea($model,'Description',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Description',array('class'=>'text-danger')); ?>
 	</div>

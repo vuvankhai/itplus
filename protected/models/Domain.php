@@ -10,9 +10,6 @@
  */
 class Domain extends CActiveRecord
 {
-        public function primaryKey(){
-            return 'ID';
-        }
 	/**
 	 * @return string the associated database table name
 	 */
@@ -29,16 +26,16 @@ class Domain extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ID', 'required'),
-			array('ID', 'numerical', 'integerOnly'=>true),
+			array('Name', 'required'),
 			array('Name', 'length', 'max'=>30),
 			array('Type', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ID, Name, Type', 'safe', 'on'=>'search'),
+			array('Name, Type', 'safe', 'on'=>'search'),
 		);
 	}
-
+        
+        
 	/**
 	 * @return array relational rules.
 	 */
@@ -59,9 +56,6 @@ class Domain extends CActiveRecord
 			'ID' => 'ID',
 			'Name' => 'Giá trị',
 			'Type' => 'Nhóm',
-			'ID:' => 'ID:',
-			'Name:' => 'Giá trị:',
-			'Type:' => 'Nhóm:',
 		);
 	}
 
@@ -133,6 +127,7 @@ class Domain extends CActiveRecord
         
         public static function getDomainTypeOptions(){
             $result = array(
+                'attendance'=>'Điểm danh',
                 'type_account'=>'Nhóm tài khoản',
                 'status_account'=>'Trạng thái tài khoản',
                 'classmanager'=>'Trạng thái lớp học',

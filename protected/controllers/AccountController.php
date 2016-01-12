@@ -230,14 +230,15 @@ class AccountController extends Controller
 			if($model->save()){
             	$user->ID_Account = (Int)$model->ID;
             	if($user->save())
-            		$this->redirect(array('index','id'=>$model->ID));
+                    echo '<script type="text/javascript">location.reload()</script>';
+            		//$this->redirect(array('index','id'=>$model->ID));
         	}
 		}
 
 		$this->renderPartial('_form',array(
 			'model'=>$model,
                         'user'=>$user,
-                    ));
+                    ),false, true);
 	}
         
         
@@ -264,12 +265,13 @@ class AccountController extends Controller
 				$user->Avatar = $avatar;
 			}
 			if($model->save() && $user->save())
-				$this->redirect(array('index','id'=>$model->ID));
+                                echo '<script type="text/javascript">location.reload()</script>';
+				//$this->redirect(array('index','id'=>$model->ID));
 		}
 
 		$this->renderPartial('_form',array(
 			'model'=>$model,
 			'user'=>$user,
-		));
+		), false, true);
 	}
 }

@@ -21,7 +21,7 @@
 		<div id="header">
 			<div class="top-head">
 				<div class="wrap-logo">
-					<a href="#" class="logo"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" border="0"/></a>
+					<a href="<?php echo Yii::app()->request->baseUrl; ?>" class="logo"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" border="0"/></a>
 					<p class="description">Phần mền quản lý học viên ITPlus-Academy</p>
 				</div>
 				<div id="box-user">

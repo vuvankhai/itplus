@@ -33,11 +33,11 @@ class DomainController extends Controller
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'users'=>array('*'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('*'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -188,7 +188,7 @@ class DomainController extends Controller
 		$model=new Domain;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Domain']))
 		{
@@ -199,7 +199,7 @@ class DomainController extends Controller
 
 		$this->renderPartial('_form',array(
 			'model'=>$model,
-		));
+		),false, true);
 	}
 
 	/**
@@ -212,7 +212,7 @@ class DomainController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Domain']))
 		{
@@ -223,7 +223,7 @@ class DomainController extends Controller
 
 		$this->renderPartial('_form',array(
 			'model'=>$model,
-		));
+		), false, true);
 	}
 
 }

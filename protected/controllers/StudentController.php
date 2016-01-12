@@ -31,11 +31,11 @@ class StudentController extends Controller {
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
                 'actions' => array('create', 'update'),
-                'users' => array('@'),
+                'users' => array('*'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
                 'actions' => array('admin', 'delete'),
-                'users' => array('admin'),
+                'users' => array('*'),
             ),
             array('deny', // deny all users
                 'users' => array('*'),
@@ -169,7 +169,7 @@ class StudentController extends Controller {
      * @param integer $id the ID of the model to be displayed
      */
     public function actionAjaxView($id) {
-        $this->renderPartial('ajaxview', array(
+        $this->renderPartial('view', array(
             'model' => $this->loadModel($id),
         ));
     }
@@ -235,5 +235,4 @@ class StudentController extends Controller {
             'account' => $account,
         ), false, true);
     }
-
 }
