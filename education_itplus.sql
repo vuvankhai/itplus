@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 10, 2016 at 01:13 AM
+-- Generation Time: Jan 12, 2016 at 06:05 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -42,9 +42,9 @@ CREATE TABLE IF NOT EXISTS `tbl_account` (
 INSERT INTO `tbl_account` (`ID`, `Username`, `Password`, `Type`, `Status`, `ID_GroupAcc`) VALUES
 (1, 'khai', '123', '0', '1', 1),
 (3, 'lehoang', '12345678', '0', '1', 2),
-(6, 'demo', '12345678', '0', '1', 3),
-(7, 'demo1', 'demo1', '0', '1', 3),
-(9, 'demo3', 'demo3', '0', '1', 3);
+(6, 'demo8', '12345678', '9', '10', 3),
+(7, 'demo1', 'demo1', '9', '10', 3),
+(9, 'demo3', 'demo3', '9', '10', 3);
 
 -- --------------------------------------------------------
 
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `tbl_attendance` (
   `ID_Teacher` int(11) DEFAULT NULL,
   `ID_Class_Subject` int(11) NOT NULL,
   `Date_create` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tbl_attendance`
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `tbl_attendance_detail` (
   `ID_Student` int(11) DEFAULT NULL,
   `Note` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `Status` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tbl_attendance_detail`
@@ -209,7 +209,7 @@ CREATE TABLE IF NOT EXISTS `tbl_domain` (
   `ID` int(11) NOT NULL,
   `Name` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Type` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tbl_domain`
@@ -217,21 +217,17 @@ CREATE TABLE IF NOT EXISTS `tbl_domain` (
 
 INSERT INTO `tbl_domain` (`ID`, `Name`, `Type`) VALUES
 (1, 'Đi học', 'attendance'),
-(1, 'Vừa mở', 'course'),
-(1, 'Hiển thị', 'post'),
-(1, 'Kích hoạt', 'status_account'),
-(1, 'Đang học', 'student'),
-(1, 'Hoạt động', 'subject'),
-(1, 'Đang làm việc', 'users'),
 (2, 'Nghỉ học', 'attendance'),
-(2, 'Đang học', 'course'),
-(2, 'Không hiển thị', 'post'),
-(2, 'Không kích hoạt', 'status_account'),
-(2, 'Bảo lưu', 'student'),
-(2, 'Không hoạt động', 'subject'),
-(2, 'Thôi việc', 'users'),
 (3, 'Nghỉ có phép', 'attendance'),
-(3, 'Kết thúc', 'course');
+(4, 'Hoạt động', 'subject'),
+(5, 'Không hoạt động', 'subject'),
+(6, 'Vừa mở', 'course'),
+(7, 'Đang học', 'course'),
+(8, 'Kết thúc', 'course'),
+(9, 'Kích hoạt', 'type_account'),
+(10, 'Không kích hoạt', 'status_account'),
+(11, 'Bảo lưu', 'student'),
+(12, 'Đang học', 'student');
 
 -- --------------------------------------------------------
 
@@ -314,25 +310,30 @@ CREATE TABLE IF NOT EXISTS `tbl_menu` (
   `Status` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Parent_ID` int(11) DEFAULT NULL,
   `Type` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Mô tả menu cấp mấy\n'
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tbl_menu`
 --
 
 INSERT INTO `tbl_menu` (`ID`, `Name`, `URL`, `Status`, `Parent_ID`, `Type`) VALUES
-(11, 'Menu', '/menu', '', 0, '1'),
-(12, 'Domain', '/domain', '', 0, '1'),
-(14, 'Lớp học', '/classmanager', '', 0, '1'),
-(15, 'Lớp môn học', '/classsubject', '', 0, '1'),
-(16, 'Khóa hoc', '/course', '', 0, '1'),
-(17, 'Học viên', '/student', '', 0, '1'),
-(18, 'Giảng viên/Giáo vụ', '/users', '', 0, '1'),
-(19, 'Điểm danh', '/attendance', '', 0, '1'),
-(20, 'Kỳ học', '/semester', '', 0, '1'),
-(21, 'Môn học', '/subject', '', 0, '1'),
-(22, 'Giờ học', '/hour', '', 0, '1'),
-(23, 'Kỳ môn học', '/semestersubject', '', 0, '1');
+(11, 'Menu', '/menu', '', 25, '2'),
+(12, 'Domain', '/domain', '', 25, '2'),
+(14, 'Lớp học', '/classmanager', '', 24, '2'),
+(15, 'Lớp môn học', '/classsubject', '', 24, '2'),
+(16, 'Khóa hoc', '/course', '', 24, '1'),
+(17, 'Học viên', '/student', '', 24, '1'),
+(18, 'Giảng viên/Giáo vụ', '/users', '', 27, '2'),
+(19, 'Điểm danh', '/attendance', '', 24, '1'),
+(20, 'Kỳ học', '/semester', '', 24, '1'),
+(21, 'Môn học', '/subject', '', 24, '1'),
+(22, 'Giờ học', '/hour', '', 24, '1'),
+(23, 'Kỳ môn học', '/semestersubject', '', 24, '1'),
+(24, 'Quản lý sinh viên', 'javascript:;', '', 0, '1'),
+(25, ' Quản trị viên', 'javascript:;', '', 0, '1'),
+(26, 'Quản lý file', 'javascript:;', '', 0, '1'),
+(27, 'Quản lý nhân sự', 'javascript:;', '', 0, '1'),
+(28, 'Tạo file báo cáo', '/report', '', 26, '2');
 
 -- --------------------------------------------------------
 
@@ -444,9 +445,9 @@ CREATE TABLE IF NOT EXISTS `tbl_student` (
 --
 
 INSERT INTO `tbl_student` (`ID`, `Firstname`, `Lastname`, `Phonenumber`, `Email`, `ID_Account`, `Gender`, `Birthday`, `Status`, `Description`, `ID_Class`, `Address`, `Phone_Parent`, `Parent_Name`, `Date_learning`, `Code`) VALUES
-(1, 'Long', 'Đào Văn', '0123456789', 'demo@demo.demo', 6, 0, '1995-07-13', 1, '', 1, 'Hà Nội', '01234567890', 'demo', '2016-01-04', 'lt08914'),
-(2, 'Hậu', 'Lương văn', '03456789', 'abc@abc.abc', 7, 0, '2016-01-06', 1, '', 1, 'ha noi', '0456789023', 'demo2', '2016-01-21', '134asdfa'),
-(3, 'Bình', 'Nguyễn Thị', '0123456789', 'binh@gmail.com', 9, 1, '2016-07-05', 1, '', 1, 'Thái Binh', '01234567890', 'Nguyễn Công Hạ', '2016-01-12', 'lt08915');
+(1, 'Long', 'Đào Văn', '0123456789', 'demo@demo.demo', 6, 0, '1995-07-13', 12, '', 1, 'Hà Nội', '01234567890', 'demo', '2016-01-04', 'lt08914'),
+(2, 'Hậu', 'Lương văn', '03456789', 'abc@abc.abc', 7, 0, '2016-01-06', 12, '', 1, 'ha noi', '0456789023', 'demo2', '2016-01-21', '134asdfa'),
+(3, 'Bình', 'Nguyễn Thị', '0123456789', 'binh@gmail.com', 9, 1, '2016-07-05', 12, '', 1, 'Thái Binh', '01234567890', 'Nguyễn Công Hạ', '2016-01-12', 'lt08915');
 
 -- --------------------------------------------------------
 
@@ -466,7 +467,7 @@ CREATE TABLE IF NOT EXISTS `tbl_subject` (
 --
 
 INSERT INTO `tbl_subject` (`ID`, `Name`, `Description`, `Status`) VALUES
-(1, 'WHCJ', 'WHCJ', 1);
+(1, 'WHCJ', 'WHCJ', 4);
 
 -- --------------------------------------------------------
 
@@ -543,7 +544,7 @@ ALTER TABLE `tbl_course`
 -- Indexes for table `tbl_domain`
 --
 ALTER TABLE `tbl_domain`
-  ADD PRIMARY KEY (`ID`,`Type`);
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `tbl_groupaccount`
@@ -630,12 +631,12 @@ ALTER TABLE `tbl_account`
 -- AUTO_INCREMENT for table `tbl_attendance`
 --
 ALTER TABLE `tbl_attendance`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `tbl_attendance_detail`
 --
 ALTER TABLE `tbl_attendance_detail`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=37;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `tbl_classmanager`
 --
@@ -656,6 +657,11 @@ ALTER TABLE `tbl_comment`
 --
 ALTER TABLE `tbl_course`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
+--
+-- AUTO_INCREMENT for table `tbl_domain`
+--
+ALTER TABLE `tbl_domain`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `tbl_groupaccount`
 --
@@ -680,7 +686,7 @@ ALTER TABLE `tbl_major`
 -- AUTO_INCREMENT for table `tbl_menu`
 --
 ALTER TABLE `tbl_menu`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=24;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT for table `tbl_post`
 --
