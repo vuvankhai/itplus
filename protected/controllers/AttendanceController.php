@@ -220,11 +220,10 @@ class AttendanceController extends Controller {
             } else {
                 $result .= '<option value="0">Chọn session</option>';
                 for ($i = 0; $i < $session; $i++) {
+                    $disabled = '';
                     foreach($sessions as $sess){
                         if($sess->Session == $i+1)
                             $disabled = ' class="disabled" ';
-                        else
-                            $disabled = '';
                     }
                     $result .= '<option value="' . ($i + 1) . '" '.$disabled.'> Session ' . ($i + 1) . '</option>';
                 }
@@ -250,13 +249,15 @@ class AttendanceController extends Controller {
 
     public function checkAttendanceSession($session, $attendanceSession) {
 
+        $check = true;
         if (!empty($attendanceSession)) {
             foreach ($attendanceSession as $sess) {
-                if ((int) $sess->Session == $session)
-                    return false;
-                else
-                    return true;
+                if ((int) $sess->Session == $session){
+                    $check = false;
+                    break;
+                }
             }
+            return $check;
         } else {
             return true;
         }
