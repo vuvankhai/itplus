@@ -68,6 +68,16 @@ html h1.welcome{
     width:auto;
 }
 
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+.disabled{
+    background:#f1f1f1;
+}
+
 /*-----------------------------------Style header--------------------------------------*/
 /*-------------------------------------------------------------------------------------*/
 
@@ -395,9 +405,6 @@ table.table thead tr:first-child th a{
     border-bottom:none;
 }
 
-option[disabled='disabled']{
-    background:#f1f1f1;
-}
 
 /*----------------------------------Restyle bootstrap----------------------------------*/
 /*-------------------------------------------------------------------------------------*/

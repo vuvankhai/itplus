@@ -19,7 +19,7 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 
-	<p class="text-info bg-info pd-3-10">Fields with <span class="required">*</span> are required.</p>
+	<p class="text-danger pd-3-10">Fields with <span class="required">*</span> are required.</p>
 
 	<div class="from-group">
 		<?php echo $form->labelEx($model,'username', array('class'=>'control-label')); ?>
@@ -33,14 +33,14 @@ $this->breadcrumbs=array(
 		<?php echo $form->error($model,'password', array('class'=>'text-danger')); ?>
 	</div>
 
-	<div class="form-group rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
+<!--	<div class="form-group rememberMe">
+		<?php //echo $form->checkBox($model,'rememberMe'); ?>
+		<?php //echo $form->label($model,'rememberMe'); ?>
+		<?php //echo $form->error($model,'rememberMe'); ?>
+	</div>-->
 
 	<div class="form-group buttons">
-		<?php echo CHtml::submitButton('Login', array('class'=>'btn btn-success btn-sm')); ?>
+		<?php echo CHtml::submitButton('Login', array('class'=>'btn btn-primary btn-sm')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

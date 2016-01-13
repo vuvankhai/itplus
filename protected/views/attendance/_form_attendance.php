@@ -18,7 +18,7 @@
     <div class="form-get-value">
 	<div class="form-group col-sm-3">
 		<?php echo $form->labelEx($model,'Select_class',array('class'=>'control-label')); ?>
-		<?php echo $form->dropDownList($model,'Select_class', $model->getClassOptionsByFacutyId(1),array('class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model,'Select_class', $model->getClassOptionsByFacutyId(Yii::app()->user->getState('idUser')),array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'Select_class',array('class'=>'text-danger')); ?>
 	</div>
 	<div class="form-group col-sm-3">
@@ -53,9 +53,9 @@
             </tbody>
         </table>
     </div>
-	<div class="form-group buttons fright">
-            <?php echo CHtml::ajaxSubmitButton('Lưu', 'attendance/ajaxsave', array('update'=>'#table-attendance'), array('class'=>'btn btn-sm btn-success floppy-disk')) ?>
-        </div>
+    <div class="form-group buttons fright hide">
+        <?php echo CHtml::ajaxSubmitButton('Lưu', 'attendance/ajaxsave', array('update'=>'#table-attendance'), array('class'=>'btn btn-sm btn-success floppy-disk')) ?>
+    </div>
 
 <?php $this->endWidget(); ?>
 

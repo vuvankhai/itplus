@@ -87,7 +87,10 @@ $this->endWidget('zii.widgets.jui.CJuiDialog');
 		'Status',*/
 		'Name',
 		'URL',
-		'Parent_ID',
+                array(
+                    'name'=>'Parent_ID',
+                    'value'=>'Menu::getMenuParent($data->Parent_ID)',
+                ),
 		array(
                     'header' => 'Chi tiết',
                     'htmlOptions' => array(

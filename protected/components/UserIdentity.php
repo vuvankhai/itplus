@@ -30,15 +30,17 @@ class UserIdentity extends CUserIdentity {
 //                $this->errorCode=self::ERROR_NONE;
 //        return !$this->errorCode;
 
-        $user = Account::model()->find('Username=:Username', array('Username' => $this->username));
+        $account = Account::model()->find('Username=:Username', array('Username' => $this->username));
         
-        if ($user === null)
+        if ($account === null)
             $this->errorCode = self::ERROR_USERNAME_INVALID;
-        else if (isset($user->Password) && $user->Password != $this->password)
+        else if (isset($account->Password) && $account->Password != $this->password)
             $this->errorCode = self::ERROR_PASSWORD_INVALID;
         else{
             $this->errorCode = self::ERROR_NONE;
-            Yii::app()->user->setState('idAccount', $user->ID);
+            Yii::app()->user->setState('idAccount', $account->ID);
+            $user = Users::model()->find('ID_Account=:id', array('id'=>$account->ID));
+            Yii::app()->user->setState('idUser', $user->ID);
         }
 
         return !$this->errorCode;

@@ -41,7 +41,18 @@ $this->breadcrumbs=array(
                     url: '".Yii::app()->createUrl('attendance/getstudentattendance')."',
                     data: {id: s_id},
                     success: function(data){
-                        $('#table-attendance').html(data);
+                        var check = data.indexOf('>x<');
+                        if(data == 'false'){
+                            $('#table-attendance').html('Chưa chọn session');
+                            $('.buttons').addClass('hide');
+                        } else {
+                            $('#table-attendance').html(data);
+                            if(check != -1){
+                                $('.buttons').addClass('hide');
+                            }else {
+                                $('.buttons').removeClass('hide');
+                            }
+                        }
                     }
                 })
             });          

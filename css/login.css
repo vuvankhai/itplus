@@ -31,3 +31,7 @@ body{
 	text-align: center;
 	font-size: 26px;
 }
+.btn,
+.form-control{
+    border-radius: 0;
+}

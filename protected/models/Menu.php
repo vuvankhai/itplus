@@ -96,7 +96,7 @@ class Menu extends CActiveRecord
 		$criteria->compare('Name',$this->Name,true);
 		$criteria->compare('URL',$this->URL,true);
 		$criteria->compare('Status',$this->Status,true);
-		$criteria->compare('Parent_ID',$this->Parent_ID);
+		$criteria->compare('Parent_ID',$this->Parent_ID, true);
 		$criteria->compare('Type',$this->Type,true);
 
 		return new CActiveDataProvider($this, array(
@@ -141,5 +141,14 @@ class Menu extends CActiveRecord
                 $Data[$key] = $value;
             }
             return $Data;
+        }
+        
+        public static function getMenuParent($id){
+            $menu = Menu::model()->find('ID=:id', array('id'=>$id));
+            if($menu!=null){
+                return $menu->Name;
+            }else {
+                return "";
+            }
         }
 }

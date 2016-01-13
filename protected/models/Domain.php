@@ -151,6 +151,9 @@ class Domain extends CActiveRecord
         }
         
         public static function getAttendanceStatus(){
-            return Domain::model()->findAll('Type=:Type', array('Type'=>'attendance'));
+            return array('1'=>'Đi học',
+                        '2'=>'Nghỉ học',
+                        '3'=>'Nghỉ có phép'
+                );
         }
 }
