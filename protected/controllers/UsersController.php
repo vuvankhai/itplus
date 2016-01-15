@@ -59,9 +59,10 @@ class UsersController extends Controller {
      */
     public function actionCreate() {
         $model = new Users;
+        $account = new Account;
 
         // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+        $this->performAjaxValidation($model);
 
         if (isset($_POST['Users'])) {
             $model->attributes = $_POST['Users'];
@@ -79,6 +80,7 @@ class UsersController extends Controller {
 
         $this->render('create', array(
             'model' => $model,
+            'account'=>$account,
         ));
     }
 
@@ -231,10 +233,11 @@ class UsersController extends Controller {
         $this->performAjaxValidation($account);
 
         if (isset($_POST['Users']) && isset($_POST['Account'])) {
-            $model->attributes = $_POST['Users'];
             $account->attributes = $_POST['Account'];
+            $model->attributes = $_POST['Users'];
             $model->Avatar = CUploadedFile::getInstance($model, 'Avatar');
-            if (!empty($model->Avatar->name)) {
+
+            if (!empty($model->Avatar)) {
                 $model->Avatar->saveAs(Yii::getPathOfAlias('webroot') . '/images/avatars/' . $model->Avatar->name);
             } else {
                 $model->Avatar = $avatar;

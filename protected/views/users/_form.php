@@ -80,8 +80,8 @@
 
             <div class="form-group">
                 <?php echo $form->labelEx($model, 'Avatar', array('class' => 'control-label')); ?>
-<?php echo $form->fileField($model, 'Avatar', array('size' => 50, 'maxlength' => 50, 'class' => 'form-control')); ?>
-<?php echo $form->error($model, 'Avatar', array('class' => 'text-danger')); ?>
+                <?php echo $form->fileField($model, 'Avatar', array('size' => 50, 'maxlength' => 50, 'class' => 'form-control')); ?>
+                <?php echo $form->error($model, 'Avatar', array('class' => 'text-danger')); ?>
             </div>
 
             <div class="form-group">

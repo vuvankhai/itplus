@@ -130,7 +130,9 @@ class StudentController extends Controller {
         }
 
         $model = new Student('search');
+        //$model = Student::model()->findAll('ID_Class=:idClass', array('idClass'=>$_SESSION['cID']));
         $model->unsetAttributes();  // clear any default values
+        $model->ID_Class = $_SESSION['cID'];
         if (isset($_GET['Student']))
             $model->attributes = $_GET['Student'];
 

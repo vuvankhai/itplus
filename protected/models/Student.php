@@ -112,7 +112,7 @@ class Student extends CActiveRecord {
         // @todo Please modify the following code to remove attributes that should not be searched.
 
         $criteria = new CDbCriteria;
-        $criteria->with = array('iDAccount','iDClass');
+        $criteria->with = array('iDAccount');
 
         $criteria->compare('ID', $this->ID);
         $criteria->compare('Firstname', $this->Firstname, true);
@@ -124,7 +124,7 @@ class Student extends CActiveRecord {
         $criteria->compare('Birthday', $this->Birthday, true);
         $criteria->compare('Status', $this->Status);
         $criteria->compare('Description', $this->Description, true);
-        $criteria->compare('iDClass.Name', $this->ID_Class, true);
+        $criteria->compare('ID_Class', $this->ID_Class);
         $criteria->compare('Address', $this->Address, true);
         $criteria->compare('Phone_Parent', $this->Phone_Parent, true);
         $criteria->compare('Parent_Name', $this->Parent_Name, true);
